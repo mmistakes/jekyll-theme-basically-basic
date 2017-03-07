@@ -1,0 +1,150 @@
+//
+// Layout
+//
+
+#wrapper {
+  min-height: 100vh;
+  transition: $global-transition;
+}
+
+#intro, #page-header, #main {
+
+  > .inner {
+    padding: 0 0.5rem;
+
+    @include breakpoint($small) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    @include breakpoint($medium) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @include breakpoint($large) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    @include breakpoint($xlarge) {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+}
+
+#main {
+
+  section {
+    @include container;
+  }
+}
+
+.inner {
+  max-width: $large;
+}
+
+//
+// Layout specific adjustments
+//
+
+.layout--post,
+.layout--page {
+
+  .entry-content {
+    @include breakpoint($large) {
+      width: span(14 of 16);
+    }
+  }
+}
+
+.layout--about {
+
+  .entry-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($medium) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .entry-content {
+    @include breakpoint($medium) {
+      flex: 1;
+    }
+  }
+
+  .entry-sidebar {
+    order: -1;
+    @include breakpoint($medium) {
+      order: initial;
+    }
+
+    .author-picture {
+      margin: 0 0 2rem;
+      border-radius: 2 * $border-radius;
+
+      @include breakpoint($medium) {
+        margin: 0 0 0 2rem;
+      }
+    }
+  }
+}
+
+.layout--cv {
+
+  .entry {
+
+    a {
+      color: $accent-color;
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    .title,
+    .position,
+    .institution,
+    .language {
+      margin-bottom: 0;
+    }
+
+    .date {
+      margin-bottom: 1rem;
+      color: tint($text-color, 40%);
+      font-family: $monospace-font-family;
+      font-size: 80%;
+    }
+
+    .courses-title,
+    .awarder,
+    .publisher,
+    .level {
+      margin: 1rem 0 0;
+    }
+
+    .courses,
+    .keywords {
+      @include list-unstyled;
+    }
+  }
+
+  .taxonomy {
+
+    & + .taxonomy {
+      margin-top: 0.5rem;
+    }
+
+    .title {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    .keywords {
+      display: inline-block;
+    }
+  }
+}

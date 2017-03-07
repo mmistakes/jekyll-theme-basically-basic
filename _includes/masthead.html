@@ -1,0 +1,21 @@
+<header id="masthead">
+  <div class="inner">
+    <div class="title-area">
+      {% if page.url == '/' %}
+        <h1 class="site-title">
+          <a href="{{ '/' | relative_url }}">
+            {% if site.image %}<img src="{{ site.image }}" alt="" class="site-image">{% endif %}
+            {{ site.title | escape }}
+          </a>
+        </h1>
+      {% else %}
+        <p class="site-title">
+          <a href="{{ '/' | relative_url }}">
+            {% if site.image %}<img src="{{ site.image }}" alt="" class="site-image">{% endif %}
+            {{ site.title | escape }}
+          </a>
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</header>

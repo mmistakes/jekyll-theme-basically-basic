@@ -1,0 +1,5 @@
+{% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+{% endif %}
+
+<script async src="{{ '/assets/javascripts/main.js' | relative_url }}"></script>

@@ -1,0 +1,168 @@
+//
+// Sidebar
+//
+
+#sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 150;
+
+  // page overlay dimmer
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($base-color, 0.5);
+    opacity: 0;
+    will-change: opacity;
+    pointer-events: none;
+    transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
+  }
+
+  // line hover effect
+  li {
+
+    a {
+      position: relative;
+      color: $base-color;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -3rem;
+        height: 1px;
+        width: 0;
+        background-color: $base-color;
+        transition: width 0.3s cubic-bezier(0, 0, 0.3, 1);
+      }
+
+      &:hover {
+        color: $accent-color;
+      }
+
+      &:hover:before {
+        width: 2.5rem;
+      }
+    }
+  }
+
+  &.is--visible {
+    transform: translateX(0);
+
+    &:after {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    > .inner {
+      box-shadow: 0 1em 5em 0 rgba(0, 0, 0, 0.125);
+      transform: none;
+    }
+  }
+
+  &.is--animatable > .inner {
+    transition: all 130ms ease-in;
+  }
+
+  &.is--visible.is--animatable > .inner {
+    transition: all 330ms ease-out;
+  }
+
+  > .inner {
+    position: relative;
+    padding: 1.5em;
+    width: 100%;
+    max-width: $sidebar-width;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: $sidebar-background-color;
+    box-shadow: none;
+    transform: translateX(-1 * $sidebar-width);
+    will-change: transform;
+    z-index: 160;
+    pointer-events: auto;
+
+    @include breakpoint($medium) {
+      padding: 3rem;
+    }
+
+    @include breakpoint($large) {
+      transform: translateX(-1.5 * $sidebar-width);
+      max-width: (1.5 * $sidebar-width);
+    }
+  }
+
+  .menu {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    @include fluid-type($min-vw, $max-vw, 24px, 48px);
+    font-weight: bold;
+    line-height: 1;
+
+    a {
+      display: block;
+    }
+
+    // divider line
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 1.5em;
+      height: 1px;
+      background-color: $base-color;
+    }
+
+    li {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+
+  li {
+    transform: translateX(-1rem);
+    opacity: 0;
+    transition: all 0.5s;
+
+    &.is--moved {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .contact-list {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    @include fluid-type($min-vw, $max-vw, 18px, 24px);
+
+    li:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      display: block;
+      color: $base-color;
+      text-decoration: none;
+    }
+  }
+}
+
+#sidebar-toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 10000;
+}

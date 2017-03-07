@@ -1,0 +1,26 @@
+//
+// Site wide
+//
+
+.site-title {
+  margin: 0;
+  padding: 1.35rem 1rem;
+  padding-right: calc(10vw + #{$navicon-width}); // make room for sidebar toggle
+  font-family: $base-font-family;
+  @include fluid-type($min-vw, $max-vw, 20px, 24px);
+  font-weight: bold;
+  line-height: 1;
+
+  @include breakpoint($medium) {
+    padding-left: 2rem;
+  }
+
+  @include breakpoint($large) {
+    padding-left: 5vw;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,24 @@
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<article class="entry">
+  <header class="entry-header">
+    <h3 class="entry-title">
+      <a href="{{ post.url | relative_url }}" rel="bookmark">{{ title }}</a>
+    </h3>
+    <p class="entry-meta">
+      {% if post.date %}
+        <time class="entry-time" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      {% endif %}
+    </p>
+  </header>
+  <div class="entry-excerpt">
+    {% if post.excerpt %}
+      {{ post.excerpt | markdownify }}
+      <p><a href="{{ post.url | relative_url }}" class="more-link">Read More <span class="icon icon--arrow-right">{% include icon-arrow-right.svg %}</span></a></p>
+    {% endif %}
+  </div>
+</article>

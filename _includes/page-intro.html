@@ -1,0 +1,31 @@
+<header id="intro" role="banner">
+  <div class="inner">
+    <div class="intro-text">
+      <h1 class="intro-title">{{ page.alt_title | default: page.title | default: site.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+      {% if page.sub_title %}
+        <p class="intro-subtitle">{{ page.sub_title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      {% endif %}
+
+      {% if page.date %}
+        {% include author %}
+        <p class="entry-meta">
+          {% if author_name %}<span class="byline-item">{{ author_name | prepend: 'by ' }}</span>{% endif %}<span class="byline-item"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></span>
+        </p>
+      {% endif %}
+
+      {% if page.introduction %}
+        <div class="intro-more">
+          {{ page.introduction | markdownify }}
+        </div>
+      {% endif %}
+
+      {% if page.actions %}
+        <ul class="intro-actions">
+          {% for action in page.actions %}
+            <li><a href="{{ action.url }}" class="btn">{% if action.icon %}<span class="icon">{% include {{ action.icon | prepend: 'icon-' | append: '.svg' }} %}</span>{% endif %}{{ action.label }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</header>
