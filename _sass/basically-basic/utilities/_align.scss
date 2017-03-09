@@ -1,5 +1,5 @@
 //
-// Text Alignment
+// Alignment
 //
 
 .align-baseline    { vertical-align: baseline !important; } // Browser default
@@ -19,6 +19,19 @@ a img.align-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+figure.align-center {
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  figcaption {
+    text-align: center;
+  }
 }
 
 .align-right,
