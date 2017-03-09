@@ -11,7 +11,7 @@
     </h3>
     <p class="entry-meta">
       {% if post.date %}
-        <time class="entry-time" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <time class="entry-time" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
       {% endif %}
     </p>
   </header>

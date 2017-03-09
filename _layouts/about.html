@@ -6,7 +6,7 @@ layout: default
 
 <main id="main" class="page-content" aria-label="Content">
   <div class="inner">
-    <article class="entry-wrap">
+    <div class="entry-wrap">
       <div class="entry-content">
         {{ content }}
       </div>
@@ -14,7 +14,7 @@ layout: default
         {% include author %}
         <img class="author-picture" src="{{ author_picture }}" alt="{{ author_name }}">
       </aside>
-    </article>
+    </div>
 
     {% include footer.html %}
   </div>
