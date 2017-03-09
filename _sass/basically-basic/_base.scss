@@ -11,7 +11,8 @@ body {
   background: $background-color;
 }
 
-blockquote {
+blockquote,
+q {
   color: tint($text-color, 40%);
   font-style: italic;
 
