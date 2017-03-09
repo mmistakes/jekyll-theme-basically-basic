@@ -12,11 +12,11 @@
   user-select: none;
 
   @include breakpoint($medium) {
-    padding-right: 2rem;
+    margin-right: 2rem;
   }
 
   @include breakpoint($large) {
-    padding-right: 5vw;
+    margin-right: 5vw;
   }
 
   &.open {
