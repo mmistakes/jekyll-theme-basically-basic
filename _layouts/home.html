@@ -10,7 +10,7 @@ layout: default
 
     <div>
       <header class="section-title">
-        <h2>Posts</h2>
+        <h2>Posts{% if paginator.page > 1 %}{{ paginator.page | prepend: ' - Page '}}{{ paginator.total_pages | prepend: ' of ' }}{% endif %}</h2>
       </header>
       <div class="entries">
         {% if site.gems contains 'jekyll-paginate' and page.paginate %}

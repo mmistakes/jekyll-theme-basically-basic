@@ -41,7 +41,7 @@ feed:
   path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 5
+paginate: 10
 paginate_path: /page:num/
 
 # Link to specific internal pages in the navigation.
