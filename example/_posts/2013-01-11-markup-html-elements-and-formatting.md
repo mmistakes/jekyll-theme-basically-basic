@@ -1,17 +1,18 @@
 ---
-title: "Markup: HTML Tags and Formatting"
-subtitle: "The common elements"
+title: "Markup: HTML Elements and Formatting"
+sub_title: "The common elements"
 categories:
   - Markup
-tags:
+elements:
   - content
   - css
   - formatting
   - html
   - markup
+last_modified_at: 2017-03-09T10:55:59-05:00
 ---
 
-A variety of common markup showing how the theme styles them.
+A variety of common HTML elements to demonstrate the theme's stylesheet and verify they have been styled appropriately.
 
 # Header one
 
@@ -101,94 +102,49 @@ Do It Live
   3. List item three
   4. List item four
 
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-```html
-<a href="#" class="btn--success">Success Button</a>
-```
-
-[Primary Button](#){: .btn}
-[Success Button](#){: .btn .btn--success}
-[Warning Button](#){: .btn .btn--warning}
-[Danger Button](#){: .btn .btn--danger}
-[Info Button](#){: .btn .btn--info}
-[Inverse Button](#){: .btn .btn--inverse}
-[Light Outline Button](#){: .btn .btn--light-outline}
-
-```markdown
-[Primary Button Text](#link){: .btn}
-[Success Button Text](#link){: .btn .btn--success}
-[Warning Button Text](#link){: .btn .btn--warning}
-[Danger Button Text](#link){: .btn .btn--danger}
-[Info Button Text](#link){: .btn .btn--info}
-[Inverse Button](#link){: .btn .btn--inverse}
-[Light Outline Button](#link){: .btn .btn--light-outline}
-```
-
-[X-Large Button](#){: .btn .btn--x-large}
-[Large Button](#){: .btn .btn--large}
-[Default Button](#){: .btn}
-[Small Button](#){: .btn .btn--small}
-
-```markdown
-[X-Large Button](#link){: .btn .btn--x-large}
-[Large Button](#link){: .btn .btn--large}
-[Default Button](#link){: .btn}
-[Small Button](#link){: .btn .btn--small}
-```
-
-## Notices
-
-**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
-{: .notice}
-
-## HTML Tags
-
-### Address Tag
+## Address element
 
 <address>
   1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
 </address>
 
-### Anchor Tag (aka. Link)
+## Anchor element (aka. Link)
 
 This is an example of a [link](http://apple.com "Apple").
 
-### Abbreviation Tag
+## Abbreviation element
 
 The abbreviation CSS stands for "Cascading Style Sheets".
 
 *[CSS]: Cascading Style Sheets
 
-### Cite Tag
+## Cite element
 
 "Code is poetry." ---<cite>Automattic</cite>
 
-### Code Tag
+## Code element
 
 You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
 
-### Strike Tag
+## Strike element
 
-This tag will let you <strike>strikeout text</strike>.
+This element will let you <strike>strikeout text</strike>.
 
-### Emphasize Tag
+## Emphasize element
 
-The emphasize tag should _italicize_ text.
+The emphasize element should _italicize_ text.
 
-### Insert Tag
+## Insert element
 
-This tag should denote <ins>inserted</ins> text.
+This element should denote <ins>inserted</ins> text.
 
-### Keyboard Tag
+## Keyboard element
 
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
+This scarcely known element emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` element.
 
-### Preformatted Tag
+## Preformatted element
 
-This tag styles large blocks of code.
+This element styles large blocks of code.
 
 <pre>
 .post-title {
@@ -196,26 +152,26 @@ This tag styles large blocks of code.
 	font-weight: bold;
 	font-size: 38px;
 	line-height: 1.2;
-	and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+	and here's a line of some really, really, really, really long text, just to see how the PRE element handles it and to find out how it overflows;
 }
 </pre>
 
-### Quote Tag
+## Quote element
 
 <q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
 
-### Strong Tag
+## Strong element
 
-This tag shows **bold text**.
+This element shows **bold text**.
 
-### Subscript Tag
+## Subscript element
 
 Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
 
-### Superscript Tag
+## Superscript element
 
 Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
 
-### Variable Tag
+## Variable element
 
 This allows you to denote <var>variables</var>.

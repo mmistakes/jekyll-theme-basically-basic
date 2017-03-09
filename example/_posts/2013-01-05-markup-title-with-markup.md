@@ -6,9 +6,13 @@ tags:
   - css
   - html
   - title
+last_modified_at: 2017-03-09T12:25:10-05:00
 ---
 
-Verify that:
+Using Markdown in the title should have no adverse effect on the layout or functionality.
 
-* The post title renders the word "with" in *italics* and the word "Markdown" in **bold**.
-* The post title markup should be removed from the browser window / tab.
+**`page.title` example:**
+
+```yaml
+title: "Markup: Title *with* **Markdown**""
+```

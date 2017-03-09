@@ -9,19 +9,18 @@ tags:
   - html
   - layout
   - title
+last_modified_at: 2017-03-09T14:10:02-05:00
 ---
 
-## Title should not overflow the content area
+This post title has a long word that could potentially overflow the content area.
 
 A few things to check for:
 
-  * Non-breaking text in the title, content, and comments should have no adverse effects on layout or functionality.
+  * Non-breaking text in the title should have no adverse effects on layout or functionality.
   * Check the browser window / tab title.
-  * If you are a theme developer, check that this text does not break anything.
 
-The following CSS properties will help you support non-breaking text.
+The following CSS property will help you support non-breaking text.
 
 ```css
--ms-word-wrap: break-word;
 word-wrap: break-word;
 ```

@@ -7,11 +7,16 @@ tags:
   - markup
   - post
   - title
+last_modified_at: 2017-03-09T12:23:27-05:00
 ---
 
 Putting special characters in the title should have no adverse effect on the layout or functionality.
 
-Special characters in the post title have been known to cause issues with JavaScript and XML when not properly encoded and escaped.
+The title above has none-breaking spaces before and after the m-dash.
+
+```markdown
+&nbsp;---&nbsp;
+```
 
 ## Latin Character Tests
 
