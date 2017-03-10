@@ -77,7 +77,7 @@ t:
 
 By default all internal pages with a `title` will be added to the "off-canvas" menu. For more granular control and sorting of these menu links:
 
-1. Create a custom list to override the default setting by adding a `navigation_pages` array to your [`/_data/themes.yml`](_data/themes.yml) file. 
+1. Create a custom list to override the default setting by adding a `navigation_pages` array to your [`/_data/theme.yml`](_data/theme.yml) file. 
 
 2. Add raw page paths in the order you'd like:
 
