@@ -41,6 +41,17 @@ This theme comes in six different skins (color variations). To change skins add 
 | `skin: default` | `skin: night` | `skin: plum`  |
 | `skin: sea`     | `skin: soft`  | `skin: steel` |
 
+### Google Fonts
+
+This theme allows you to easily use [Google Fonts](https://fonts.google.com/) throughout the theme. Simply add the following to your [`/_data/theme.yml`](_data/theme.yml), replacing the font `name` and `weights` accordingly.
+
+```yaml
+google_fonts:
+  - name: "Fira Sans"
+    weights: "400,400i,600,600i"
+  - name: "Fira Sans Condensed"
+```
+
 ### Text
 
 To change text found throughout the theme add the following to your [`/_data/theme.yml`](_data/theme.yml) file and customize as necessary.
@@ -66,7 +77,7 @@ t:
 
 By default all internal pages with a `title` will be added to the "off-canvas" menu. For more granular control and sorting of these menu links:
 
-1. Create a custom list to override the default setting by adding a `navigation_pages` array to your `_config.yml` file. 
+1. Create a custom list to override the default setting by adding a `navigation_pages` array to your [`/_data/themes.yml`](_data/themes.yml) file. 
 
 2. Add raw page paths in the order you'd like:
 
