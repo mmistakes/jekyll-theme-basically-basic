@@ -44,14 +44,6 @@ feed:
 paginate: 10
 paginate_path: /page:num/
 
-# Link to specific internal pages in the navigation.
-# Create a custom list to override the default setting of including links to all
-# pages that have a `title`. Add raw page paths in the order you'd like.
-
-# navigation_pages:
-#   - about.md
-#   - cv.md
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
