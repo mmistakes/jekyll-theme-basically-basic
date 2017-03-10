@@ -5,28 +5,25 @@
  * https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/LICENSE.md
 */
 
-// Mixins and Functions
+/* Mixins and functions */
 @import "basically-basic/vendor/susy";
 @import "basically-basic/vendor/breakpoint";
 @include breakpoint-set("to ems", true);
 @import "basically-basic/mixins";
 
-// Variables
+/* Variables */
 @import "basically-basic/variables";
 
-// Core CSS
+/* Core CSS */
 @import "basically-basic/reset";
 @import "basically-basic/base";
 @import "basically-basic/layout";
 @import "basically-basic/tables";
-// @import "basically-basic/forms";
-@import "basically-basic/syntax-highlighting";
 
-// Components
+/* Components */
 @import "basically-basic/global";
 @import "basically-basic/sidebar";
 @import "basically-basic/navigation";
-@import "basically-basic/header";
 @import "basically-basic/footer";
 @import "basically-basic/entries";
 @import "basically-basic/buttons";
@@ -34,6 +31,7 @@
 @import "basically-basic/intro";
 @import "basically-basic/navicons";
 @import "basically-basic/contact-lists";
+@import "basically-basic/syntax-highlighting";
 
-// Utility classes
+/* Utility classes */
 @import "basically-basic/utilities";

@@ -1,6 +1,6 @@
-//
-// Navigation
-//
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
 
 .menu {
   @include list-unstyled;
@@ -11,9 +11,9 @@
   }
 }
 
-//
-// Paginator
-//
+/*
+   Paginator
+   ========================================================================== */
 
 .pager {
   @include clearfix();
@@ -21,11 +21,14 @@
 
   ul {
     @include list-unstyled;
+    display: -ms-flexbox;
     display: flex;
 
     > li {
-      flex: 1;
-      justify-content: space-between;
+      -ms-flex: 1;
+          flex: 1;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
     }
 
     li + li {

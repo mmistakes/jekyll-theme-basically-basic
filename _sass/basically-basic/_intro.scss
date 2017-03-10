@@ -1,44 +1,16 @@
-//
-// Page intro
-//
+/* ==========================================================================
+   Page intro
+   ========================================================================== */
 
 #intro {
-  // position: relative;
   margin: 1rem 0 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  // darken image
-  // background-color: rgba(0, 0, 0, 0.6);
-
-  // @include breakpoint($large) {
-  //   // darken image
-  //   background-color: initial;
-  //   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.3));
-  // }
-
-  // &:after {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.25) 0%, rgba(251, 237, 150, 0.25) 100%);
-  //   pointer-events: none;
-  // }
 }
 
 .intro-text {
-  // position: relative;
-  // color: #fff;
-  // text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
-  // z-index: 1;
 
-  // a {
-  //   color: #fff;
-  // }
-
-  // remove space after last child element
+  /* remove space after last child element */
   > *:last-child {
     margin-bottom: 0;
   }
@@ -55,26 +27,6 @@
   @include fluid-type($min-vw, $max-vw, 18px, 28px);
   font-style: italic;
 }
-
-// .intro-more {
-
-//   @include breakpoint($medium) {
-//     width: 70%;
-//   }
-// }
-
-// .intro-image {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   z-index: -1;
-//   // parallax effect via fixed background image
-//   background-attachment: fixed;
-//   background-position: center center;
-//   background-size: cover;
-// }
 
 .intro-actions {
   @include list-unstyled;

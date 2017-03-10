@@ -1,6 +1,6 @@
-//
-// Buttons
-//
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
 
 .btn {
   display: inline-block;
@@ -27,7 +27,7 @@
     margin-right: 0.5em;
   }
 
-  // block button fills width of parent container
+  /* block button fills width of parent container */
   &--block {
     display: block;
     width: 100%;

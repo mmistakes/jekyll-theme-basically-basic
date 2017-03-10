@@ -1,6 +1,6 @@
-//
-// Entries (Posts, collection documents, etc.)
-//
+/* ==========================================================================
+   Entries (Posts, collection documents, etc.)
+   ========================================================================== */
 
 .entry {
   @include clearfix();
@@ -44,9 +44,9 @@
   }
 }
 
-//
-// Entry list
-//
+/*
+   Entry list
+   ========================================================================== */
 
 .entries {
 
@@ -56,14 +56,14 @@
       @include span(5 of 16);
       @include suffix(1 of 16);
 
-      // remove space after last child element
+      /* remove space after last child element */
       > *:last-child {
         margin-bottom: 0;
       }
     }
   }
 
-  // break long words that could overflow
+  /* break long words that could overflow */
   .entry-title {
     word-wrap: break-word;
   }
@@ -73,12 +73,12 @@
       @include span(11 of 16 last);
     }
 
-    // normalize font sizes
+    /* normalize font sizes */
     > * {
       font-size: 1em;
     }
 
-    // remove space after last child element
+    /* remove space after last child element */
     > *:last-child {
       margin-bottom: 0;
     }
@@ -89,7 +89,7 @@
       @include span(11 of 16 last);
     }
 
-    // remove space after last child element
+    /* remove space after last child element */
     > *:last-child {
       margin-bottom: 0;
     }
@@ -107,7 +107,7 @@
   }
 }
 
-// Footnotes
+/* Footnotes */
 .footnotes {
   margin: 2rem 0;
   padding-top: 1rem;
@@ -115,7 +115,7 @@
   border-top: 1px solid $border-color;
 }
 
-// Read more link
+/* Read more link */
 .more-link {
   font-size: 75%;
   font-weight: bold;

@@ -1,6 +1,6 @@
-//
-// Navicons
-//
+/* ==========================================================================
+   Navicons
+   ========================================================================== */
 
 .navicon-button {
   display: inline-block;
@@ -9,7 +9,10 @@
   background-color: $navicon-nav-bg-close;
   transition: $navicon-duration/2;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 
   @include breakpoint($medium) {
     margin-right: 2rem;
@@ -75,7 +78,8 @@
 
 /* Minus */
 .open {
-  transform: scale($navicon-toggled-size);
+  -ms-transform: scale($navicon-toggled-size);
+      transform: scale($navicon-toggled-size);
 }
 
 /* Arrows */
@@ -88,17 +92,22 @@
   }
 
   &:before {
-    transform: rotate(35deg);
-    transform-origin: left top;
+    -ms-transform: rotate(35deg);
+        transform: rotate(35deg);
+    -ms-transform-origin: left top;
+        transform-origin: left top;
   }
 
   &:after {
-    transform: rotate(-35deg);
-    transform-origin: left bottom;
+    -ms-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+    -ms-transform-origin: left bottom;
+        transform-origin: left bottom;
   }
 }
 .open.uarr {
-  transform: scale($navicon-toggled-size) rotate(90deg);
+  -ms-transform: scale($navicon-toggled-size) rotate(90deg);
+      transform: scale($navicon-toggled-size) rotate(90deg);
 }
 
 /* Arrows */
@@ -106,12 +115,14 @@
 
   &:before {
     transform: translate3d(1em, 0, 0) rotate(-35deg);
-    transform-origin: right top;
+    -ms-transform-origin: right top;
+        transform-origin: right top;
   }
 
   &:after {
     transform: translate3d(1em, 0, 0) rotate(35deg);
-    transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+        transform-origin: right bottom;
   }
 }
 
@@ -122,15 +133,18 @@
     background: transparent;
 
     &:before {
-      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
     }
 
     &:after {
-      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
     }
   }
 }
 
 .open.plus {
-  transform: scale($navicon-toggled-size) rotate(45deg)
+  -ms-transform: scale($navicon-toggled-size) rotate(45deg);
+      transform: scale($navicon-toggled-size) rotate(45deg);
 }

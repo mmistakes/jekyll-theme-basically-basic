@@ -1,6 +1,6 @@
-//
-// Sidebar
-//
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
 
 #sidebar {
   position: fixed;
@@ -12,7 +12,7 @@
   pointer-events: none;
   z-index: 150;
 
-  // page overlay dimmer
+  /* page overlay dimmer */
   &:after {
     content: '';
     display: block;
@@ -28,7 +28,7 @@
     transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
   }
 
-  // line hover effect
+  /* line hover effect */
   li {
 
     a {
@@ -58,7 +58,8 @@
   }
 
   &.is--visible {
-    transform: translateX(0);
+    -ms-transform: translateX(0);
+        transform: translateX(0);
 
     &:after {
       opacity: 1;
@@ -67,7 +68,8 @@
 
     > .inner {
       box-shadow: 0 1em 5em 0 rgba(0, 0, 0, 0.125);
-      transform: none;
+      -ms-transform: none;
+          transform: none;
     }
   }
 
@@ -88,7 +90,8 @@
     overflow-x: hidden;
     background-color: $sidebar-background-color;
     box-shadow: none;
-    transform: translateX(-1 * $sidebar-width);
+    -ms-transform: translateX(-1 * $sidebar-width);
+        transform: translateX(-1 * $sidebar-width);
     will-change: transform;
     z-index: 160;
     pointer-events: auto;
@@ -98,7 +101,8 @@
     }
 
     @include breakpoint($large) {
-      transform: translateX(-1.5 * $sidebar-width);
+      -ms-transform: translateX(-1.5 * $sidebar-width);
+          transform: translateX(-1.5 * $sidebar-width);
       max-width: (1.5 * $sidebar-width);
     }
   }
@@ -115,7 +119,7 @@
       display: block;
     }
 
-    // divider line
+    /* divider line */
     &:after {
       content: '';
       position: absolute;
@@ -132,13 +136,15 @@
 
 
   li {
-    transform: translateX(-1rem);
+    -ms-transform: translateX(-1rem);
+        transform: translateX(-1rem);
     opacity: 0;
     transition: all 0.5s;
 
     &.is--moved {
       opacity: 1;
-      transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
     }
   }
 
