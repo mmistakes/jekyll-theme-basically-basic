@@ -10,6 +10,33 @@ Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as 
 
 ## Table of Contents
 
+1. [Installation](#installation)
+2. [Configuration](#configuration)
+   1. [Skin](#skin)
+   2. [Google Fonts](#google-fonts)
+   3. [Text](#text)
+   4. [Navigation](#navigation)
+   5. [Pagination](#pagination)
+   6. [Author](#author)
+   7. [Comments (via Disqus)](#comments-via-disqus)
+3. [Layouts](#layouts)
+   1. [Default](#layout-default)
+   2. [Post](#layout-post)
+   3. [Page](#layout-page)
+   4. [Home](#layout-home)
+   5. [About](#layout-about)
+   6. [Curriculum Vitæ/Resume](#layout-cv)
+4. [Customization](#customization)
+   1. [Overriding Includes and Layouts](#overriding-includes-and-layouts)
+   2. [Customizing Sass (SCSS)](#customizing-sass-scss)
+   3. [Customizing JavaScript](#customizing-javascript)
+   4. [SVG Icons](#svg-icons)
+   5. [Customizing Sidebar Content](#customizing-sidebar-content)
+5. [Development](#development)
+6. [Contributing](#contributing)
+   1. [Pull Requests](#pull-requests)
+7. [Credits](#credits)
+
 ## Installation
 
 1. Install the theme as a Ruby Gem by adding it to your `Gemfile` like so:
@@ -38,6 +65,8 @@ Configuration of site-wide elements (`lang`, `title`, `description`, `author`, e
 
 This theme comes in six different skins (color variations). To change skins add one of the following to your [`/_data/theme.yml`](_data/theme.yml) file:
 
+|                 |               |               |
+| =============== | ============= | ============= |
 | `skin: default` | `skin: night` | `skin: plum`  |
 | `skin: sea`     | `skin: soft`  | `skin: steel` |
 
