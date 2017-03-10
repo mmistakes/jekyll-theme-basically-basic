@@ -36,10 +36,31 @@ Configuration of site-wide elements (`title`, `description`, `author`, etc.) hap
 
 ### Skin
 
-This theme comes in six different skins (color variations). To change skins edit your project's `_config.yml` to one of the following:
+This theme comes in six different skins (color variations). To change skins add one of the following to your [`/_data/theme.yml`](_data/theme.yml) file:
 
-| `theme_skin: default` | `theme_skin: night` | `theme_skin: plum`  |
-| `theme_skin: sea`     | `theme_skin: soft`  | `theme_skin: steel` |
+| `skin: default` | `skin: night` | `skin: plum`  |
+| `skin: sea`     | `skin: soft`  | `skin: steel` |
+
+### Text
+
+To change text found throughout the theme add the following to your [`/_data/theme.yml`](_data/theme.yml) file and customize as necessary.
+
+```yaml
+t:
+  skip_links: "Skip links"
+  skip_primary_nav: "Skip to primary navigation"
+  skip_content: "Skip to content"
+  skip_footer: "Skip to footer"
+  home: "Home"
+  newer: "Newer"
+  older: "Older"
+  email: "Email"
+  subscribe: "Subscribe"
+  read_more: "Read More"
+  posts: "Posts"
+  page: "Page"
+  of: "of"
+```
 
 ### Navigation
 

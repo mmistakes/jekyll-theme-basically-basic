@@ -3,7 +3,7 @@
     <!-- Home link -->
     <li class="menu-item">
       <a href="{{ '/' | relative_url }}" itemprop="url">
-        <span itemprop="name">Home</span>
+        <span itemprop="name">{{ site.data.theme.t.home | default: 'Home' }}</span>
       </a>
     </li>
 

@@ -3,7 +3,7 @@
     <li>
       <a href="mailto:{{ site.email }}">
         <span class="icon icon--email">{% include icon-email.svg %}</span>
-        <span class="label">Email</span>
+        <span class="label">{{ site.data.theme.t.email | default: 'Email' }}</span>
       </a>
     </li>
   {% endif %}
@@ -20,7 +20,7 @@
     {% if site.gems contains 'jekyll-feed' %}
       <a href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" title="Atom Feed">
         <span class="icon icon--rss">{% include icon-rss.svg %}</span>
-        <span class="label">Subscribe</span>
+        <span class="label">{{ site.data.theme.t.subscribe | default: 'Subscribe' }}</span>
       </a>
     {% endif %}
   </li>
