@@ -66,7 +66,7 @@ Configuration of site-wide elements (`lang`, `title`, `description`, `author`, e
 This theme comes in six different skins (color variations). To change skins add one of the following to your [`/_data/theme.yml`](_data/theme.yml) file:
 
 |                 |               |               |
-| =============== | ============= | ============= |
+| --------------- | ------------- | ------------- |
 | `skin: default` | `skin: night` | `skin: plum`  |
 | `skin: sea`     | `skin: soft`  | `skin: steel` |
 
