@@ -335,12 +335,12 @@ To override the default JavaScript bundled in the theme, do one of the following
 
   - Go to your local Basically Basic gem installation directory (run `bundle show jekyll-theme-basically-basic` to get the path to it).
   - Copy the contents of `/assets/javascripts/main.js` from there to `<your_project>`.
-  - Customize want you want inside `<your_project>/assets/javascripts/main.js`.
+  - Customize what you want inside `<your_project>/assets/javascripts/main.js`.
 
 2. Copy from this repo.
 
   - Copy the contents of [assets/javascripts/main.js](assets/javascripts/main.js) to `<your_project>`.
-  - Customize want you want inside `<your_project>/assets/javascripts/main.js`.
+  - Customize what you want inside `<your_project>/assets/javascripts/main.js`.
 
 ### SVG Icons
 
