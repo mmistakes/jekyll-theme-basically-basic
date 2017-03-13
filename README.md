@@ -59,7 +59,7 @@ Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as 
 
 ## Configuration
 
-Configuration of site-wide elements (`lang`, `title`, `description`, `author`, etc.) happens in your project's `_config.yml`. See the [example configuration](example/_config.yml) in this repo for reference.
+Configuration of site-wide elements (`lang`, `title`, `description`, `image`, `author`, etc.) happens in your project's `_config.yml`. See the [example configuration](example/_config.yml) in this repo for reference.
 
 ### Skin
 

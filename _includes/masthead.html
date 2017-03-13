@@ -1,18 +1,24 @@
+{% if site.image contains '://' %}
+  {% assign site_image = site.image %}
+{% else %}
+  {% assign site_image = site.image | relative_url %}
+{% endif %}
+
 <header id="masthead">
   <div class="inner">
     <div class="title-area">
       {% if page.url == '/' %}
         <h1 class="site-title">
           <a href="{{ '/' | relative_url }}">
-            {% if site.image %}<img src="{{ site.image }}" alt="" class="site-image">{% endif %}
-            {{ site.title | escape }}
+            {% if site.image %}<img src="{{ site_image }}" alt="" class="site-image">{% endif %}
+            <span>{{ site.title | escape }}</span>
           </a>
         </h1>
       {% else %}
         <p class="site-title">
           <a href="{{ '/' | relative_url }}">
-            {% if site.image %}<img src="{{ site.image }}" alt="" class="site-image">{% endif %}
-            {{ site.title | escape }}
+            {% if site.image %}<img src="{{ site_image }}" alt="" class="site-image">{% endif %}
+            <span>{{ site.title | escape }}</span>
           </a>
         </p>
       {% endif %}

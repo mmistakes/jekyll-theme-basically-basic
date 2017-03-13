@@ -4,7 +4,7 @@
 
 .site-title {
   margin: 0;
-  padding: 1.35rem 1rem;
+  padding: 1.8125rem 1rem;
   padding-right: calc(10vw + #{$navicon-width}); /* make room for sidebar toggle */
   font-family: $base-font-family;
   @include fluid-type($min-vw, $max-vw, 20px, 24px);
@@ -20,7 +20,16 @@
   }
 
   a {
+    display: flex;
+    align-items: center;
     color: $text-color;
     text-decoration: none;
   }
+}
+
+.site-image {
+  margin-right: 0.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
