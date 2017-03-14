@@ -1,4 +1,7 @@
-# WIP Basically Basic Jekyll Theme
+# Basically Basic Jekyll Theme
+
+[![license](https://img.shields.io/github/license/mmistakes/jekyll-theme-basically-basic.svg?style=flat-square)](LICENSE.md)
+[![Code Climate](https://img.shields.io/codeclimate/github/mmistakes/jekyll-theme-basically-basic.svg?style=flat-square)](https://codeclimate.com/github/mmistakes/jekyll-theme-basically-basic)
 
 Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default `jekyll new` theme --- [Minima](https://github.com/jekyll/minima). Conventions and features found in Minima are fully supported by **Basically Basic**, with a few enhancements here and there:
 
