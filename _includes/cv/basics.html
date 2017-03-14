@@ -27,11 +27,11 @@
           {% endif %}
           {% if p.username %}
             <span class="username">
-              {% if p.url %}
+              {% unless p.url == '' or p.url == nil %}
                 <a href="{{ p.url }}">{{ p.username }}</a>
               {% else %}
                 {{ p.username }}
-              {% endif %}
+              {% endunless %}
             </span>
           {% endif %}
         </div>
