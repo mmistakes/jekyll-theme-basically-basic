@@ -8,6 +8,16 @@
   padding-bottom: 2rem;
 }
 
+.intro-image {
+  position: relative;
+  margin-top: -3rem; /* compensate for intro top margin */
+  margin-bottom: 2rem;
+
+  img {
+    width: 100%;
+  }
+}
+
 .intro-text {
 
   /* remove space after last child element */

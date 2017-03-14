@@ -1,4 +1,15 @@
 <header id="intro">
+  {% if page.image %}
+    {% assign intro_image = page.image.path | default: page.image %}
+    {% unless intro_image contains '://' %}
+      {% assign intro_image = intro_image | relative_url %}
+    {% endunless %}
+    {% assign intro_image = intro_image | escape %}
+    <div class="intro-image">
+      <img src="{{ intro_image }}" alt="{{ page.title }}">
+    </div>
+  {% endif %}
+
   <div class="inner">
     <div class="intro-text">
       <h1 class="intro-title">{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</h1>
