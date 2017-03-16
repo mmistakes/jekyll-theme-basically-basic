@@ -6,32 +6,32 @@
 */
 
 /* Mixins and functions */
-@import "basically-basic/vendor/susy";
-@import "basically-basic/vendor/breakpoint";
-@include breakpoint-set("to ems", true);
-@import "basically-basic/mixins";
+@import 'basically-basic/vendor/susy';
+@import 'basically-basic/vendor/breakpoint';
+@include breakpoint-set('to ems', true);
+@import 'basically-basic/mixins';
 
 /* Variables */
-@import "basically-basic/variables";
+@import 'basically-basic/variables';
 
 /* Core CSS */
-@import "basically-basic/reset";
-@import "basically-basic/base";
-@import "basically-basic/layout";
-@import "basically-basic/tables";
+@import 'basically-basic/reset';
+@import 'basically-basic/base';
+@import 'basically-basic/layout';
+@import 'basically-basic/tables';
 
 /* Components */
-@import "basically-basic/global";
-@import "basically-basic/sidebar";
-@import "basically-basic/navigation";
-@import "basically-basic/footer";
-@import "basically-basic/entries";
-@import "basically-basic/buttons";
-@import "basically-basic/icons";
-@import "basically-basic/intro";
-@import "basically-basic/navicons";
-@import "basically-basic/contact-lists";
-@import "basically-basic/syntax-highlighting";
+@import 'basically-basic/global';
+@import 'basically-basic/sidebar';
+@import 'basically-basic/navigation';
+@import 'basically-basic/footer';
+@import 'basically-basic/entries';
+@import 'basically-basic/buttons';
+@import 'basically-basic/icons';
+@import 'basically-basic/intro';
+@import 'basically-basic/navicons';
+@import 'basically-basic/contact-lists';
+@import 'basically-basic/syntax-highlighting';
 
 /* Utility classes */
-@import "basically-basic/utilities";
+@import 'basically-basic/utilities';
