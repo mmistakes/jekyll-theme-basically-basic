@@ -7,6 +7,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   /* For Firefox to horizontally scroll wider tables */
+  // scss-lint:disable DuplicateProperty
   word-break: normal;
   word-break: keep-all;
 }
