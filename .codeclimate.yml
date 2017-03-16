@@ -26,5 +26,5 @@ ratings:
   - "**.php"
   - "**.py"
   - "**.rb"
-  - "_sass/**.scss"
+  - "_sass/**/*.scss"
 exclude_paths: []

@@ -1,6 +1,6 @@
 # Default application configuration that all configurations inherit from.
 
-scss_files: "_sass/*.scss"
+scss_files: "_sass/**/*.scss"
 plugin_directories: ['.scss-linters']
 
 # List of gem names to load custom linters from (make sure they are already
