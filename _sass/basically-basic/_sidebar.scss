@@ -72,7 +72,7 @@
     -ms-transform: translateX(0);
     transform: translateX(0);
 
-    &:after {
+    &::after {
       opacity: 1;
       pointer-events: auto;
     }
@@ -112,9 +112,9 @@
     }
 
     @include breakpoint($large) {
+      max-width: (1.5 * $sidebar-width);
       -ms-transform: translateX(-1.5 * $sidebar-width);
       transform: translateX(-1.5 * $sidebar-width);
-      max-width: (1.5 * $sidebar-width);
     }
   }
 
@@ -145,15 +145,10 @@
     }
   }
 
-
-  li {
-
-  }
-
   .contact-list {
+    @include fluid-type($min-vw, $max-vw, 18px, 24px);
     margin-top: 0.5rem;
     padding-top: 0.5rem;
-    @include fluid-type($min-vw, $max-vw, 18px, 24px);
 
     li:not(:last-child) {
       margin-bottom: 0.5rem;

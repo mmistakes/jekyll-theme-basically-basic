@@ -78,8 +78,8 @@ main {
   .entry-content {
 
     @include breakpoint($medium) {
-      flex: 1;
       -ms-flex: 1;
+      flex: 1;
     }
   }
 

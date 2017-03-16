@@ -15,8 +15,8 @@
   cursor: pointer;
 
   &:hover {
-    color: #fff;
     background-color: tint($accent-color, 20%);
+    color: #fff;
   }
 
   &:focus {
