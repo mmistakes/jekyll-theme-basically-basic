@@ -82,14 +82,14 @@
       transform: none;
       box-shadow: 0 1em 5em 0 rgba(0, 0, 0, 0.125);
     }
+
+    &.is--animatable > .inner {
+      transition: all 330ms ease-out;
+    }
   }
 
   &.is--animatable > .inner {
     transition: all 130ms ease-in;
-  }
-
-  &.is--visible.is--animatable > .inner {
-    transition: all 330ms ease-out;
   }
 
   > .inner {
