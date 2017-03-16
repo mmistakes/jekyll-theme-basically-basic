@@ -8,6 +8,7 @@
 }
 
 @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  // scss-lint:disable UnnecessaryParentReference
   $u1: unit($min-vw);
   $u2: unit($max-vw);
   $u3: unit($min-font-size);
