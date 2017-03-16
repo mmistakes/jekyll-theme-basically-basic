@@ -74,82 +74,80 @@
   top: 0 !important;
 }
 
-.open .navicon::before,
-.open .navicon::after {
-  transition-duration: $navicon-duration;
-}
-
-/* Minus */
 .open {
   -ms-transform: scale($navicon-toggled-size);
   transform: scale($navicon-toggled-size);
-}
 
-/* Arrows */
-.open.larr .navicon,
-.open.rarr .navicon,
-.open.uarr .navicon {
-
-  &::before,
-  &::after {
-    width: (0.6 * $navicon-width);
+  .navicon::before,
+  .navicon::after {
+    transition-duration: $navicon-duration;
   }
 
-  &::before {
-    -ms-transform: rotate(35deg);
-    transform: rotate(35deg);
-    -ms-transform-origin: left top;
-    transform-origin: left top;
-  }
+  /* Arrows */
+  &.larr .navicon,
+  &.rarr .navicon,
+  &.uarr .navicon {
 
-  &::after {
-    -ms-transform: rotate(-35deg);
-    transform: rotate(-35deg);
-    -ms-transform-origin: left bottom;
-    transform-origin: left bottom;
-  }
-}
-
-.open.uarr {
-  -ms-transform: scale($navicon-toggled-size) rotate(90deg);
-  transform: scale($navicon-toggled-size) rotate(90deg);
-}
-
-/* Arrows */
-.open.rarr .navicon {
-
-  &::before {
-    transform: translate3d(1em, 0, 0) rotate(-35deg);
-    -ms-transform-origin: right top;
-    transform-origin: right top;
-  }
-
-  &::after {
-    transform: translate3d(1em, 0, 0) rotate(35deg);
-    -ms-transform-origin: right bottom;
-    transform-origin: right bottom;
-  }
-}
-
-/* × and + */
-.open.plus,
-.open.x {
-  .navicon {
-    background: transparent;
+    &::before,
+    &::after {
+      width: (0.6 * $navicon-width);
+    }
 
     &::before {
-      -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+      -ms-transform: rotate(35deg);
+      transform: rotate(35deg);
+      -ms-transform-origin: left top;
+      transform-origin: left top;
     }
 
     &::after {
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+      -ms-transform: rotate(-35deg);
+      transform: rotate(-35deg);
+      -ms-transform-origin: left bottom;
+      transform-origin: left bottom;
     }
   }
-}
 
-.open.plus {
-  -ms-transform: scale($navicon-toggled-size) rotate(45deg);
-  transform: scale($navicon-toggled-size) rotate(45deg);
+  &.uarr {
+    -ms-transform: scale($navicon-toggled-size) rotate(90deg);
+    transform: scale($navicon-toggled-size) rotate(90deg);
+  }
+
+  &.rarr .navicon {
+
+    &::before {
+      transform: translate3d(1em, 0, 0) rotate(-35deg);
+      -ms-transform-origin: right top;
+      transform-origin: right top;
+    }
+
+    &::after {
+      transform: translate3d(1em, 0, 0) rotate(35deg);
+      -ms-transform-origin: right bottom;
+      transform-origin: right bottom;
+    }
+  }
+
+  /* × and + */
+  // &.plus,
+  // &.x {
+  //   .navicon {
+  //     background: transparent;
+
+  //     &::before {
+  //       -ms-transform: rotate(-45deg);
+  //       transform: rotate(-45deg);
+  //     }
+
+  //     &::after {
+  //       -ms-transform: rotate(45deg);
+  //       transform: rotate(45deg);
+  //     }
+  //   }
+  // }
+
+  // &.plus {
+  //   -ms-transform: scale($navicon-toggled-size) rotate(45deg);
+  //   transform: scale($navicon-toggled-size) rotate(45deg);
+  // }
 }
