@@ -3,7 +3,7 @@
 scss_files: "_sass/**/*.scss"
 exclude:
   - "_sass/basically-basic/_reset.scss"
-  - "_sass/vendor/**"
+  - "_sass/basically-basic/vendor/**"
 plugin_directories: ['.scss-linters']
 
 # List of gem names to load custom linters from (make sure they are already
