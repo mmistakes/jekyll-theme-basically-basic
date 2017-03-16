@@ -3,20 +3,20 @@
    ========================================================================== */
 
 .icon {
+  display: inline-block;
   position: relative;
   top: -0.05em; /* fine-tune alignment */
-  display: inline-block;
-  fill: currentColor;
   width: 1em;
   height: 1em;
   line-height: 1;
   vertical-align: middle;
+  fill: currentColor;
 
   $icons:
   (bitbucket, #205081),
-  (codepen, #000000),
+  (codepen, #000),
   (dribbble, #ea4c89),
-  (email, #000000),
+  (email, #000),
   (facebook, #3b5998),
   (flickr, #0063dc),
   (github, #181717),

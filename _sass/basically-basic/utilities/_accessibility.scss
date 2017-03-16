@@ -1,49 +1,26 @@
-//
-// Accessibility Modules
-//
+/* ==========================================================================
+   Accessibility Modules
+   ========================================================================== */
 
-// Skip links.
+/* Skip links */
 .skip-links {
   margin: 0;
 
   li {
-    height: 0;
     width: 0;
+    height: 0;
     list-style: none;
   }
 }
 
-// Text meant only for screen readers.
+/* Text meant only for screen readers */
 .screen-reader-text,
 .screen-reader-text span,
 .screen-reader-shortcut {
   position: absolute !important;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
   width: 1px;
-  border: 0;
-  overflow: hidden;
-}
-
-.screen-reader-text:focus,
-.screen-reader-shortcut:focus,
-.genesis-nav-menu .search input[type="submit"]:focus,
-.widget_search input[type="submit"]:focus  {
-  clip: auto !important;
-  height: auto;
-  width: auto;
-  z-index: 100000;
-  text-decoration: none;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-}
-
-.screen-reader-text,
-.screen-reader-text span,
-.screen-reader-shortcut {
-  position: absolute !important;
-  clip: rect(0, 0, 0, 0);
   height: 1px;
-  width: 1px;
+  clip: rect(0, 0, 0, 0);
   border: 0;
   overflow: hidden;
 
@@ -51,17 +28,29 @@
     display: block;
     top: 5px;
     left: 5px;
-    padding: 0.75em 1em;
     width: auto;
     height: auto;
+    padding: 0.75em 1em;
+    clip: auto !important;
+    border-radius: 0.125em;
+    background-color: $base-color;
     color: #fff;
     font-weight: bold;
     line-height: normal;
     text-decoration: none;
-    background-color: $base-color;
-    border-radius: 0.125em;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
     z-index: 100000;
   }
+}
+
+.screen-reader-text:focus,
+.screen-reader-shortcut:focus,
+.genesis-nav-menu .search input[type="submit"]:focus,
+.widget_search input[type="submit"]:focus {
+  width: auto;
+  height: auto;
+  clip: auto !important;
+  text-decoration: none;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  z-index: 100000;
 }

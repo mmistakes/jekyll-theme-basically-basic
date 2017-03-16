@@ -17,9 +17,9 @@
 }
 
 .entry-title {
+  @include fluid-type($min-vw, $max-vw, 18px, 24px);
   margin-bottom: 0.5rem;
   color: tint($text-color, 25%);
-  @include fluid-type($min-vw, $max-vw, 18px, 24px);
   line-height: inherit;
 
   a {
@@ -28,8 +28,8 @@
 }
 
 .entry-meta {
-  margin-bottom: 1rem;
   @include fluid-type($min-vw, $max-vw, 12px, 16px);
+  margin-bottom: 1rem;
 
   a {
     color: inherit;
@@ -37,9 +37,9 @@
 
   .byline-item {
 
-    &:not(:first-child):before {
-      content: '\00b7';
+    &:not(:first-child)::before {
       margin: 0 0.5em;
+      content: '\00b7';
     }
   }
 }
@@ -103,7 +103,12 @@
     line-height: 1.625;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: tint($text-color, 25%);
   }
 }
@@ -112,8 +117,8 @@
 .footnotes {
   margin: 2rem 0;
   padding-top: 1rem;
-  font-size: 80%;
   border-top: 1px solid $border-color;
+  font-size: 80%;
 }
 
 /* Read more link */

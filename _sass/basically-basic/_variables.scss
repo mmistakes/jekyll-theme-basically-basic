@@ -19,14 +19,14 @@ $max-font-size: 18px !default;
 $modular-scale-1: 1.067 !default; /* small */
 $modular-scale-2: 1.296 !default; /* large */
 /* Heading 1 */
-$h1-min: $modular-scale-1*$modular-scale-1*$modular-scale-1*$modular-scale-1 * $base-font-size !default;
-$h1-max: $modular-scale-2*$modular-scale-2*$modular-scale-2*$modular-scale-2 * $base-font-size !default;
+$h1-min: $modular-scale-1 * $modular-scale-1 * $modular-scale-1 * $modular-scale-1 * $base-font-size !default;
+$h1-max: $modular-scale-2 * $modular-scale-2 * $modular-scale-2 * $modular-scale-2 * $base-font-size !default;
 /* Heading 2 */
-$h2-min: $modular-scale-1*$modular-scale-1*$modular-scale-1 * $base-font-size !default;
-$h2-max: $modular-scale-2*$modular-scale-2*$modular-scale-2 * $base-font-size !default;
+$h2-min: $modular-scale-1 * $modular-scale-1 * $modular-scale-1 * $base-font-size !default;
+$h2-max: $modular-scale-2 * $modular-scale-2 * $modular-scale-2 * $base-font-size !default;
 /* Heading 3 */
-$h3-min: $modular-scale-1*$modular-scale-1 * $base-font-size !default;
-$h3-max: $modular-scale-2*$modular-scale-2 * $base-font-size !default;
+$h3-min: $modular-scale-1 * $modular-scale-1 * $base-font-size !default;
+$h3-max: $modular-scale-2 * $modular-scale-2 * $base-font-size !default;
 /* Heading 4 */
 $h4-min: $modular-scale-1 * $base-font-size !default;
 $h4-max: $modular-scale-2 * $base-font-size !default;
@@ -47,7 +47,7 @@ $monospace-font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospa
 $base-color: #393e46 !default;
 $text-color: #222831 !default;
 $accent-color: #00848a !default;
-$background-color: #ffffff !default;
+$background-color: #fff !default;
 $code-background-color: tint($base-color, 95%) !default;
 $border-color: tint($base-color, 80%) !default;
 $overlay-color: $base-color !default;

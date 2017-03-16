@@ -22,7 +22,7 @@ linters:
     max_elements: 1
 
   BorderZero:
-    enabled: true
+    enabled: false
     convention: zero # or `none`
 
   ChainedClasses:
@@ -110,7 +110,7 @@ linters:
     convention: hyphenated_lowercase # or 'camel_case', or 'snake_case', or a regex pattern
 
   NestingDepth:
-    enabled: true
+    enabled: false
     max_depth: 3
     ignore_parent_selectors: false
 
@@ -155,8 +155,8 @@ linters:
     enabled: true
 
   QualifyingElement:
-    enabled: true
-    allow_element_with_attribute: false
+    enabled: false
+    allow_element_with_attribute: true
     allow_element_with_class: false
     allow_element_with_id: false
 

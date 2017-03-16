@@ -43,9 +43,9 @@ function OnTransitionEnd() {
   myMenu.classList.remove('is--animatable');
 }
 
-var myWrapper = document.querySelector('#wrapper');
-var myMenu = document.querySelector('#sidebar');
-var myToggle = document.querySelector('#sidebar-toggle');
+var myWrapper = document.querySelector('.wrapper');
+var myMenu = document.querySelector('.sidebar');
+var myToggle = document.querySelector('.toggle');
 myMenu.addEventListener('transitionend', OnTransitionEnd, false);
 myToggle.addEventListener('click', function() {
   toggleClassMenu();

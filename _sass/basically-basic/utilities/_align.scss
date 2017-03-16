@@ -1,32 +1,32 @@
-//
-// Alignment
-//
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
 
-.align-baseline    { vertical-align: baseline !important; } // Browser default
-.align-top         { vertical-align: top !important; }
-.align-middle      { vertical-align: middle !important; }
-.align-bottom      { vertical-align: bottom !important; }
+.align-baseline { vertical-align: baseline !important; } // Browser default
+.align-top { vertical-align: top !important; }
+.align-middle { vertical-align: middle !important; }
+.align-bottom { vertical-align: bottom !important; }
 .align-text-bottom { vertical-align: text-bottom !important; }
-.align-text-top    { vertical-align: text-top !important; }
+.align-text-top { vertical-align: text-top !important; }
 
-//
-// Image Alignment
-//
+/*
+   Image Alignment
+   ========================================================================== */
 
 .align-center,
 div.align-center,
 a img.align-center {
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 figure.align-center {
 
   img {
     display: block;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
   figcaption {
@@ -36,23 +36,24 @@ figure.align-center {
 
 .align-right,
 a img.align-right {
-  float: right;
-  margin-left: 1rem;
   margin-bottom: 1rem;
+  margin-left: 1rem;
+  float: right;
 }
 
 .align-left,
 a img.align-left {
-  float: left;
-  margin-right: 1rem;
   margin-bottom: 1rem;
+  margin-right: 1rem;
+  float: left;
 }
 
-//
-// Sidebar pusher
-//
+/*
+   Sidebar Pusher
+   ========================================================================== */
 
 .is--pushed {
+
   @include breakpoint($medium) {
     padding-left: $sidebar-width;
   }

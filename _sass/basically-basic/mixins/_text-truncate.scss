@@ -1,5 +1,7 @@
-// Text truncate
-// Requires inline-block or block for proper styling
+/* ==========================================================================
+   Text Truncate Mixin
+   Requires inline-block or block for proper styling
+   ========================================================================== */
 
 @mixin text-truncate() {
   overflow: hidden;

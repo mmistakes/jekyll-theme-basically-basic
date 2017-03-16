@@ -6,13 +6,13 @@
   display: inline-block;
   position: relative;
   padding: 1.8125rem 1rem;
+  transition: $navicon-duration / 2;
   background-color: $navicon-nav-bg-close;
-  transition: $navicon-duration/2;
   cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 
   @include breakpoint($medium) {
     margin-right: 2rem;
@@ -26,19 +26,21 @@
     background-color: $navicon-nav-bg-open;
   }
 
-  .navicon:before, .navicon:after {
+  .navicon::before,
+  .navicon::after {
     transition: $navicon-duration/2;
   }
 
   &:hover {
     transition: $navicon-duration;
 
-    .navicon:before, .navicon:after {
-      transition: $navicon-duration/2;
+    .navicon::before,
+    .navicon::after {
+      transition: $navicon-duration / 2;
     }
 
-    .navicon:before { top: (2.5 * $navicon-height); }
-    .navicon:after { top: (-2.5 * $navicon-height); }
+    .navicon::before { top: (2.5 * $navicon-height); }
+    .navicon::after { top: (-2.5 * $navicon-height); }
   }
 }
 
@@ -46,40 +48,41 @@
   position: relative;
   width: $navicon-width;
   height: $navicon-height;
-  background: $navicon-content-bg;
   transition: $navicon-duration;
   border-radius: $navicon-width;
+  background: $navicon-content-bg;
 
-  &:before, &:after {
+  &::before,
+  &::after {
     display: block;
-    content: "";
-    height: $navicon-height;
-    width: $navicon-width;
-    background: $navicon-content-bg;
     position: absolute;
-    z-index: -1;
-    transition: $navicon-duration $navicon-duration/2;
+    width: $navicon-width;
+    height: $navicon-height;
+    transition: $navicon-duration $navicon-duration / 2;
     border-radius: $navicon-width;
+    background: $navicon-content-bg;
+    content: '';
+    z-index: -1;
   }
 
-  &:before { top: (2 * $navicon-height); }
-  &:after { top: (-2 * $navicon-height); }
+  &::before { top: (2 * $navicon-height); }
+  &::after { top: (-2 * $navicon-height); }
 }
 
-.open:not(.steps) .navicon:before,
-.open:not(.steps) .navicon:after {
+.open:not(.steps) .navicon::before,
+.open:not(.steps) .navicon::after {
   top: 0 !important;
 }
 
-.open .navicon:before,
-.open .navicon:after {
+.open .navicon::before,
+.open .navicon::after {
   transition: $navicon-duration;
 }
 
 /* Minus */
 .open {
   -ms-transform: scale($navicon-toggled-size);
-      transform: scale($navicon-toggled-size);
+  transform: scale($navicon-toggled-size);
 }
 
 /* Arrows */
@@ -87,42 +90,44 @@
 .open.rarr .navicon,
 .open.uarr .navicon {
 
-  &:before, &:after {
+  &::before,
+  &::after {
     width: (0.6 * $navicon-width);
   }
 
-  &:before {
+  &::before {
     -ms-transform: rotate(35deg);
-        transform: rotate(35deg);
+    transform: rotate(35deg);
     -ms-transform-origin: left top;
-        transform-origin: left top;
+    transform-origin: left top;
   }
 
-  &:after {
+  &::after {
     -ms-transform: rotate(-35deg);
-        transform: rotate(-35deg);
+    transform: rotate(-35deg);
     -ms-transform-origin: left bottom;
-        transform-origin: left bottom;
+    transform-origin: left bottom;
   }
 }
+
 .open.uarr {
   -ms-transform: scale($navicon-toggled-size) rotate(90deg);
-      transform: scale($navicon-toggled-size) rotate(90deg);
+  transform: scale($navicon-toggled-size) rotate(90deg);
 }
 
 /* Arrows */
 .open.rarr .navicon {
 
-  &:before {
+  &::before {
     transform: translate3d(1em, 0, 0) rotate(-35deg);
     -ms-transform-origin: right top;
-        transform-origin: right top;
+    transform-origin: right top;
   }
 
-  &:after {
+  &::after {
     transform: translate3d(1em, 0, 0) rotate(35deg);
     -ms-transform-origin: right bottom;
-        transform-origin: right bottom;
+    transform-origin: right bottom;
   }
 }
 
@@ -132,19 +137,19 @@
   .navicon {
     background: transparent;
 
-    &:before {
+    &::before {
       -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+      transform: rotate(-45deg);
     }
 
-    &:after {
+    &::after {
       -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+      transform: rotate(45deg);
     }
   }
 }
 
 .open.plus {
   -ms-transform: scale($navicon-toggled-size) rotate(45deg);
-      transform: scale($navicon-toggled-size) rotate(45deg);
+  transform: scale($navicon-toggled-size) rotate(45deg);
 }

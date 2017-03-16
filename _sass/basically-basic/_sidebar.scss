@@ -2,56 +2,67 @@
    Sidebar
    ========================================================================== */
 
-#sidebar {
+.sidebar {
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  pointer-events: none;
   z-index: 150;
+  pointer-events: none;
 
   /* page overlay dimmer */
-  &:after {
-    content: '';
+  &::after {
     display: block;
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba($base-color, 0.5);
-    opacity: 0;
-    will-change: opacity;
-    pointer-events: none;
     transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
+    background: rgba($base-color, 0.5);
+    content: '';
+    opacity: 0;
+    pointer-events: none;
+    will-change: opacity;
   }
 
-  /* line hover effect */
   li {
 
+    -ms-transform: translateX(-1rem);
+    transform: translateX(-1rem);
+    transition: all 0.5s;
+    opacity: 0;
+
+    &.is--moved {
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    /* line hover effect */
     a {
       position: relative;
       color: $base-color;
 
-      &:before {
-        content: '';
+      &::before {
         display: block;
         position: absolute;
         top: 50%;
         left: -3rem;
-        height: 1px;
         width: 0;
-        background-color: $base-color;
+        height: 1px;
         transition: width 0.3s cubic-bezier(0, 0, 0.3, 1);
+        background-color: $base-color;
+        content: '';
       }
 
       &:hover {
         color: $accent-color;
       }
 
-      &:hover:before {
+      &:hover::before {
         width: 2.5rem;
       }
     }
@@ -59,7 +70,7 @@
 
   &.is--visible {
     -ms-transform: translateX(0);
-        transform: translateX(0);
+    transform: translateX(0);
 
     &:after {
       opacity: 1;
@@ -67,9 +78,9 @@
     }
 
     > .inner {
-      box-shadow: 0 1em 5em 0 rgba(0, 0, 0, 0.125);
       -ms-transform: none;
-          transform: none;
+      transform: none;
+      box-shadow: 0 1em 5em 0 rgba(0, 0, 0, 0.125);
     }
   }
 
@@ -83,17 +94,17 @@
 
   > .inner {
     position: relative;
-    padding: 1.5em;
     width: 100%;
     max-width: $sidebar-width;
     height: 100%;
-    overflow-x: hidden;
+    padding: 1.5em;
+    -ms-transform: translateX(-1 * $sidebar-width);
+    transform: translateX(-1 * $sidebar-width);
     background-color: $sidebar-background-color;
     box-shadow: none;
-    -ms-transform: translateX(-1 * $sidebar-width);
-        transform: translateX(-1 * $sidebar-width);
-    will-change: transform;
     z-index: 160;
+    will-change: transform;
+    overflow-x: hidden;
     pointer-events: auto;
 
     @include breakpoint($medium) {
@@ -102,16 +113,16 @@
 
     @include breakpoint($large) {
       -ms-transform: translateX(-1.5 * $sidebar-width);
-          transform: translateX(-1.5 * $sidebar-width);
+      transform: translateX(-1.5 * $sidebar-width);
       max-width: (1.5 * $sidebar-width);
     }
   }
 
   .menu {
+    @include fluid-type($min-vw, $max-vw, 24px, 48px);
     position: relative;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    @include fluid-type($min-vw, $max-vw, 24px, 48px);
     font-weight: bold;
     line-height: 1;
 
@@ -120,13 +131,13 @@
     }
 
     /* divider line */
-    &:after {
-      content: '';
+    &::after {
       position: absolute;
       bottom: 0;
       width: 1.5em;
       height: 1px;
       background-color: $base-color;
+      content: '';
     }
 
     li {
@@ -136,16 +147,7 @@
 
 
   li {
-    -ms-transform: translateX(-1rem);
-        transform: translateX(-1rem);
-    opacity: 0;
-    transition: all 0.5s;
 
-    &.is--moved {
-      opacity: 1;
-      -ms-transform: translateX(0);
-          transform: translateX(0);
-    }
   }
 
   .contact-list {
@@ -165,7 +167,7 @@
   }
 }
 
-#sidebar-toggle {
+.sidebar-toggle-wrapper {
   position: fixed;
   top: 0.675rem;
   right: 0;

@@ -12,17 +12,19 @@
 
     {% include skip-links.html %}
 
-    <a id="sidebar-toggle" class="toggle navicon-button larr" href="#sidebar">
-      <span class="screen-reader-text">Menu</span>
-      <div class="navicon"></div>
-    </a>
+    <div class="sidebar-toggle-wrapper">
+      <a class="toggle navicon-button larr" href="#sidebar">
+        <span class="screen-reader-text">Menu</span>
+        <div class="navicon"></div>
+      </a>
+    </div>
 
-    <div id="wrapper">
+    <div class="wrapper">
       {% include masthead.html %}
       {{ content }}
     </div>
 
-    <div id="sidebar">
+    <div id="sidebar" class="sidebar">
       <div class="inner">
         {% include navigation.html %}
         {% include contact-list.html %}

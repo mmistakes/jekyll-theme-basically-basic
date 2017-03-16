@@ -1,11 +1,13 @@
-// Image Mixins
-// - Responsive image
-// - Retina image
+/* ==========================================================================
+   Image Mixins
+   - Responsive image
+   - Retina image
+   ========================================================================== */
 
-
-// Responsive image
-//
-// Keep images from scaling beyond the width of their parents.
+/*
+   Responsive image
+   Keep images from scaling beyond the width of their parents.
+   ========================================================================== */
 
 @mixin img-fluid {
   // Part 1: Set a maximum relative to the parent
@@ -15,10 +17,10 @@
   height: auto;
 }
 
-
-// Retina image
-//
-// Short retina mixin for setting background-image and -size.
+/*
+   Retina image
+   Short retina mixin for setting background-image and -size.
+   ========================================================================== */
 
 @mixin img-retina($file-1x, $file-2x, $width-1x, $height-1x) {
   background-image: url($file-1x);

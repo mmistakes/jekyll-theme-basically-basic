@@ -1,7 +1,7 @@
-//
-// Fluid Type
-// as seen on https://madebymike.com.au/writing/fluid-type-calc-examples/
-//
+/* ==========================================================================
+   Fluid Type
+   as seen on https://madebymike.com.au/writing/fluid-type-calc-examples/
+   ========================================================================== */
 
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
@@ -17,6 +17,7 @@
     & {
 
       font-size: $min-font-size;
+
       @media screen and (min-width: $min-vw) {
         font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
       }
