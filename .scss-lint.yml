@@ -2,7 +2,7 @@
 
 scss_files: "_sass/**/*.scss"
 exclude:
-  - "_sass/_reset.scss"
+  - "_sass/basically-basic/_reset.scss"
   - "_sass/vendor/**"
 plugin_directories: ['.scss-linters']
 
