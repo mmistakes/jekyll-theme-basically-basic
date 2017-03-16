@@ -15,6 +15,8 @@ engines:
     checks:
       TODO:
         enabled: false
+  scss-lint:
+    enabled: true
 ratings:
   paths:
   - "**.inc"
@@ -24,4 +26,5 @@ ratings:
   - "**.php"
   - "**.py"
   - "**.rb"
+  - "_sass/**.scss"
 exclude_paths: []
