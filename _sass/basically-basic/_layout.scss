@@ -105,6 +105,28 @@ main {
 
 .layout--cv {
 
+  .entries {
+
+    .entry-header {
+
+      @include breakpoint($medium) {
+        @include span(5 of 16);
+        @include suffix(1 of 16);
+
+        /* remove space after last child element */
+        > *:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .entry-content {
+      @include breakpoint($medium) {
+        @include span(11 of 16 last);
+      }
+    }
+  }
+
   .entry {
 
     a {

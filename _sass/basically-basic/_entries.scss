@@ -54,20 +54,6 @@
 
 .entries {
 
-  .entry-header {
-
-    @include breakpoint($medium) {
-      // @include span(5 of 16);
-      // @include suffix(1 of 16);
-
-      /* remove space after last child element */
-      // > *:last-child {
-      //   margin-bottom: 0;
-      // }
-    }
-  }
-
-
   .entry-title {
     word-wrap: break-word; /* break long words that could overflow */
 
