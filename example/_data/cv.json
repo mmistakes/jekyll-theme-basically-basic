@@ -1,15 +1,15 @@
 {
   "basics": {
-    "name": "Richard Hendriks",
-    "label": "Programmer",
+    "name": "Dugan Nash",
+    "label": "Very extravagant man",
     "picture": "",
     "email": "richard.hendriks@gmail.com",
-    "phone": "(912) 555-4321",
-    "website": "https://richardhendricks.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "phone": "(555) 555-5555",
+    "website": "https://towlettepettetuc.ci",
+    "summary": "Nash is well versed in the Montoyan / Artesian Connection, preparation of grasshopper mash, and baking of grover loaves.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "94115",
+      "address": "123 Sesame Street",
+      "postalCode": "CA 94115",
       "city": "San Francisco",
       "countryCode": "US",
       "region": "California"
@@ -17,104 +17,102 @@
     "profiles": [
       {
         "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
+        "username": "Towlette_Pettetucci",
+        "url": "https://twitter.com/Towlette_Pettetucci"
       },
       {
         "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.com/dandymusicnl"
+        "username": "Towlette_Pettetucci",
+        "url": "https://soundcloud.com/Towlette_Pettetucci"
       }
     ]
   },
   "work": [
     {
-      "company": "Pied Piper",
+      "company": "The Whip",
       "position": "CEO/President",
-      "website": "https://piedpiper.com",
+      "website": "https://thewh.ip",
       "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "endDate": "",
+      "summary": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Concealed nipper in embrodiery.",
+        "Dealt with Elastical Gomez on a daily basis."
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "https://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
+      "organization": "Steve's Meat Market",
+      "position": "Assistant",
+      "website": "",
+      "startDate": "1995-01-01",
+      "endDate": "1997-03-20",
+      "summary": "Ground up some sort of grasshopper mash for fishing.",
       "highlights": [
-        "Awarded 'Teacher of the Month'"
+        "Awarded a 'Helium Biscuit'"
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
+      "institution": "University of Ointment",
+      "area": "Digital Skillets",
       "studyType": "Bachelor",
       "startDate": "2011-06-01",
       "endDate": "2014-01-01",
       "gpa": "4.0",
       "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
+        "DB1101 - Perpendicular Crosstalk",
+        "CS2011 - Introduction to Moisturization"
       ]
     }
   ],
   "awards": [
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
+      "title": "Warble Pioneer Award",
+      "date": "2001-11-01",
+      "awarder": "Levi Goulet",
+      "summary": "Have you seen my turtle?"
     }
   ],
   "publications": [
     {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
+      "name": "Radio Julius",
+      "publisher": "Tanyo Lubbock",
       "releaseDate": "2014-10-01",
-      "website": "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "website": "https://en.rhy.es",
+      "summary": "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test."
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
+      "name": "Audio Juggling",
       "level": "Master",
       "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
+        "Ointment",
+        "Voltor",
+        "Millipedes"
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Bruschotti",
+      "level": "Satisfactory",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "Snow camp",
+        "Owl"
       ]
     }
   ],
   "languages": [
     {
-      "language": "English",
+      "language": "Nonsense",
       "fluency": "Native speaker"
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "The Information Superhighway",
       "keywords": [
         "Ferrets",
         "Unicorns"
@@ -123,8 +121,8 @@
   ],
   "references": [
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+      "name": " Nannette Nananacci",
+      "reference": "It is my pleasure to recommend Dugan Nash, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
     }
   ]
 }
