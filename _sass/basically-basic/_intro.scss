@@ -38,7 +38,7 @@
 
 .intro-title {
   @include fluid-type($min-vw, $max-vw, 26px, 80px);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: tint($text-color, 25%);
   line-height: 1;
 }
