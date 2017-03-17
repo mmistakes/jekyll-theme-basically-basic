@@ -96,6 +96,7 @@ t:
   skip_primary_nav: "Skip to primary navigation"
   skip_content: "Skip to content"
   skip_footer: "Skip to footer"
+  menu: "Menu"
   home: "Home"
   newer: "Newer"
   older: "Older"

@@ -76,5 +76,9 @@ $navicon-nav-bg-close: transparent !default;
 $navicon-nav-bg-open: transparent !default;
 $navicon-content-bg: $text-color !default;
 
+/* Site image */
+$site-image-width: 50px !default;
+$site-image-height: 50px !default;
+
 /* Susy grid settings */
 $susy: (columns: 16, gutters: 0, math: fluid, output: float) !default;

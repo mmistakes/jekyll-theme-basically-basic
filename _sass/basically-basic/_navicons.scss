@@ -62,7 +62,7 @@
     border-radius: $navicon-width;
     background: $navicon-content-bg;
     content: '';
-    z-index: -1;
+    // z-index: -1;
   }
 
   &::before { top: (2 * $navicon-height); }
