@@ -107,6 +107,7 @@ t:
   page: "Page"
   of: "of"
   min_read: "min read"
+  present: "Present"
 ```
 
 ### Navigation

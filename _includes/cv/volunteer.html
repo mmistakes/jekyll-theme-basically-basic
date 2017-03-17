@@ -22,10 +22,10 @@
           {% if v.startDate %}
             <span class="startDate">{{ v.startDate }}</span>
           {% endif %}
-          {% if v.endDate %}
-            <span class="endDate">{{ v.endDate | prepend: ' &mdash; ' }}</span>
+          {% if v.endDate == '' %}
+            <span class="endDate">{{ site.data.theme.t.present | default: 'Present' | prepend: ' &mdash; ' }}</span>
           {% else %}
-            <span class="endDate">{{ Present | prepend: ' &mdash; ' }}</span>
+            <span class="endDate">{{ v.endDate | prepend: ' &mdash; ' }}</span>
           {% endif %}
         </div>
         {% if v.summary %}
