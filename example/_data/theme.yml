@@ -16,6 +16,7 @@ t:
   posts: "Posts"
   page: "Page"
   of: "of"
+  min_read: "min read"
 
 # Google Fonts
 google_fonts:

@@ -21,7 +21,9 @@ Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as 
    4. [Navigation](#navigation)
    5. [Pagination](#pagination)
    6. [Author](#author)
-   7. [Comments (via Disqus)](#comments-via-disqus)
+   7. [Reading Time](#reading-time)
+   8. [Comments (via Disqus)](#comments-via-disqus)
+   9. [Google Analytics](#google-analytics)
 3. [Layouts](#layouts)
    1. [Default](#layout-default)
    2. [Post](#layout-post)
@@ -103,6 +105,7 @@ t:
   posts: "Posts"
   page: "Page"
   of: "of"
+  min_read: "min read"
 ```
 
 ### Navigation
@@ -183,6 +186,10 @@ drlight:
 ```
 
 Currently `author.picture` is only used in `layout: about`. Recommended size is `300 x 300` pixels.
+
+### Reading Time
+
+To enable reading time counts add `read_time: true` to a post or page's YAML Front Matter.
 
 ### Comments (via Disqus)
 

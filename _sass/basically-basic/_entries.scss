@@ -37,10 +37,14 @@
 
   .byline-item {
 
-    &:not(:first-child)::before {
-      margin: 0 0.5em;
-      content: '\00b7';
+    &:not(:first-child) {
+      margin-left: 1.5rem;
     }
+  }
+
+  .icon {
+    margin-right: 0.5em;
+    fill: $accent-color;
   }
 }
 
@@ -53,24 +57,28 @@
   .entry-header {
 
     @include breakpoint($medium) {
-      @include span(5 of 16);
-      @include suffix(1 of 16);
+      // @include span(5 of 16);
+      // @include suffix(1 of 16);
 
       /* remove space after last child element */
-      > *:last-child {
-        margin-bottom: 0;
-      }
+      // > *:last-child {
+      //   margin-bottom: 0;
+      // }
     }
   }
 
-  /* break long words that could overflow */
+
   .entry-title {
-    word-wrap: break-word;
+    word-wrap: break-word; /* break long words that could overflow */
+
+    a:hover {
+      color: $accent-color;
+    }
   }
 
   .entry-excerpt {
     @include breakpoint($medium) {
-      @include span(11 of 16 last);
+      @include span(11 of 16);
     }
 
     /* normalize font sizes */
@@ -86,12 +94,36 @@
 
   .entry-content {
     @include breakpoint($medium) {
-      @include span(11 of 16 last);
+      @include span(11 of 16);
     }
 
     /* remove space after last child element */
     > *:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  .entry-meta {
+    @include breakpoint($medium) {
+      @include span(5 of 16 last);
+      @include prefix(1 of 16);
+    }
+
+    ul {
+      @include list-unstyled();
+
+      @include breakpoint(max-width $medium) {
+        li {
+          display: inline-block;
+          margin-right: 1.5rem;
+        }
+      }
+
+      @include breakpoint($medium) {
+        li {
+          padding-bottom: 0.5rem;
+        }
+      }
     }
   }
 }
