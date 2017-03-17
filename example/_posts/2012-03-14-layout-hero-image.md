@@ -1,5 +1,5 @@
 ---
-title: "Layout: Intro Image"
+title: "Layout: Hero Image"
 image: /assets/images/eder-oliveira-180877.jpg
 categories:
   - Layout
@@ -7,10 +7,10 @@ tags:
   - content
   - image
   - layout
-last_modified_at: 2017-03-13T22:06:24-04:00
+last_modified_at: 2017-03-17T10:46:49-04:00
 ---
 
-This post should display an image in the introductory section of a page.
+This post should display a large hero image at the top of a page.
 
 This post tests a horizontal image using the following YAML Front Matter:
 
@@ -18,7 +18,7 @@ This post tests a horizontal image using the following YAML Front Matter:
 image: /assets/images/eder-oliveira-180877.jpg
 ```
 
-Intro images can also be assigned like this:
+Hero images can also be assigned like this:
 
 ```yaml
 image:
