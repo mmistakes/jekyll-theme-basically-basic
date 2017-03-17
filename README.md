@@ -3,11 +3,11 @@
 [![license](https://img.shields.io/github/license/mmistakes/jekyll-theme-basically-basic.svg?style=flat-square)](LICENSE.md)
 [![Code Climate](https://img.shields.io/codeclimate/github/mmistakes/jekyll-theme-basically-basic.svg?style=flat-square)](https://codeclimate.com/github/mmistakes/jekyll-theme-basically-basic)
 
-Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default `jekyll new` theme --- [Minima](https://github.com/jekyll/minima). Conventions and features found in Minima are fully supported by **Basically Basic**, with a few enhancements here and there:
+Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default --- [Minima](https://github.com/jekyll/minima). Conventions and features found there are fully supported by **Basically Basic**, with a few enhancements thrown in for good measure:
 
-- Clean responsive design with six customizable variations
-- About page layout
+- Clean responsive design with [six customizable skins](#skin)
 - Curriculum Vitæ/Resume layout powered by [JSON data](http://registry.jsonresume.org/)
+- About page layout
 - Disqus Comments and Google Analytics support
 - SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
 
@@ -245,7 +245,7 @@ sub_title: "The name says it all"
 
 # optional intro text below titles, Markdown allowed
 introduction: |
-    Basically Basic is a Jekyll theme meant to be a substitute for the default `jekyll new` theme --- [Minima](https://github.com/jekyll/minima). Conventions and features found in Minima are fully supported by **Basically Basic**.
+    Basically Basic is a Jekyll theme meant to be a substitute for the default --- [Minima](https://github.com/jekyll/minima). Conventions and features found in Minima are fully supported by **Basically Basic**.
 
 # optional call to action links
 actions:
