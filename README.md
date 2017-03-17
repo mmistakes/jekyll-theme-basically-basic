@@ -255,7 +255,7 @@ actions:
     icon: download  # references name of svg icon, see full list below
     url: "http://url-goes-here.com"
 
-image:  # URL to an image associated with the post (e.g., /assets/page-pic.jpg)
+image:  # URL to a hero image associated with the post (e.g., /assets/page-pic.jpg)
 
 # post specific author data if different from what is set in _config.yml 
 author:

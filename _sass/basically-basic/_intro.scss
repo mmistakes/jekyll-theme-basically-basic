@@ -55,3 +55,11 @@
     display: inline-block;
   }
 }
+
+.intro-more {
+
+  > p:first-child {
+    font-size: 1.125em;
+    line-height: 1.625;
+  }
+}
