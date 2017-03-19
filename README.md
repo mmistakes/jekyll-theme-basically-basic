@@ -64,7 +64,18 @@ Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as 
 
 ## Configuration
 
-Configuration of site-wide elements (`lang`, `title`, `description`, `image`, `author`, etc.) happens in your project's `_config.yml`. See the [example configuration](example/_config.yml) in this repo for reference.
+Configuration of site-wide elements (`lang`, `title`, `description`, `logo`, `author`, etc.) happens in your project's `_config.yml`. See the [example configuration](example/_config.yml) in this repo for additional reference.
+
+|                    | Description                                                          |
+| ------------------ | -------------------------------------------------------------------- |
+| `lang`             | Used to indicate the language of text (e.g., en-US, en-GB, fr)       |
+| `title`            | Your site's title (e.g., Dungan's Awesome Site)                      |
+| `description`      | Short site description (e.g., A blog about grasshopper mash)         |
+| `url`              | The full URL to your site (e.g., https://groverloaf.org)             |
+| `author`           | Global author information (see below)                                |
+| `logo`             | Path to a site-wide logo (e.g., /assets/your-company-logo.png)       |
+| `twitter_username` | Site-wide Twitter username, used as a link in sidebar                |
+| `github_username`  | Site-wide GitHub username, used as a link in sidebar                 |
 
 ### Skin
 
