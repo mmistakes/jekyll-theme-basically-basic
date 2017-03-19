@@ -170,7 +170,9 @@
   z-index: 10000;
 
   .toggle {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
     color: inherit;
     text-decoration: none;
@@ -178,6 +180,7 @@
 }
 
 .sidebar-toggle-label {
+  -ms-flex-order: 2;
   order: 2;
   margin-left: 0.5rem;
   font-weight: bold;
