@@ -55,7 +55,7 @@ with a few enhancements thrown in for good measure:
 1. Install the theme as a Ruby Gem by adding it to your `Gemfile` like so:
 
    ```ruby
-   gem "jekyll-theme-basically-basic", :git => "https://github.com/mmistakes/jekyll-theme-basically-basic.git"
+   gem "jekyll-theme-basically-basic"
    ```
 
 2. Fetch and update your bundled gems by running the following 
