@@ -14,7 +14,7 @@ with a few enhancements thrown in for good measure:
 - Disqus Comments and Google Analytics support
 - SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
 
-![jekyll-theme-basically-basic](https://cloud.githubusercontent.com/assets/1376749/24117337/3cd49088-0d80-11e7-9696-ca9bb87205d1.jpg)
+![jekyll-theme-basically-basic](https://cloud.githubusercontent.com/assets/1376749/24117647/6dede894-0d81-11e7-9c2c-f19bea45e219.jpg)
 
 ## Table of Contents
 
