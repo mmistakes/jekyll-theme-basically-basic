@@ -359,7 +359,7 @@ addition of the following to display an author picture:
 ```yaml
 author:
   name: John Doe
-  picture /assets/images/johndoe.png
+  picture: /assets/images/johndoe.png
 ```
 
 Recommended `picture` size is approximately `300 x 300` pixels. If `author` 
