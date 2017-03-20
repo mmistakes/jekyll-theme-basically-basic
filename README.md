@@ -1,5 +1,6 @@
 # [Basically Basic Jekyll Theme][1]
 
+[![Gem](https://img.shields.io/gem/v/jekyll-theme-basically-basic.svg?style=flat-square)](https://rubygems.org/gems/jekyll-theme-basically-basic)
 [![license](https://img.shields.io/github/license/mmistakes/jekyll-theme-basically-basic.svg?style=flat-square)](LICENSE.md)
 [![Code Climate](https://img.shields.io/codeclimate/github/mmistakes/jekyll-theme-basically-basic.svg?style=flat-square)](https://codeclimate.com/github/mmistakes/jekyll-theme-basically-basic)
 
