@@ -395,17 +395,17 @@ To override the default [Sass](http://sass-lang.com/guide) (located in theme's
 
 1. Copy directly from the Basically Basic gem
 
-  - Go to your local Basically Basic gem installation directory (run 
-    `bundle show jekyll-theme-basically-basic` to get the path to it).
-  - Copy the contents of `/assets/stylesheets/main.scss` from there to 
-    `<your_project>`.
-  - Customize want you want inside `<your_project>/assets/stylesheets/main.scss`.
+   - Go to your local Basically Basic gem installation directory (run 
+     `bundle show jekyll-theme-basically-basic` to get the path to it).
+   - Copy the contents of `/assets/stylesheets/main.scss` from there to 
+     `<your_project>`.
+   - Customize want you want inside `<your_project>/assets/stylesheets/main.scss`.
 
 2. Copy from this repo.
 
-  - Copy the contents of [assets/stylesheets/main.scss](assets/stylesheets/main.scss) 
-    to `<your_project>`.
-  - Customize want you want inside `<your_project/assets/stylesheets/main.scss`.
+   - Copy the contents of [assets/stylesheets/main.scss](assets/stylesheets/main.scss) 
+     to `<your_project>`.
+   - Customize want you want inside `<your_project/assets/stylesheets/main.scss`.
 
 **Note:** To make more extensive changes and customize the Sass partials bundled 
 in the gem. You will need to copy the complete contents the `_sass` directory to 
@@ -427,17 +427,17 @@ To override the default JavaScript bundled in the theme, do one of the following
 
 1. Copy directly from the Basically Basic gem
 
-  - Go to your local Basically Basic gem installation directory (run 
-    `bundle show jekyll-theme-basically-basic` to get the path to it).
-  - Copy the contents of `/assets/javascripts/main.js` from there to 
-    `<your_project>`.
-  - Customize what you want inside `<your_project>/assets/javascripts/main.js`.
+   - Go to your local Basically Basic gem installation directory (run 
+     `bundle show jekyll-theme-basically-basic` to get the path to it).
+   - Copy the contents of `/assets/javascripts/main.js` from there to 
+     `<your_project>`.
+   - Customize what you want inside `<your_project>/assets/javascripts/main.js`.
 
 2. Copy from this repo.
 
-  - Copy the contents of [assets/javascripts/main.js](assets/javascripts/main.js) 
-    to `<your_project>`.
-  - Customize what you want inside `<your_project>/assets/javascripts/main.js`.
+   - Copy the contents of [assets/javascripts/main.js](assets/javascripts/main.js) 
+     to `<your_project>`.
+   - Customize what you want inside `<your_project>/assets/javascripts/main.js`.
 
 ### SVG Icons
 
