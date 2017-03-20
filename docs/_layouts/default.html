@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+    Basically Basic Jekyll Theme 0.0.1
+    Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE.md
+-->
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
+  {% include head.html %}
+
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}">
+
+    {% include skip-links.html %}
+
+    <div class="sidebar-toggle-wrapper">
+      <a class="toggle navicon-button larr" href="#sidebar">
+        <span class="sidebar-toggle-label">{{ site.data.theme.t.menu | default: 'Menu' }}</span>
+        <div class="navicon"></div>
+      </a>
+    </div>
+
+    <div class="wrapper">
+      {% include masthead.html %}
+      {{ content }}
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <div class="inner">
+        {% include navigation.html %}
+        {% include contact-list.html %}
+      </div>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+
+</html>

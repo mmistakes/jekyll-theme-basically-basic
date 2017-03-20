@@ -1,0 +1,51 @@
+lang: en-US
+title: Basically Basic
+email: dugan.nash@mailinator.com
+description: "Your new default Jekyll theme"
+baseurl: "/jekyll-theme-basically-basic"
+url: "https://mmistakes.github.io"
+repository: "mmistakes/minimal-mistakes"
+author:
+  name: Dugan Nash
+  twitter: Towlette_Pettetucci
+  picture: https://api.adorable.io/avatars/285/johndoe.png
+twitter_username: Towlette_Pettetucci
+github_username: Towlette_Pettetucci
+logo: /assets/icons/basically-basic-logo-light.svg
+
+# Build settings
+markdown: kramdown
+# theme: jekyll-theme-basically-basic
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+feed:
+  path: atom.xml
+
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 10
+paginate_path: /page:num/
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Front Matter Defaults
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      read_time: true
