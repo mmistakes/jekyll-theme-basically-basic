@@ -21,11 +21,9 @@
 
   ul {
     @include list-unstyled;
-    display: -ms-flexbox;
     display: flex;
 
     > li {
-      -ms-flex: 1;
       flex: 1;
       justify-content: space-between;
       -ms-flex-pack: justify;

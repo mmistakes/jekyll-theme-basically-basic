@@ -62,7 +62,6 @@
     border-radius: $navicon-width;
     background: $navicon-content-bg;
     content: '';
-    // z-index: -1;
   }
 
   &::before { top: (2 * $navicon-height); }
@@ -75,7 +74,6 @@
 }
 
 .open {
-  -ms-transform: scale($navicon-toggled-size);
   transform: scale($navicon-toggled-size);
 
   .navicon::before,
@@ -94,22 +92,17 @@
     }
 
     &::before {
-      -ms-transform: rotate(35deg);
       transform: rotate(35deg);
-      -ms-transform-origin: left top;
       transform-origin: left top;
     }
 
     &::after {
-      -ms-transform: rotate(-35deg);
       transform: rotate(-35deg);
-      -ms-transform-origin: left bottom;
       transform-origin: left bottom;
     }
   }
 
   &.uarr {
-    -ms-transform: scale($navicon-toggled-size) rotate(90deg);
     transform: scale($navicon-toggled-size) rotate(90deg);
   }
 
@@ -117,37 +110,35 @@
 
     &::before {
       transform: translate3d(1em, 0, 0) rotate(-35deg);
-      -ms-transform-origin: right top;
       transform-origin: right top;
     }
 
     &::after {
       transform: translate3d(1em, 0, 0) rotate(35deg);
-      -ms-transform-origin: right bottom;
       transform-origin: right bottom;
     }
   }
 
   /* × and + */
-  // &.plus,
-  // &.x {
-  //   .navicon {
-  //     background: transparent;
+  /* &.plus,*/
+  /* &.x {*/
+  /*   .navicon {*/
+  /*     background: transparent;*/
 
-  //     &::before {
-  //       -ms-transform: rotate(-45deg);
-  //       transform: rotate(-45deg);
-  //     }
+  /*     &::before {*/
+  /*       -ms-transform: rotate(-45deg);*/
+  /*       transform: rotate(-45deg);*/
+  /*     }*/
 
-  //     &::after {
-  //       -ms-transform: rotate(45deg);
-  //       transform: rotate(45deg);
-  //     }
-  //   }
-  // }
+  /*     &::after {*/
+  /*       -ms-transform: rotate(45deg);*/
+  /*       transform: rotate(45deg);*/
+  /*     }*/
+  /*   }*/
+  /* }*/
 
-  // &.plus {
-  //   -ms-transform: scale($navicon-toggled-size) rotate(45deg);
-  //   transform: scale($navicon-toggled-size) rotate(45deg);
-  // }
+  /* &.plus {*/
+  /*   -ms-transform: scale($navicon-toggled-size) rotate(45deg);*/
+  /*   transform: scale($navicon-toggled-size) rotate(45deg);*/
+  /* }*/
 }

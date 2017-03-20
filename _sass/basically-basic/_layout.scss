@@ -64,13 +64,10 @@ main {
 .layout--about {
 
   .entry-wrap {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     @include breakpoint($medium) {
-      -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
     }
   }
@@ -78,7 +75,6 @@ main {
   .entry-content {
 
     @include breakpoint($medium) {
-      -ms-flex: 1;
       flex: 1;
     }
   }

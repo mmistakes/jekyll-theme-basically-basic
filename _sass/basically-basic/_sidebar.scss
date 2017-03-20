@@ -29,14 +29,11 @@
   }
 
   li {
-
-    -ms-transform: translateX(-1rem);
     transform: translateX(-1rem);
     transition: all 0.5s;
     opacity: 0;
 
     &.is--moved {
-      -ms-transform: translateX(0);
       transform: translateX(0);
       opacity: 1;
     }
@@ -69,7 +66,6 @@
   }
 
   &.is--visible {
-    -ms-transform: translateX(0);
     transform: translateX(0);
 
     &::after {
@@ -78,7 +74,6 @@
     }
 
     > .inner {
-      -ms-transform: none;
       transform: none;
       box-shadow: 0 1em 5em 0 rgba(0, 0, 0, 0.125);
     }
@@ -98,7 +93,6 @@
     max-width: $sidebar-width;
     height: 100%;
     padding: 1.5em;
-    -ms-transform: translateX(-1 * $sidebar-width);
     transform: translateX(-1 * $sidebar-width);
     background-color: $sidebar-background-color;
     box-shadow: none;
@@ -113,7 +107,6 @@
 
     @include breakpoint($large) {
       max-width: (1.5 * $sidebar-width);
-      -ms-transform: translateX(-1.5 * $sidebar-width);
       transform: translateX(-1.5 * $sidebar-width);
     }
   }
@@ -170,9 +163,7 @@
   z-index: 10000;
 
   .toggle {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
     align-items: center;
     color: inherit;
     text-decoration: none;
@@ -180,7 +171,6 @@
 }
 
 .sidebar-toggle-label {
-  -ms-flex-order: 2;
   order: 2;
   margin-left: 0.5rem;
   font-weight: bold;
