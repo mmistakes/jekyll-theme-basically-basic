@@ -25,7 +25,7 @@ author:
   picture: https://api.adorable.io/avatars/285/johndoe.png
 twitter_username: Towlette_Pettetucci
 github_username: Towlette_Pettetucci
-logo: /assets/images/100x100.png  # ~100x100px
+logo: /assets/icons/basically-basic-logo-light.svg
 
 # Build settings
 markdown: kramdown
