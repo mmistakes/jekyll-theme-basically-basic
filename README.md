@@ -450,7 +450,12 @@ To override the default JavaScript bundled in the theme, do one of the following
 
 ### SVG Icons
 
-| Icon | `_includes` Filename |
+The theme uses social network logos and other iconography saved as SVGs for 
+performance and flexibility. Said SVGs are located in the `_includes` directory 
+and prefixed with `icon-`. Each icon has been sized and designed to fit a 
+`16 x 16` viewbox and optimized with [SVGO](https://github.com/svg/svgo).
+
+| Icon | Filename |
 | --- | --- |
 | <img src="https://cdn.rawgit.com/mmistakes/jekyll-theme-basically-basic/master/_includes/icon-arrow-left.svg" width="16" height="16"> | icon-arrow-left.svg |
 | <img src="https://cdn.rawgit.com/mmistakes/jekyll-theme-basically-basic/master/_includes/icon-arrow-right.svg" width="16" height="16"> | icon-arrow-right.svg |
@@ -478,11 +483,6 @@ To override the default JavaScript bundled in the theme, do one of the following
 | <img src="https://cdn.rawgit.com/mmistakes/jekyll-theme-basically-basic/master/_includes/icon-twitter.svg" width="16" height="16"> | icon-twitter.svg |
 | <img src="https://cdn.rawgit.com/mmistakes/jekyll-theme-basically-basic/master/_includes/icon-xing.svg" width="16" height="16"> | icon-xing.svg |
 | <img src="https://cdn.rawgit.com/mmistakes/jekyll-theme-basically-basic/master/_includes/icon-youtube.svg" width="16" height="16"> | icon-youtube.svg |
-
-The theme uses social network logos and other iconography saved as SVGs for 
-performance and flexibility. Said SVGs are located in the `_includes` directory 
-and prefixed with `icon-`. Each icon has been sized and designed to fit a 
-`16 x 16` viewbox and optimized with [SVGO](https://github.com/svg/svgo).
 
 Fill colors are defined in the `_sass/basically-basic/_icons.scss` partial and 
 set with `.icon-name` where class name matches the corresponding icon.
