@@ -450,6 +450,10 @@ To override the default JavaScript bundled in the theme, do one of the following
 
 ### SVG Icons
 
+| Filename | Icon |
+| --- | --- |
+| icon-arrow-left.svg | <img src="https://cdn.rawgit.com/mmistakes/jekyll-theme-basically-basic/master/_includes/icon-arrow-left.svg" width="16" height="16"> |
+
 The theme uses social network logos and other iconography saved as SVGs for 
 performance and flexibility. Said SVGs are located in the `_includes` directory 
 and prefixed with `icon-`. Each icon has been sized and designed to fit a 
