@@ -1,3 +1,11 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Site Settings
 lang: en-US
 title: Basically Basic
 email: dugan.nash@mailinator.com
@@ -12,15 +20,44 @@ author:
 twitter_username: Towlette_Pettetucci
 github_username: Towlette_Pettetucci
 logo: /assets/icons/basically-basic-logo-light.svg
+google_analytics: UA-2011187-6
+disqus:
+  shortname: basically-basic-theme
 
-# Build settings
+# Conversion
 markdown: kramdown
-# theme: jekyll-theme-basically-basic
+highlighter: rouge
+lsi: false
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Outputting
+permalink: /:categories/:title/
+timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Plugins
 gems:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+
+# Jekyll Feed
 feed:
   path: atom.xml
 
