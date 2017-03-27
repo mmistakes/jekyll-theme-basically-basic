@@ -3,8 +3,15 @@
    ========================================================================== */
 
 .wrapper {
+  width: 100%;
   min-height: 100vh;
   transition: $global-transition;
+  box-shadow: -1em 0 5em 0 rgba(0, 0, 0, 0.125);
+
+  @include breakpoint($medium) {
+    position: relative;
+    z-index: 200;
+  }
 }
 
 .intro,
@@ -64,10 +71,13 @@ main {
 .layout--about {
 
   .entry-wrap {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     @include breakpoint($medium) {
+      -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
     }
   }
@@ -75,6 +85,7 @@ main {
   .entry-content {
 
     @include breakpoint($medium) {
+      -ms-flex: 1;
       flex: 1;
     }
   }

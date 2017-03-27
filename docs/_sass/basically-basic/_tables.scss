@@ -12,14 +12,6 @@ table {
   word-break: keep-all;
 }
 
-thead {
-
-  th,
-  td {
-    background-color: tint($base-color, 80%);
-  }
-}
-
 th,
 td {
   border-bottom: 1px solid $border-color;
