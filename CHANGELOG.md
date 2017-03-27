@@ -10,7 +10,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Google Analytics tracking ID, Disqus comments, to `/docs` demo site.
 
 ### Changed
+- Refactor sidebar off-canvas menu. [#9](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/9)
+- Removed tinted background from `<th>` elements.
 - Permalink structure of `/docs` demo site.
+
+### Fixed
+- Unclickable main content links in Internet Explorer 10. [#9](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/9)
 
 ## [1.0.1] - 2017-03-23
 ### Added

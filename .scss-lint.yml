@@ -131,7 +131,7 @@ linters:
   PropertySortOrder:
     enabled: true
     order: smacss
-    ignore_unspecified: false
+    ignore_unspecified: true
     min_properties: 2
     separate_groups: false
 

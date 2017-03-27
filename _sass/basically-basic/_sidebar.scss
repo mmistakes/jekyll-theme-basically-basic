@@ -8,24 +8,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   z-index: 150;
-  pointer-events: none;
 
-  /* page overlay dimmer */
-  &::after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
-    background: rgba($base-color, 0.5);
-    content: '';
-    opacity: 0;
-    pointer-events: none;
-    will-change: opacity;
+  @include breakpoint($sidebar-width) {
+    width: $sidebar-width;
+  }
+
+  @include breakpoint($large) {
+    width: (1.5 * $sidebar-width);
   }
 
   li {
@@ -68,14 +58,8 @@
   &.is--visible {
     transform: translateX(0);
 
-    &::after {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
     > .inner {
       transform: none;
-      box-shadow: 0 1em 5em 0 rgba(0, 0, 0, 0.125);
     }
 
     &.is--animatable > .inner {
@@ -95,14 +79,16 @@
     padding: 1.5em;
     transform: translateX(-1 * $sidebar-width);
     background-color: $sidebar-background-color;
-    box-shadow: none;
     z-index: 160;
     will-change: transform;
     overflow-x: hidden;
-    pointer-events: auto;
 
     @include breakpoint($medium) {
       padding: 3rem;
+    }
+
+    @include breakpoint(max-width $medium) {
+      box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.125);
     }
 
     @include breakpoint($large) {
@@ -163,7 +149,9 @@
   z-index: 10000;
 
   .toggle {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
     color: inherit;
     text-decoration: none;
@@ -171,6 +159,7 @@
 }
 
 .sidebar-toggle-label {
+  -ms-flex-order: 2;
   order: 2;
   margin-left: 0.5rem;
   font-weight: bold;

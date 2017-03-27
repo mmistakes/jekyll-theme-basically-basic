@@ -20,7 +20,9 @@
   }
 
   a {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
     min-height: $site-image-height;
     color: $text-color;
