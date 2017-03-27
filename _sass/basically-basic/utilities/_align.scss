@@ -53,12 +53,15 @@ a img.align-left {
    ========================================================================== */
 
 .is--pushed {
+  @include clearfix();
 
   @include breakpoint($medium) {
-    padding-left: $sidebar-width;
+    width: calc(100% - #{$sidebar-width});
+    transform: translateX(1 * $sidebar-width);
   }
 
   @include breakpoint($large) {
-    padding-left: (1.5 * $sidebar-width);
+    width: calc(100% - (1.5 * #{$sidebar-width}));
+    transform: translateX(1.5 * $sidebar-width);
   }
 }
