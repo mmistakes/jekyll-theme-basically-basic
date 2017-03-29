@@ -11,6 +11,7 @@
   border: 0;
   outline: none;
   background-color: $navicon-nav-bg-close;
+  line-height: normal;
   cursor: pointer;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -121,27 +122,4 @@
       transform-origin: right bottom;
     }
   }
-
-  /* × and + */
-  /* &.plus,*/
-  /* &.x {*/
-  /*   .navicon {*/
-  /*     background: transparent;*/
-
-  /*     &::before {*/
-  /*       -ms-transform: rotate(-45deg);*/
-  /*       transform: rotate(-45deg);*/
-  /*     }*/
-
-  /*     &::after {*/
-  /*       -ms-transform: rotate(45deg);*/
-  /*       transform: rotate(45deg);*/
-  /*     }*/
-  /*   }*/
-  /* }*/
-
-  /* &.plus {*/
-  /*   -ms-transform: scale($navicon-toggled-size) rotate(45deg);*/
-  /*   transform: scale($navicon-toggled-size) rotate(45deg);*/
-  /* }*/
 }
