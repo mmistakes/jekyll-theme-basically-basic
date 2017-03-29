@@ -5,10 +5,10 @@
 .navicon-button {
   display: inline-block;
   position: relative;
-  padding: 1.8125rem 1rem;
+  margin: 0.90625rem 0;
+  padding: 0.90625rem 1rem;
   transition: $navicon-duration / 2;
   border: 0;
-  border-radius: $border-radius;
   outline: none;
   background-color: $navicon-nav-bg-close;
   cursor: pointer;
@@ -23,10 +23,6 @@
 
   @include breakpoint($large) {
     margin-right: 5vw;
-  }
-
-  &:focus {
-    border: 0.25em solid $text-color;
   }
 
   &.open {
