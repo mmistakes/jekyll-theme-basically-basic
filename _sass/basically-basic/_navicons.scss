@@ -7,6 +7,9 @@
   position: relative;
   padding: 1.8125rem 1rem;
   transition: $navicon-duration / 2;
+  border: 0;
+  border-radius: $border-radius;
+  outline: none;
   background-color: $navicon-nav-bg-close;
   cursor: pointer;
   -moz-user-select: none;
@@ -20,6 +23,10 @@
 
   @include breakpoint($large) {
     margin-right: 5vw;
+  }
+
+  &:focus {
+    border: 0.25em solid $text-color;
   }
 
   &.open {
