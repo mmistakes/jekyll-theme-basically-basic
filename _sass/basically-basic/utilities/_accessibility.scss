@@ -2,17 +2,6 @@
    Accessibility Modules
    ========================================================================== */
 
-/* Skip links */
-.skip-links {
-  margin: 0;
-
-  li {
-    width: 0;
-    height: 0;
-    list-style: none;
-  }
-}
-
 /* Text meant only for screen readers */
 .screen-reader-text,
 .screen-reader-text span,
