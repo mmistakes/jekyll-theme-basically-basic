@@ -116,13 +116,11 @@
   cursor: pointer;
   z-index: 10000;
 
-  .toggle {
+  .toggle-inner {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    color: inherit;
-    text-decoration: none;
   }
 }
 
