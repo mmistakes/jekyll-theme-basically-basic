@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- Improved installation documentation. [#8](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/8)
 - Google Analytics tracking ID, Disqus comments, to `/docs` demo site.
 
 ### Changed
