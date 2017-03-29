@@ -13,15 +13,17 @@
     {% include skip-links.html %}
 
     <div class="sidebar-toggle-wrapper">
-      <a class="toggle navicon-button larr" href="#sidebar">
+      <button class="toggle navicon-button larr">
         <span class="sidebar-toggle-label">{{ site.data.theme.t.menu | default: 'Menu' }}</span>
         <div class="navicon"></div>
-      </a>
+      </button>
     </div>
 
-    <div class="wrapper">
-      {% include masthead.html %}
-      {{ content }}
+    <div class="canvas">
+      <div class="wrapper">
+        {% include masthead.html %}
+        {{ content }}
+      </div>
     </div>
 
     <div id="sidebar" class="sidebar">

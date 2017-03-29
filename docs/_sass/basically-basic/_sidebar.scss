@@ -7,15 +7,12 @@
   top: 0;
   left: 0;
   width: 100%;
+  max-width: $sidebar-width;
   height: 100%;
-  z-index: 150;
-
-  @include breakpoint($sidebar-width) {
-    width: $sidebar-width;
-  }
+  z-index: 50;
 
   @include breakpoint($large) {
-    width: (1.5 * $sidebar-width);
+    max-width: (1.5 * $sidebar-width);
   }
 
   li {
@@ -55,45 +52,16 @@
     }
   }
 
-  &.is--visible {
-    transform: translateX(0);
-
-    > .inner {
-      transform: none;
-    }
-
-    &.is--animatable > .inner {
-      transition: all 330ms ease-out;
-    }
-  }
-
-  &.is--animatable > .inner {
-    transition: all 130ms ease-in;
-  }
-
   > .inner {
-    position: relative;
     width: 100%;
-    max-width: $sidebar-width;
     height: 100%;
     padding: 1.5em;
-    transform: translateX(-1 * $sidebar-width);
     background-color: $sidebar-background-color;
-    z-index: 160;
-    will-change: transform;
     overflow-x: hidden;
+    box-shadow: inset -1em 0 5em 0 rgba(0, 0, 0, 0.125);
 
     @include breakpoint($medium) {
       padding: 3rem;
-    }
-
-    @include breakpoint(max-width $medium) {
-      box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.125);
-    }
-
-    @include breakpoint($large) {
-      max-width: (1.5 * $sidebar-width);
-      transform: translateX(-1.5 * $sidebar-width);
     }
   }
 

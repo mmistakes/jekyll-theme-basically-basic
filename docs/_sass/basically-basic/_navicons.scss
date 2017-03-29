@@ -5,8 +5,11 @@
 .navicon-button {
   display: inline-block;
   position: relative;
-  padding: 1.8125rem 1rem;
+  margin: 0.90625rem 0;
+  padding: 0.90625rem 1rem;
   transition: $navicon-duration / 2;
+  border: 0;
+  outline: none;
   background-color: $navicon-nav-bg-close;
   cursor: pointer;
   -moz-user-select: none;
