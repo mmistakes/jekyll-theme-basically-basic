@@ -146,8 +146,8 @@ jekyll-theme-basically-basic
 ├── assets
 |  ├── javascripts
 |  |  └── main.js
-|  ├── stylesheets
-|  |  └── main.scss
+|  └── stylesheets
+|     └── main.scss
 ├── _config.yml                # sample configuration
 └── index.md                   # sample home page (all posts/not paginated)
 ```
