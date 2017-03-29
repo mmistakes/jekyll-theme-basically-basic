@@ -11,7 +11,7 @@
   border: 0;
   outline: none;
   background-color: $navicon-nav-bg-close;
-  line-height: normal;
+  line-height: 5 * $navicon-height;
   cursor: pointer;
   -moz-user-select: none;
   -ms-user-select: none;
