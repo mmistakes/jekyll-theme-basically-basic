@@ -23,7 +23,13 @@ with a few enhancements thrown in for good measure:
 ## Table of Contents
 
 1. [Installation](#installation)
-2. [Configuration](#configuration)
+   1. [Ruby Gem Method](#ruby-gem-method)
+   2. [GitHub Pages Compatible Method](#github-pages-compatible-method)
+      1. [Remove the Unnecessary](#remove-the-unnecessary)
+2. [Structure](#structure)
+   1. [Starting Fresh](#starting-fresh)
+   2. [Starting from jekyll new](#starting-from-jekyll-new)
+3. [Configuration](#configuration)
    1. [Skin](#skin)
    2. [Google Fonts](#google-fonts)
    3. [Text](#text)
@@ -33,25 +39,32 @@ with a few enhancements thrown in for good measure:
    7. [Reading Time](#reading-time)
    8. [Comments (via Disqus)](#comments-via-disqus)
    9. [Google Analytics](#google-analytics)
-3. [Layouts](#layouts)
+4. [Layouts](#layouts)
    1. [Default](#layout-default)
    2. [Post](#layout-post)
    3. [Page](#layout-page)
    4. [Home](#layout-home)
    5. [About](#layout-about)
    6. [Curriculum Vitæ/Resume](#layout-cv)
-4. [Customization](#customization)
+5. [Customization](#customization)
    1. [Overriding Includes and Layouts](#overriding-includes-and-layouts)
    2. [Customizing Sass (SCSS)](#customizing-sass-scss)
    3. [Customizing JavaScript](#customizing-javascript)
    4. [SVG Icons](#svg-icons)
    5. [Customizing Sidebar Content](#customizing-sidebar-content)
-5. [Development](#development)
-6. [Contributing](#contributing)
+6. [Development](#development)
+7. [Contributing](#contributing)
    1. [Pull Requests](#pull-requests)
-7. [Credits](#credits)
+8. [Credits](#credits)
 
 ## Installation
+
+If you're running Jekyll v3.3+ and self-hosting you can quickly install the 
+theme as Ruby gem. If you're hosting with GitHub Pages you'll have to use the 
+"repo fork" method or directly copy all of the theme files (see 
+[structure](#structure) below) into your project.
+
+### Ruby Gem Method
 
 1. Install the theme as a Ruby Gem by adding it to your `Gemfile` like so:
 
@@ -72,9 +85,91 @@ with a few enhancements thrown in for good measure:
    theme: jekyll-theme-basically-basic
    ```
 
-**Note:** 3rd-party Ruby gem themes aren't currently supported on sites hosted 
-with [GitHub Pages](https://pages.github.com/). Basically Basic can still be 
-used on GH Pages, but you will need to fork the theme instead.
+### GitHub Pages Compatible Method
+
+Fork the [Basically Basic repo](https://github.com/mmistakes/jekyll-theme-basically-basic/fork), 
+then rename it to **USERNAME.github.io** --- replacing **USERNAME** with your 
+GitHub username.
+
+**Note:** Your Jekyll site should be viewable immediately at 
+<http://USERNAME.github.io>. If it's not, you can force a rebuild by 
+**configuring your site** (see below for more details).
+
+Replace the contents of `Gemfile` found in the root of your Jekyll site with 
+the following:
+
+```ruby
+source "https://rubygems.org"
+
+gem "github-pages", group: :jekyll_plugins
+```
+
+Then run `bundle update` and verify that the [GitHub Pages gem](https://github.com/github/pages-gem)
+and its dependencies install properly.
+
+#### Remove the Unnecessary
+
+If you forked or downloaded the `jekyll-theme-basically-basic` repo you can 
+safely remove the following files and folders:
+
+- `.codeclimate.yml`
+- `.editorconfig`
+- `.gitattributes`
+- `.github`
+- `.scss-lint.yml`
+- `CHANGELOG.md`
+- `jekyll-theme-basically-basic.gemspec`
+- `LICENSE.md`
+- `Rakefile`
+- `README.md`
+- `screenshot.png`
+- `/docs`
+- `/example`
+
+## Structure
+
+Layouts, includes, Sass partials, and data files are all placed in their default 
+locations. Stylesheets and scripts in `assets`, and a few development related 
+files in the project's root directory.
+
+**Please note:** If you installed Basically Basic via the Ruby Gem method, theme 
+files found in `/_layouts`, `/_includes`, `/_sass`, and `/assets` will be 
+missing. This is normal as they are bundled with the [`jekyll-theme-basically-basic`](https://rubygems.org/gems/jekyll-theme-basically-basic) gem.
+
+```bash
+jekyll-theme-basically-basic
+├── _data                      # data files
+|  └── theme.yml               # theme settings and custom text
+├── _includes                  # theme includes and SVG icons
+├── _layouts                   # theme layouts (see below for details)
+├── _sass                      # Sass partials
+├── assets
+|  ├── javascripts
+|  |  └── main.js
+|  ├── stylesheets
+|  |  └── main.scss
+├── _config.yml                # sample configuration
+└── index.md                   # sample home page (all posts/not paginated)
+```
+
+### Starting Fresh
+
+After creating a `Gemfile` and installing the theme you'll need to add and edit 
+the following files:
+
+- [`_config.yml`](_config.yml)
+- [`/_data/theme.yml`](_data/theme.yml)
+- [`index.md`](index.md) 
+
+**Note:** Consult the [**pagination**](#pagination) documentation below for
+instructions on how to enable it for the home page.
+
+### Starting from `jekyll new`
+
+Using the `jekyll new` command will get you up and running the quickest.
+
+Edit `_config.yml` and create `_data/theme.yml` as instructed above and you're 
+good to go.
 
 ## Configuration
 
@@ -196,13 +291,18 @@ following pagination settings:
    ```
 
 3. Create `index.html` (or rename `index.md`) in the root of your project and 
-add `layout: home` `paginate: true` to its YAML Front Matter.
+add the following front matter:
+
+   ```yaml
+   layout: home
+   paginate: true
+   ```
 
 ### Author
 
 Author information is used as meta data for post "by lines" and propagates the 
-`creator` field of Twitter summary cards with the following YAML Front Matter 
-in `_config.yml`:
+`creator` field of Twitter summary cards with the following front matter in 
+`_config.yml`:
 
 ```yaml
 author:
@@ -211,8 +311,8 @@ author:
   picture: /assets/images/johndoe.png
 ```
 
-Site-wide author information can be overridden in a document's YAML Front Matter 
-in the same way:
+Site-wide author information can be overridden in a document's front matter in 
+the same way:
 
 ```yaml
 author:
@@ -221,9 +321,9 @@ author:
   picture: /assets/images/janedoe.png
 ```
 
-Or by specifying a corresponding key in the document's YAML Front Matter, that 
+Or by specifying a corresponding key in the document's front matter, that 
 exists in `site.data.authors`. E.g., you have the following in the document's 
-YAML Front Matter:
+front matter:
 
 ```yaml
 author: megaman
@@ -268,7 +368,7 @@ with the following [environment value](http://jekyllrb.com/docs/configuration/#s
 `JEKYLL_ENV=production`
 
 If you don't want to display comments for a particular post you can disable 
-them by adding `comments: false` to that post's YAML Front Matter.
+them by adding `comments: false` to that post's front matter.
 
 ### Google Analytics
 
@@ -302,7 +402,7 @@ and provide additional styling and features inside of the `{{ content }}` block.
 
 ### `layout: post`
 
-This layout accommodates the following YAML Front Matter:
+This layout accommodates the following front matter:
 
 ```yaml
 # optional alternate title to replace page.title at the top of the page
@@ -344,7 +444,7 @@ differences.
 
 ### `layout: home`
 
-This layout accommodates the same YAML Front Matter as `layout: page`, with the 
+This layout accommodates the same front matter as `layout: page`, with the 
 addition of the following:
 
 ```yaml
@@ -353,7 +453,7 @@ paginate: true  # enables pagination loop, see section above for additional setu
 
 ### `layout: about`
 
-This layout accommodates the same YAML Front Matter as `layout: page`, with the 
+This layout accommodates the same front matter as `layout: page`, with the 
 addition of the following to display an author picture:
 
 ```yaml
@@ -363,14 +463,14 @@ author:
 ```
 
 Recommended `picture` size is approximately `300 x 300` pixels. If `author` 
-object is not explicitly set in the about page's YAML Front Matter the theme 
+object is not explicitly set in the about page's front matter the theme 
 will default to the value set in `_config.yml`.
 
 If blank there no image will appear.
 
 ### `layout: cv`
 
-This layout accommodates the same YAML Front Matter as `layout: page`. It 
+This layout accommodates the same front matter as `layout: page`. It 
 leverages a [JSON-based file standard](https://jsonresume.org/schema/) for 
 resume data to conveniently render a curriculum vitæ or resume painlessly.
 
@@ -558,8 +658,9 @@ When submitting a pull request:
    `my-awesome-new-feature`) and describe the feature or fix.
 3. Open a pull request on GitHub.
 
-Sample pages can be found in the [`/docs`](docs) folder if you'd like to tackle 
-any "low-hanging fruit" like fixing typos, bad grammar, etc.
+Sample pages can be found in the [`/docs`](docs) and [`/example`](/example) 
+folders if you'd like to tackle any "low-hanging fruit" like fixing typos, bad 
+grammar, etc.
 
 ---
 
