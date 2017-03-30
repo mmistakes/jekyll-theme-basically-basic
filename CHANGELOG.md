@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.1.0] - 2017-03-30
 ### Added
 - Improved installation documentation. [#8](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/8)
 - Google Analytics tracking ID, Disqus comments, to `/docs` demo site.
