@@ -30,7 +30,7 @@ logo: /assets/icons/basically-basic-logo-light.svg
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-basically-basic
-gems:
+plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
