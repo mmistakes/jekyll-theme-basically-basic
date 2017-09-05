@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+### Changed
+### Fixed
+
+- Liquid syntax error: "Expected id but found end_of_string_in `cv.skills.`" in `/cv/skills.html` include.
+
 ## [1.1.0] - 2017-03-30
 ### Added
 - Improved installation documentation. [#8](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/8)
