@@ -27,6 +27,10 @@ twitter_username: Towlette_Pettetucci
 github_username: Towlette_Pettetucci
 logo: /assets/icons/basically-basic-logo-light.svg
 
+# Liquid
+liquid:
+  error_mode: strict
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-basically-basic
