@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+### Fixed
+- `/_sass/_print.scss` to reduce blank pages when printing in Chrome. [#29](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/29)
+
 ## [1.1.1] - 2017-09-06
 ### Changed
 - Change `gems` key in `_config.yml` to `plugins`. [#23](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/23)
