@@ -10,9 +10,18 @@
   max-width: $sidebar-width;
   height: 100%;
   z-index: 50;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.3s;
+  transition: visibility 0s 0.3s;
 
   @include breakpoint($large) {
     max-width: (1.5 * $sidebar-width);
+  }
+
+  &.is--visible {
+    visibility: visible;
+    -webkit-transition: visibility 0s 0s;
+    transition: visibility 0s 0s;
   }
 
   li {
