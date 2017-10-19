@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased] - 
+## [1.1.3] - 2017-10-19
 
 ### Fixed
 - Fixed `{nil, "picture"=>nil"}` in `_layouts/about.html` when author image isn't set. [#34](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/34)
