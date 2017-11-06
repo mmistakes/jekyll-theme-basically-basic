@@ -20,7 +20,7 @@ description: 오마이랩 블로그
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: https://ohmylab.github.io
 author:
-  name:
+  name: Ohmylab
   twitter:
   picture:
 twitter_username:
