@@ -15,14 +15,14 @@
 # in the templates via {{ site.myvariable }}.
 lang: ko_KR
 title: Ohmylab Co., Ltd.
-email:
+email: recruit@ohmylab.com
 description: 오마이랩 블로그
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: https://ohmylab.github.io
 author:
   name: Ohmylab
   twitter:
-  picture:
+  picture: /assets/images/company-logo.png
 twitter_username:
 github_username:
 logo: /assets/images/site-logo.png 
