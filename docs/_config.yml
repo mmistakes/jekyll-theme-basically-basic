@@ -58,6 +58,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-remote-theme
 
 # Jekyll Feed
 feed:
