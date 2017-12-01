@@ -5,6 +5,8 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
+remote_theme: "mmistakes/jekyll-theme-basically-basic"
+
 # Site Settings
 lang: en-US
 title: Basically Basic
