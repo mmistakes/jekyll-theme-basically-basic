@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased] -
+
+### Changed
+- Use [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) for demo site.
+- Update GitHub Pages compatible installation instructions to include jekyll-remote-theme method.
+
 ## [1.1.3] - 2017-10-19
 
 ### Fixed
@@ -17,11 +23,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Fixed sidebar visibility bug in Firefox and Safari by adding toggling `visibility: hidden`. [#31](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/31) 
 
 ## [1.1.1] - 2017-09-06
+
 ### Changed
 - Change `gems` key in `_config.yml` to `plugins`. [#23](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/23)
 - Fixed Liquid syntax error: "Expected id but found end_of_string_in `cv.skills.`" in `/cv/skills.html` include.
 
 ## [1.1.0] - 2017-03-30
+
 ### Added
 - Improved installation documentation. [#8](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/8)
 - Google Analytics tracking ID, Disqus comments, to `/docs` demo site.
@@ -37,6 +45,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Unclickable main content links in Internet Explorer 10. [#9](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/9)
 
 ## [1.0.1] - 2017-03-23
+
 ### Added
 - Responsive embed helper classes for videos. [#2](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/2)
 - Print styles for improved readability of printed pages. [#4](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/4)
