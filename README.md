@@ -87,25 +87,29 @@ theme as Ruby gem. If you're hosting with GitHub Pages you'll have to use the
 
 ### GitHub Pages Compatible Method
 
-Fork the [Basically Basic repo](https://github.com/mmistakes/jekyll-theme-basically-basic/fork), 
-then rename it to **USERNAME.github.io** --- replacing **USERNAME** with your 
-GitHub username.
+If you're hosting with GitHub Pages follow these steps instead:
 
-**Note:** Your Jekyll site should be viewable immediately at 
-<http://USERNAME.github.io>. If it's not, you can force a rebuild by 
-**configuring your site** (see below for more details).
-
-Replace the contents of `Gemfile` found in the root of your Jekyll site with 
-the following:
+Replace `gem "jekyll"` with:
 
 ```ruby
-source "https://rubygems.org"
-
 gem "github-pages", group: :jekyll_plugins
+gem "jekyll-remote-theme"
 ```
 
-Then run `bundle update` and verify that the [GitHub Pages gem](https://github.com/github/pages-gem)
-and its dependencies install properly.
+Run `bundle update` and verify that all gems install properly.
+
+Add `remote_theme: "mmistakes/jekyll-theme-basically-basic"` to your `_config.yml` file.
+
+Then add [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) to the `plugins` (previously gems) array in your `_config.yml` file like so:
+
+```yaml
+plugins:
+  - jekyll-remote-theme
+```
+
+**Note:** Your Jekyll site should be viewable immediately at <http://USERNAME.github.io>. If it's not, you can force a rebuild by **Customizing Your Site** (see below for more details).
+
+If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than **USERNAME.github.io** and create a `gh-pages` branch off of `master`. For more details on how to set things up check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
 
 #### Remove the Unnecessary
 
