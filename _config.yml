@@ -42,6 +42,9 @@ feed:
 paginate: 5
 paginate_path: /page:num/
 
+# Google Analytics
+google_analytics: UA-110890982-1
+
 # Exclude from processing.
 exclude:
   - .asset-cache
