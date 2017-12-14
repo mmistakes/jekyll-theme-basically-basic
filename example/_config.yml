@@ -34,7 +34,7 @@ liquid:
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-basically-basic
-plugins:
+plugins: # previously gems
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
