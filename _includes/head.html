@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% if site.gems contains 'jekyll-seo-tag' %}
+  {% if site.plugins contains 'jekyll-seo-tag' or site.gems contains 'jekyll-seo-tag' %}
     {% comment %}
       Add metadata for search engines and social networks if jekyll-seo-tag plugin is enabled
     {% endcomment %}
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={% for font in site.data.theme.google_fonts %}{{ font.name | replace: ' ', '+' }}{% if font.weights %}:{% endif %}{{ font.weights | remove: ' ' }}{% if forloop.last != true %}|{% endif %}{% endfor %}">
   {% endif %}
 
-  {% if site.gems contains 'jekyll-feed' %}
+  {% if site.plugins contains 'jekyll-feed' or site.gems contains 'jekyll-feed'%}
     {% comment %}
       Add Atom feed link if jekyll-feed plugin is enabled
     {% endcomment %}
