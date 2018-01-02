@@ -24,7 +24,7 @@ with a few enhancements thrown in for good measure:
 
 1. [Installation](#installation)
    1. [Ruby Gem Method](#ruby-gem-method)
-   2. [GitHub Pages Compatible Method](#github-pages-compatible-method)
+   2. [GitHub Pages Method](#github-pages-method)
       1. [Remove the Unnecessary](#remove-the-unnecessary)
 2. [Structure](#structure)
    1. [Starting Fresh](#starting-fresh)
@@ -85,7 +85,7 @@ theme as Ruby gem. If you're hosting with GitHub Pages you'll have to use the
    theme: jekyll-theme-basically-basic
    ```
 
-### GitHub Pages Compatible Method
+### GitHub Pages Method
 
 If you're hosting with GitHub Pages follow these steps instead:
 
@@ -93,7 +93,6 @@ Replace `gem "jekyll"` with:
 
 ```ruby
 gem "github-pages", group: :jekyll_plugins
-gem "jekyll-remote-theme"
 ```
 
 Run `bundle update` and verify that all gems install properly.
