@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Update GitHub Pages compatible installation instructions to include jekyll-remote-theme method.
 - Update `site.gems` references to `site.plugins`. [#39](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/39)
 
+### Fixed
+- Fixed primary navigation skip link to use correct anchor ID. [#41](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/41)
+
 ## [1.1.3] - 2017-10-19
 
 ### Fixed
