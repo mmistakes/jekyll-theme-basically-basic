@@ -7,8 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [1.2.0] - 2018-01-05
 
-### Changed
+### Added
 - Use [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) for demo site.
+
+### Changed
 - Update GitHub Pages compatible installation instructions to include jekyll-remote-theme method.
 - Update `site.gems` references to `site.plugins`. [#39](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/39)
 - Update license and copyright.
