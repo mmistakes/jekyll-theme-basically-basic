@@ -48,7 +48,7 @@
         height: 1px;
         transition: width 0.3s cubic-bezier(0, 0, 0.3, 1);
         background-color: $base-color;
-        content: '';
+        content: "";
       }
 
       &:hover {
@@ -93,7 +93,7 @@
       width: 1.5em;
       height: 1px;
       background-color: $base-color;
-      content: '';
+      content: "";
     }
 
     li {
@@ -138,4 +138,5 @@
   order: 2;
   margin-left: 0.5rem;
   font-weight: bold;
+  color: $text-color;
 }
