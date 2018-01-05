@@ -23,7 +23,6 @@
 
 .intro,
 main {
-
   > .inner {
     padding: 0 0.5rem;
 
@@ -50,9 +49,10 @@ main {
 }
 
 main {
-
   section {
-    @include container;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
   }
 }
 
@@ -66,9 +66,7 @@ main {
 
 .layout--post,
 .layout--page {
-
   .entry-content {
-
     @include breakpoint($large) {
       width: span(14 of 16);
     }
@@ -76,7 +74,6 @@ main {
 }
 
 .layout--about {
-
   .entry-wrap {
     display: -ms-flexbox;
     display: flex;
@@ -90,7 +87,6 @@ main {
   }
 
   .entry-content {
-
     @include breakpoint($medium) {
       -ms-flex: 1;
       flex: 1;
@@ -118,14 +114,11 @@ main {
 }
 
 .layout--cv {
-
   .entries {
-
     .entry-header {
-
       @include breakpoint($medium) {
-        @include span(5 of 16);
-        @include suffix(1 of 16);
+        width: span(5 of 16);
+        padding-right: gutter(1 of 16);
 
         /* remove space after last child element */
         > *:last-child {
@@ -136,13 +129,13 @@ main {
 
     .entry-content {
       @include breakpoint($medium) {
-        @include span(11 of 16 last);
+        float: right;
+        width: span(11 of 16);
       }
     }
   }
 
   .entry {
-
     a {
       color: $accent-color;
     }
@@ -179,7 +172,6 @@ main {
   }
 
   .taxonomy {
-
     + .taxonomy {
       margin-top: 0.5rem;
     }

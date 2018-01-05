@@ -36,7 +36,6 @@
   }
 
   .byline-item {
-
     &:not(:first-child) {
       margin-left: 1.5rem;
     }
@@ -53,7 +52,6 @@
    ========================================================================== */
 
 .entries {
-
   .entry-title {
     word-wrap: break-word; /* break long words that could overflow */
 
@@ -64,7 +62,7 @@
 
   .entry-excerpt {
     @include breakpoint($medium) {
-      @include span(11 of 16);
+      width: span(11 of 16);
     }
 
     /* normalize font sizes */
@@ -80,7 +78,7 @@
 
   .entry-content {
     @include breakpoint($medium) {
-      @include span(11 of 16);
+      width: span(11 of 16);
     }
 
     /* remove space after last child element */
@@ -91,8 +89,9 @@
 
   .entry-meta {
     @include breakpoint($medium) {
-      @include span(5 of 16 last);
-      @include prefix(1 of 16);
+      float: right;
+      width: span(5 of 16 last);
+      padding-left: gutter(1 of 16);
     }
 
     ul {
@@ -114,7 +113,6 @@
   }
 
   > .summary {
-
     > p:first-child {
       font-size: 1.125em;
       line-height: 1.625;
@@ -123,7 +121,6 @@
 }
 
 .entry-content {
-
   > p:first-child {
     font-size: 1.125em;
     line-height: 1.625;
