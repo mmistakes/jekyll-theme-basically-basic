@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 - Fixed primary navigation skip link to use correct anchor ID. [#41](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/41)
+- Fixed Susy deprecation warnings by updating to version 3. [#21](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/21)
 
 ## [1.1.3] - 2017-10-19
 
