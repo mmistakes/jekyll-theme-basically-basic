@@ -199,7 +199,7 @@ Here's a quick checklist of the important folders/files you'll want to be mindfu
 
 ---
 
-**Note:** If you're not seeing the latest version, be sure to flush browser and CDN caches. Depending on your hosting environment older versions of `/assets/css/main.css`, `/assets/js/main.min.js`, or `*.html` may be cached.
+**Note:** If you're not seeing the latest version, be sure to flush browser and CDN caches. Depending on your hosting environment older versions of `/assets/css/main.css`, `/assets/js/main.js`, or `*.html` may be cached.
 
 ## Structure
 
