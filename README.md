@@ -22,94 +22,103 @@ with a few enhancements thrown in for good measure:
 ## Table of Contents
 
 1. [Installation](#installation)
-   1. [Ruby Gem Method](#ruby-gem-method)
-   2. [GitHub Pages Method](#github-pages-method)
-      1. [Remove the Unnecessary](#remove-the-unnecessary)
-2. [Structure](#structure)
-   1. [Starting Fresh](#starting-fresh)
-   2. [Starting from jekyll new](#starting-from-jekyll-new)
-3. [Configuration](#configuration)
-   1. [Skin](#skin)
-   2. [Google Fonts](#google-fonts)
-   3. [Text](#text)
-   4. [Navigation](#navigation)
-   5. [Pagination](#pagination)
-   6. [Author](#author)
-   7. [Reading Time](#reading-time)
-   8. [Comments (via Disqus)](#comments-via-disqus)
-   9. [Google Analytics](#google-analytics)
-4. [Layouts](#layouts)
-   1. [Default](#layout-default)
-   2. [Post](#layout-post)
-   3. [Page](#layout-page)
-   4. [Home](#layout-home)
-   5. [About](#layout-about)
-   6. [Curriculum Vitæ/Resume](#layout-cv)
-5. [Customization](#customization)
-   1. [Overriding Includes and Layouts](#overriding-includes-and-layouts)
-   2. [Customizing Sass (SCSS)](#customizing-sass-scss)
-   3. [Customizing JavaScript](#customizing-javascript)
-   4. [SVG Icons](#svg-icons)
-   5. [Customizing Sidebar Content](#customizing-sidebar-content)
-6. [Development](#development)
-7. [Contributing](#contributing)
-   1. [Pull Requests](#pull-requests)
-8. [Credits](#credits)
+    1. [Ruby Gem Method](#ruby-gem-method)
+    2. [GitHub Pages Method](#github-pages-method)
+        1. [Remove the Unnecessary](#remove-the-unnecessary)
+2. [Upgrading](#upgrading)
+3. [Ruby Gem](#ruby-gem)
+4. [Remote Theme](#remote-theme)
+5. [Use Git](#use-git)
+    1. [Pull Down Updates](#pull-down-updates)
+6. [Update Files Manually](#update-files-manually)
+7. [Structure](#structure)
+    1. [Starting Fresh](#starting-fresh)
+    2. [Starting from `jekyll new`](#starting-from-jekyll-new)
+8. [Configuration](#configuration)
+    1. [Skin](#skin)
+    2. [Google Fonts](#google-fonts)
+    3. [Text](#text)
+    4. [Navigation](#navigation)
+    5. [Pagination](#pagination)
+    6. [Author](#author)
+    7. [Reading Time](#reading-time)
+    8. [Comments (via Disqus)](#comments-via-disqus)
+    9. [Google Analytics](#google-analytics)
+9. [Layouts](#layouts)
+    1. [`layout: default`](#layout-default)
+    2. [`layout: post`](#layout-post)
+    3. [`layout: page`](#layout-page)
+    4. [`layout: home`](#layout-home)
+    5. [`layout: about`](#layout-about)
+    6. [`layout: cv`](#layout-cv)
+10. [Customization](#customization)
+    1. [Overriding Includes and Layouts](#overriding-includes-and-layouts)
+    2. [Customizing Sass (SCSS)](#customizing-sass-scss)
+    3. [Customizing JavaScript](#customizing-javascript)
+    4. [SVG Icons](#svg-icons)
+    5. [Customizing Sidebar Content](#customizing-sidebar-content)
+11. [Development](#development)
+12. [Contributing](#contributing)
+    1. [Pull Requests](#pull-requests)
+13. [Credits](#credits)
+    1. [Creator](#creator)
+    2. [Icons + Demo Images:](#icons--demo-images)
+    3. [Other:](#other)
+14. [License](#license)
 
 ## Installation
 
-If you're running Jekyll v3.3+ and self-hosting you can quickly install the 
-theme as Ruby gem. If you're hosting with GitHub Pages you'll have to use the 
-"repo fork" method or directly copy all of the theme files (see 
-[structure](#structure) below) into your project.
+If you're running Jekyll v3.5+ and self-hosting you can quickly install the 
+theme as a Ruby gem. If you're hosting with GitHub Pages you can install as a 
+remote theme or directly copy all of the theme files (see [structure](#structure) 
+below) into your project.
 
 ### Ruby Gem Method
 
-1. Install the theme as a Ruby Gem by adding it to your `Gemfile` like so:
+1. Add this line to your Jekyll site's `Gemfile`:
 
    ```ruby
    gem "jekyll-theme-basically-basic"
    ```
-
-2. Fetch and update your bundled gems by running the following 
-   [Bundler](http://bundler.io/) command:
-   
-   ```bash
-   bundle
-   ```
-
-3. Set the `theme` in your project's Jekyll configuration, `_config.yml`:
+2. Add this line to your Jekyll site's `_config.yml` file:
 
    ```yaml
    theme: jekyll-theme-basically-basic
    ```
 
+2. Then run [Bundler](http://bundler.io/) to install the theme gem and dependencies:
+   
+   ```terminal
+   bundle install
+   ```
+
 ### GitHub Pages Method
 
-If you're hosting with GitHub Pages follow these steps instead:
+GitHub Pages has added [full support](https://github.com/blog/2464-use-any-theme-with-github-pages) 
+for any GitHub-hosted theme.
 
-Replace `gem "jekyll"` with:
+1. Replace `gem "jekyll"` with:
 
-```ruby
-gem "github-pages", group: :jekyll_plugins
-```
+   ```ruby
+   gem "github-pages", group: :jekyll_plugins
+   ```
 
-Run `bundle update` and verify that all gems install properly.
+2. Run `bundle update` and verify that all gems install properly.
 
-Add `remote_theme: "mmistakes/jekyll-theme-basically-basic"` to your `_config.yml` file.
+3. Add `remote_theme: "mmistakes/jekyll-theme-basically-basic"` to your 
+   `_config.yml` file. Remove any other `theme:` or `remote_theme:` entries.
 
-Then add [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) to the `plugins` (previously gems) array in your `_config.yml` file like so:
+---
 
-```yaml
-plugins:
-  - jekyll-remote-theme
-```
+**Note:** Your Jekyll site should be viewable immediately at 
+<http://USERNAME.github.io>. If it's not, you can force a rebuild by 
+**Customizing Your Site** (see below for more details).
 
-Remove any other `theme:` or `remote_theme:` entry.
-
-**Note:** Your Jekyll site should be viewable immediately at <http://USERNAME.github.io>. If it's not, you can force a rebuild by **Customizing Your Site** (see below for more details).
-
-If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than **USERNAME.github.io** and create a `gh-pages` branch off of `master`. For more details on how to set things up check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
+If you're hosting several Jekyll based sites under the same GitHub username you 
+will have to use Project Pages instead of User Pages. Essentially you rename the 
+repo to something other than **USERNAME.github.io** and create a `gh-pages` 
+branch off of `master`. For more details on how to set things up check 
+[GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
 
 #### Remove the Unnecessary
 
@@ -130,6 +139,95 @@ safely remove the following files and folders:
 - `/docs`
 - `/example`
 
+## Upgrading
+
+If you're using the Ruby Gem or remote theme versions of Basically Basic, 
+upgrading is fairly painless.
+
+To check which version you are currently using, view the source of your built 
+site and you should something similar to:
+
+```
+<!--
+    Basically Basic Jekyll Theme 1.2.0
+    Copyright 2017-2018 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE.md
+-->
+```
+
+At the top of every `.html` file, `/assets/css/main.css`, and `/assets/js/main.js`.
+
+## Ruby Gem
+
+Simply run `bundle update` if you're using Bundler (have a `Gemfile`) or `gem 
+update jekyll-theme-basically-basic` if you're not.
+
+## Remote Theme
+
+When hosting with GitHub Pages you'll need to push up a commit to force a 
+rebuild with the latest [theme release](https://github.com/mmistakes/jekyll-theme-basically-basic/releases).
+
+An empty commit will get the job done too if you don't have anything to push at 
+the moment:
+
+```terminal
+git commit --allow-empty -m "Force rebuild of site"
+```
+
+## Use Git
+
+If you want to get the most out of the Jekyll + GitHub Pages workflow, then 
+you'll need to utilize Git. To pull down theme updates you must first ensure 
+there's an upstream remote. If you forked the theme's repo then you're likely 
+good to go.
+
+To double check, run `git remote -v` and verify that you can fetch from `origin https://github.com/mmistakes/jekyll-theme-basically-basic.git`.
+
+To add it you can do the following:
+
+```terminal
+git remote add upstream https://github.com/mmistakes/jekyll-theme-basically-basic.git
+```
+
+### Pull Down Updates
+
+Now you can pull any commits made to theme's `master` branch with:
+
+```terminal
+git pull upstream master
+```
+
+Depending on the amount of customizations you've made after forking, there's 
+likely to be merge conflicts. Work through any conflicting files Git flags, 
+staging the changes you wish to keep, and then commit them.
+
+## Update Files Manually
+
+Another way of dealing with updates is [downloading the theme](https://github.com/mmistakes/jekyll-theme-basically-basic/archive/master.zip) 
+--- replacing your layouts, includes, and assets with the newer ones manually. 
+To be sure that you don't miss any changes it's probably a good idea to review 
+the theme's [commit history](https://github.com/mmistakes/jekyll-theme-basically-basic/commits/master) 
+to see what's changed since.
+
+Here's a quick checklist of the important folders/files you'll want to be 
+mindful of:
+
+| Name                   |     |
+| ----                   | --- |
+| `_layouts`             | Replace all. Apply edits if you customized any layouts. |
+| `_includes`            | Replace all. Apply edits if you customized any includes. |
+| `assets`               | Replace all. Apply edits if you customized stylesheets or scripts. |
+| `_sass`                | Replace all. Apply edits if you customized Sass partials. |
+| `_data/theme.yml`      | Safe to keep. Verify that there were no major structural changes or additions. |
+| `_config.yml`          | Safe to keep. Verify that there were no major structural changes or additions. |
+
+---
+
+**Note:** If you're not seeing the latest version, be sure to flush browser and 
+CDN caches. Depending on your hosting environment older versions of 
+`/assets/css/main.css`, `/assets/js/main.js`, or `*.html` may be cached.
+
 ## Structure
 
 Layouts, includes, Sass partials, and data files are all placed in their default 
@@ -140,7 +238,7 @@ files in the project's root directory.
 files found in `/_layouts`, `/_includes`, `/_sass`, and `/assets` will be 
 missing. This is normal as they are bundled with the [`jekyll-theme-basically-basic`](https://rubygems.org/gems/jekyll-theme-basically-basic) gem.
 
-```bash
+```terminal
 jekyll-theme-basically-basic
 ├── _data                      # data files
 |  └── theme.yml               # theme settings and custom text
@@ -360,7 +458,8 @@ Front Matter.
 Optionally, if you have a [Disqus](https://disqus.com/) account, you can show a 
 comments section below each post.
 
-To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) to your project's `_config.yml` file:
+To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) to your project's 
+`_config.yml` file:
 
 ```yaml
   disqus:
@@ -521,18 +620,16 @@ To override the default [Sass](http://sass-lang.com/guide) (located in theme's
    - Customize what you want inside `<your_project/assets/stylesheets/main.scss`.
 
 **Note:** To make more extensive changes and customize the Sass partials bundled 
-in the gem. You will need to copy the complete contents the `_sass` directory to 
-`<your_project>` due to the way Jekyll currently reads those files.
+in the gem. You will need to copy the complete contents of the `_sass` directory 
+to `<your_project>` due to the way Jekyll currently reads those files.
 
 To make basic tweaks to theme's style Sass variables can be overridden by adding 
 to `<your_project>/assets/stylesheets/main.scss`. For instance, to change the 
-accent color used throughout the theme add:
+accent color used throughout the theme add the following:
 
 ```scss
 $accent-color: red;
 ```
-
-Before any `@import` lines.
 
 ### Customizing JavaScript
 
