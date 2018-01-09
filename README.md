@@ -26,15 +26,15 @@ with a few enhancements thrown in for good measure:
     2. [GitHub Pages Method](#github-pages-method)
         1. [Remove the Unnecessary](#remove-the-unnecessary)
 2. [Upgrading](#upgrading)
-3. [Ruby Gem](#ruby-gem)
-4. [Remote Theme](#remote-theme)
-5. [Use Git](#use-git)
-    1. [Pull Down Updates](#pull-down-updates)
-6. [Update Files Manually](#update-files-manually)
-7. [Structure](#structure)
+    1. [Ruby Gem](#ruby-gem)
+    2. [Remote Theme](#remote-theme)
+    3. [Use Git](#use-git)
+        1. [Pull Down Updates](#pull-down-updates)
+    4. [Update Files Manually](#update-files-manually)
+3. [Structure](#structure)
     1. [Starting Fresh](#starting-fresh)
     2. [Starting from `jekyll new`](#starting-from-jekyll-new)
-8. [Configuration](#configuration)
+4. [Configuration](#configuration)
     1. [Skin](#skin)
     2. [Google Fonts](#google-fonts)
     3. [Text](#text)
@@ -44,27 +44,27 @@ with a few enhancements thrown in for good measure:
     7. [Reading Time](#reading-time)
     8. [Comments (via Disqus)](#comments-via-disqus)
     9. [Google Analytics](#google-analytics)
-9. [Layouts](#layouts)
+5. [Layouts](#layouts)
     1. [`layout: default`](#layout-default)
     2. [`layout: post`](#layout-post)
     3. [`layout: page`](#layout-page)
     4. [`layout: home`](#layout-home)
     5. [`layout: about`](#layout-about)
     6. [`layout: cv`](#layout-cv)
-10. [Customization](#customization)
+6. [Customization](#customization)
     1. [Overriding Includes and Layouts](#overriding-includes-and-layouts)
     2. [Customizing Sass (SCSS)](#customizing-sass-scss)
     3. [Customizing JavaScript](#customizing-javascript)
     4. [SVG Icons](#svg-icons)
     5. [Customizing Sidebar Content](#customizing-sidebar-content)
-11. [Development](#development)
-12. [Contributing](#contributing)
+7. [Development](#development)
+8. [Contributing](#contributing)
     1. [Pull Requests](#pull-requests)
-13. [Credits](#credits)
+9. [Credits](#credits)
     1. [Creator](#creator)
     2. [Icons + Demo Images:](#icons--demo-images)
     3. [Other:](#other)
-14. [License](#license)
+10. [License](#license)
 
 ## Installation
 
@@ -158,12 +158,12 @@ site and you should something similar to:
 
 At the top of every `.html` file, `/assets/css/main.css`, and `/assets/js/main.js`.
 
-## Ruby Gem
+### Ruby Gem
 
 Simply run `bundle update` if you're using Bundler (have a `Gemfile`) or `gem 
 update jekyll-theme-basically-basic` if you're not.
 
-## Remote Theme
+### Remote Theme
 
 When hosting with GitHub Pages you'll need to push up a commit to force a 
 rebuild with the latest [theme release](https://github.com/mmistakes/jekyll-theme-basically-basic/releases).
@@ -175,7 +175,7 @@ the moment:
 git commit --allow-empty -m "Force rebuild of site"
 ```
 
-## Use Git
+### Use Git
 
 If you want to get the most out of the Jekyll + GitHub Pages workflow, then 
 you'll need to utilize Git. To pull down theme updates you must first ensure 
@@ -190,7 +190,7 @@ To add it you can do the following:
 git remote add upstream https://github.com/mmistakes/jekyll-theme-basically-basic.git
 ```
 
-### Pull Down Updates
+#### Pull Down Updates
 
 Now you can pull any commits made to theme's `master` branch with:
 
@@ -202,7 +202,7 @@ Depending on the amount of customizations you've made after forking, there's
 likely to be merge conflicts. Work through any conflicting files Git flags, 
 staging the changes you wish to keep, and then commit them.
 
-## Update Files Manually
+### Update Files Manually
 
 Another way of dealing with updates is [downloading the theme](https://github.com/mmistakes/jekyll-theme-basically-basic/archive/master.zip) 
 --- replacing your layouts, includes, and assets with the newer ones manually. 
