@@ -312,3 +312,9 @@ figure.highlight {
     color: $base09;
   }
 }
+
+.gist {
+  th, td {
+    border-bottom: 0;
+  }
+}

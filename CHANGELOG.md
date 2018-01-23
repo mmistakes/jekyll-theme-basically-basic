@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - New installation and upgrade instructions.
 
+### Fixed
+- Fix `border-bottom` for Gist line numbers.
+
 ## [1.2.0] - 2018-01-05
 
 ### Added
