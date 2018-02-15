@@ -55,3 +55,13 @@ myMenu.addEventListener('click', function() {
   toggleClassMenu();
   animateMenuItems();
 }, false);
+
+// Search toggle
+$(".search-toggle").on("click", function() {
+  $(".search-content").toggleClass("is--visible");
+  $(".initial-content").toggleClass("is--hidden");
+  // set focus on input
+  setTimeout(function() {
+    $("#search").focus();
+  }, 400);
+});
