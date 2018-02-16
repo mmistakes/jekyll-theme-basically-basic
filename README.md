@@ -42,10 +42,13 @@ with a few enhancements thrown in for good measure:
     3. [Text](#text)
     4. [Navigation](#navigation)
     5. [Pagination](#pagination)
-    6. [Author](#author)
-    7. [Reading Time](#reading-time)
-    8. [Comments (via Disqus)](#comments-via-disqus)
-    9. [Google Analytics](#google-analytics)
+    6. [Search](#search)
+        1. [Lunr (default)](#lunr-default)
+        2. [Algolia](#algolia)
+    7. [Author](#author)
+    8. [Reading Time](#reading-time)
+    9. [Comments (via Disqus)](#comments-via-disqus)
+    10. [Google Analytics](#google-analytics)
 5. [Layouts](#layouts)
     1. [`layout: default`](#layout-default)
     2. [`layout: post`](#layout-post)
@@ -63,9 +66,6 @@ with a few enhancements thrown in for good measure:
 8. [Contributing](#contributing)
     1. [Pull Requests](#pull-requests)
 9. [Credits](#credits)
-    1. [Creator](#creator)
-    2. [Icons + Demo Images:](#icons--demo-images)
-    3. [Other:](#other)
 10. [License](#license)
 
 ## Installation
@@ -401,6 +401,67 @@ add the following front matter:
    layout: home
    paginate: true
    ```
+
+### Search
+
+To enable site-wide search add `search: true` to your `_config.yml`.
+
+#### Lunr (default)
+
+The default search uses [**Lunr**](https://lunrjs.com/) to build a search index of all your documents. This method is 100% compatible with sites hosted on GitHub Pages.
+
+**Note:** Only the first 50 words of a post or page's body content is added to the Lunr search index. Setting `search_full_content` to `true` in your `_config.yml` will override this and could impact page load performance.
+
+#### Algolia
+
+For faster and more relevant search:
+
+1. Add the [`jekyll-algolia`](https://github.com/algolia/jekyll-algolia) gem to your `Gemfile`, in the `:jekyll_plugins` section.
+
+   ```ruby
+   group :jekyll_plugins do
+     gem "jekyll-feed"
+     gem "jekyll-seo-tag"
+     gem "jekyll-sitemap"
+     gem "jekyll-paginate"
+     gem "jekyll-algolia"
+   end
+   ```
+
+   Once this is done, download all dependencies by running `bundle install`.
+
+2. Switch search providers from `lunr` to `algolia` in your `_config.yml` file:
+
+   ```yaml
+   search_provider: algolia
+   ```
+
+3. Add the following Algolia credentials to your `_config.yml` file. *If you don't have an Algolia account, you can open a free [Community plan](https://www.algolia.com/users/sign_up/hacker). Once signed in, you can grab your credentials from [your dashboard](https://www.algolia.com/licensing).*
+
+   ```yaml
+   algolia:
+     application_id: # YOUR_APPLICATION_ID
+     index_name: # YOUR_INDEX_NAME
+     search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
+     powered_by: # true (default), false
+   ```
+
+4. Once your credentials are setup, you can run the indexing with the following command:
+
+   ```
+   ALGOLIA_API_KEY=your_admin_api_key bundle exec jekyll algolia
+   ```
+
+   For Windows users you will have to use `set` to assigned the `ALGOLIA_API_KEY` environment variable.
+
+   ```
+   set ALGOLIA_API_KEY=your_admin_api_key
+   bundle exec jekyll algolia
+   ```
+
+   Note that `ALGOLIA_API_KEY` should be set to your admin API key.
+
+To use the Algolia search with GitHub Pages hosted sites follow [this deployment guide](https://community.algolia.com/jekyll-algolia/github-pages.html). Or this guide for [deploying on Netlify](https://community.algolia.com/jekyll-algolia/netlify.html).
 
 ### Author
 

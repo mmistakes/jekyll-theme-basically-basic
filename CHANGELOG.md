@@ -7,8 +7,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+### Added
+- Add site-wide search toggle.
+- Add support for Lunr search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
+- Add support for Algolia search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
+
 ### Changed
 - New installation and upgrade instructions.
+- Absolutely position navigation menu instead of sticking it to the top.
+- Visually hide "Menu" label.
+- Improve alignment of menu toggle when search is enabled.
 
 ### Fixed
 - Fix `border-bottom` for Gist line numbers.
