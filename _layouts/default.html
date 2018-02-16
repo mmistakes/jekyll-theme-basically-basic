@@ -13,13 +13,6 @@
     {% include skip-links.html %}
 
     <div class="sidebar-toggle-wrapper">
-      <button class="toggle navicon-button larr" type="button">
-        <span class="toggle-inner">
-          <span class="sidebar-toggle-label">{{ site.data.theme.t.menu | default: 'Menu' }}</span>
-          <span class="navicon"></span>
-        </span>
-      </button>
-
       {% if site.search %}
         <button class="search-toggle" type="button">
           <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
@@ -28,6 +21,13 @@
           </svg>
         </button>
       {% endif %}
+
+      <button class="toggle navicon-button larr" type="button">
+        <span class="toggle-inner">
+          <span class="sidebar-toggle-label visually-hidden">{{ site.data.theme.t.menu | default: 'Menu' }}</span>
+          <span class="navicon"></span>
+        </span>
+      </button>
     </div>
 
     <div id="sidebar" class="sidebar">

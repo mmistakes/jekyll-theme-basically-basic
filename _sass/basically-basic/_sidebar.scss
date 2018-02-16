@@ -25,11 +25,16 @@
   }
 
   li {
+    -webkit-transform: translateX(-1rem);
+    -ms-transform: translateX(-1rem);
     transform: translateX(-1rem);
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     opacity: 0;
 
     &.is--moved {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
       transform: translateX(0);
       opacity: 1;
     }
@@ -46,6 +51,7 @@
         left: -3rem;
         width: 0;
         height: 1px;
+        -webkit-transition: width 0.3s cubic-bezier(0, 0, 0.3, 1);
         transition: width 0.3s cubic-bezier(0, 0, 0.3, 1);
         background-color: $base-color;
         content: "";
@@ -67,6 +73,7 @@
     padding: 1.5em;
     background-color: $sidebar-background-color;
     overflow-x: hidden;
+    -webkit-box-shadow: inset -1em 0 5em 0 rgba(0, 0, 0, 0.125);
     box-shadow: inset -1em 0 5em 0 rgba(0, 0, 0, 0.125);
 
     @include breakpoint($medium) {
@@ -119,23 +126,40 @@
 }
 
 .sidebar-toggle-wrapper {
-  position: fixed;
-  top: 0.675rem;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
   right: 0;
-  cursor: pointer;
+  margin: 1.8125rem 0;
+  padding-right: 1rem;
+  background-color: $background-color;
   z-index: 10000;
+
+  @include breakpoint($medium) {
+    right: 2rem;
+    padding-right: 0;
+  }
+
+  @include breakpoint($large) {
+    right: 5vw;
+  }
 
   .toggle-inner {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
   }
 }
 
 .sidebar-toggle-label {
-  -ms-flex-order: 2;
-  order: 2;
   margin-left: 0.5rem;
   font-weight: bold;
   color: $text-color;

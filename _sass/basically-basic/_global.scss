@@ -6,7 +6,9 @@
   @include fluid-type($min-vw, $max-vw, 20px, 24px);
   margin: 0;
   padding: 1.8125rem 1rem;
-  padding-right: calc(10vw + #{$navicon-width}); /* make room for sidebar toggle */
+  padding-right: calc(
+    10vw + (2 * #{$navicon-width})
+  ); /* make room for sidebar toggle */
   font-family: $base-font-family;
   font-weight: bold;
   line-height: 1;
@@ -21,8 +23,10 @@
 
   a {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
     min-height: $site-image-height;
     color: $text-color;
