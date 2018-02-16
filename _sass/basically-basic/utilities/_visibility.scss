@@ -16,10 +16,7 @@
 
 /* https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html */
 
-.visually-hidden,
-.screen-reader-text,
-.screen-reader-text span,
-.screen-reader-shortcut {
+.visually-hidden {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px !important;
