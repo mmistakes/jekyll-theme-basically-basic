@@ -24,7 +24,7 @@ const hitTemplate = function(hit) {
 
   return `
     <article class="entry">
-      <h3 class="entry-title"><a href="${url}">${title}</a></h3>
+      <h3 class="entry-title"><a href="{{ site.baseurl }}${url}">${title}</a></h3>
       <div class="entry-excerpt">${content}</div>
     </article>
   `;
@@ -34,6 +34,7 @@ const hitTemplate = function(hit) {
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: '.search-searchbar',
+    {% unless site.algolia.powered_by == false %}poweredBy: true,{% endunless %}
     placeholder: '{{ site.data.theme.t.menu.search_placeholder_text | default: "Enter your search term..." }}'
   })
 );
