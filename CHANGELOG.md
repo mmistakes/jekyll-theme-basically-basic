@@ -5,9 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## Unreleased
+## [1.3.0] - 2018-02-16
 
 ### Added
+- Add jQuery script.
 - Add site-wide search toggle.
 - Add support for Lunr search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
 - Add support for Algolia search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
