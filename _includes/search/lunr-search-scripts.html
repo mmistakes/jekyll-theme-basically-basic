@@ -35,6 +35,7 @@
     {%- else -%}
       {%- assign lang = "en" -%}
   {%- endcase -%}
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="{{ '/assets/javascripts/lunr/lunr.min.js' | absolute_url }}"></script>
   <script src="{{ '/assets/javascripts/search-data.json' | absolute_url }}"></script>
   {%- unless lang == "en" -%}
