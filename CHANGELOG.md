@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+### Changed
+- Only include jQuery when using default Lunr search. [#49](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/49)
+
+### Fixed
+- Focus on search input after clicking on toggle.
+
 ## [1.3.0] - 2018-02-16
 
 ### Added
