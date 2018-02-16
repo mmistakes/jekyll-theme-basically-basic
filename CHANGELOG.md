@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add site-wide search toggle.
 - Add support for [Lunr](https://lunrjs.com/) search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
 - Add support for [Algolia](https://www.algolia.com/) search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
+- Add [Algolia search demo](https://mmistakes.github.io/jekyll-theme-basically-basic-algolia-search/).
 
 ### Changed
 - New installation and upgrade instructions.
