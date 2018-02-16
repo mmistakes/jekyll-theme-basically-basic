@@ -2,7 +2,7 @@
 ---
 
 /*!
- * Basically Basic Jekyll Theme 1.3.0
+ * Basically Basic Jekyll Theme 1.3.1
  * Copyright 2017-2018 Michael Rose - mademistakes | @mmistakes
  * Free for personal and commercial use under the MIT license
  * https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE.md
