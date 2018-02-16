@@ -25,6 +25,14 @@ logo: /assets/icons/basically-basic-logo-light.svg
 google_analytics: UA-2011187-6
 disqus:
   shortname: basically-basic-theme
+search: true
+search_full_content: true
+search_provider: lunr
+algolia:
+  application_id: # YOUR_APPLICATION_ID
+  index_name: # YOUR_INDEX_NAME
+  search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
+  powered_by: # true (default), false
 
 # Conversion
 markdown: kramdown
