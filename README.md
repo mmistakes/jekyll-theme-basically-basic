@@ -13,6 +13,7 @@ with a few enhancements thrown in for good measure:
 - Clean responsive design with [six customizable skins](#skin)
 - Curriculum Vitæ/Resume layout powered by [JSON data](http://registry.jsonresume.org/)
 - About page layout
+- Site-wide search provided by [Algolia](https://www.algolia.com/) or [Lunr](https://lunrjs.com/).
 - Disqus Comments and Google Analytics support
 - SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
 

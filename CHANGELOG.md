@@ -10,8 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Add jQuery script.
 - Add site-wide search toggle.
-- Add support for Lunr search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
-- Add support for Algolia search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
+- Add support for [Lunr](https://lunrjs.com/) search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
+- Add support for [Algolia](https://www.algolia.com/) search. [#48](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/48)
 
 ### Changed
 - New installation and upgrade instructions.
