@@ -464,6 +464,8 @@ For faster and more relevant search ([see demo](https://mmistakes.github.io/jeky
 
 To use the Algolia search with GitHub Pages hosted sites follow [this deployment guide](https://community.algolia.com/jekyll-algolia/github-pages.html). Or this guide for [deploying on Netlify](https://community.algolia.com/jekyll-algolia/netlify.html).
 
+**Note:** The Jekyll Algolia plugin can be configured in several ways. Be sure to check out [their full documentation](https://community.algolia.com/jekyll-algolia/options.html "Algolia configuration") on how to exclude files and other valuable settings.
+
 ### Author
 
 Author information is used as meta data for post "by lines" and propagates the 
