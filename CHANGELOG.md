@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## Changed
+- Lint JavaScript.
+
 ### Added
 - Accessibility enhancements for Lunr search form.
 

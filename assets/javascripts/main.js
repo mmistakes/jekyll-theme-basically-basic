@@ -13,14 +13,14 @@ var menuItems = document.querySelectorAll('#sidebar li');
 // Get vendor transition property
 var docElemStyle = document.documentElement.style;
 var transitionProp = typeof docElemStyle.transition == 'string' ?
-    'transition' : 'WebkitTransition';
+  'transition' : 'WebkitTransition';
 
 // Animate sidebar menu items
 function animateMenuItems() {
-  for ( var i=0; i < menuItems.length; i++ ) {
+  for (var i = 0; i < menuItems.length; i++) {
     var item = menuItems[i];
     // Stagger transition with transitionDelay
-    item.style[ transitionProp + 'Delay' ] = ( i * 75 ) + 'ms';
+    item.style[transitionProp + 'Delay'] = (i * 75) + 'ms';
     item.classList.toggle('is--moved');
   }
 };
@@ -35,7 +35,7 @@ var mySearchToggle = document.querySelector('.search-toggle');
 // Toggle sidebar visibility
 function toggleClassMenu() {
   myMenu.classList.add('is--animatable');
-  if(!myMenu.classList.contains('is--visible')) {
+  if (!myMenu.classList.contains('is--visible')) {
     myMenu.classList.add('is--visible');
     myToggle.classList.add('open');
     myWrapper.classList.add('is--pushed');
@@ -52,23 +52,23 @@ function OnTransitionEnd() {
 }
 
 myMenu.addEventListener('transitionend', OnTransitionEnd, false);
-myToggle.addEventListener('click', function() {
+myToggle.addEventListener('click', function () {
   toggleClassMenu();
   animateMenuItems();
 }, false);
-myMenu.addEventListener('click', function() {
+myMenu.addEventListener('click', function () {
   toggleClassMenu();
   animateMenuItems();
 }, false);
-mySearchToggle.addEventListener('click', function() {
+mySearchToggle.addEventListener('click', function () {
   toggleClassSearch();
 }, false);
 
 // Toggle search input and content visibility
 function toggleClassSearch() {
-  mySearchContent.classList.toggle("is--visible");
-  myInitialContent.classList.toggle("is--hidden");
-  setTimeout(function() {
-    document.querySelector(".search-content input").focus();
+  mySearchContent.classList.toggle('is--visible');
+  myInitialContent.classList.toggle('is--hidden');
+  setTimeout(function () {
+    document.querySelector('.search-content input').focus();
   }, 400);
 }
