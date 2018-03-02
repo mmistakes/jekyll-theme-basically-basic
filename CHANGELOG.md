@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Accessibility enhancements for Lunr search form.
 
+### Fixed
+- Fix Firefox [flexbox bug](https://bugzilla.mozilla.org/show_bug.cgi?id=939897) when printing pages.
+
 ## [1.3.1] - 2018-02-16
 
 ### Changed
