@@ -13,10 +13,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Accessibility enhancements for Lunr search form.
 - Add SCSS `$intro-image-color-overlay` variable to disable color overlay on hero images. [#55](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/55)
+- Add new archive layouts: `categories`, `category`, `collection`, `tag`, and `tags`.
 
 ### Fixed
 - Fix Firefox [flexbox bug](https://bugzilla.mozilla.org/show_bug.cgi?id=939897) when printing pages.
 - Fix search excerpts that run together because of implied spaces.
+- Moved `<footer>` outside of `<main>` to be semantically correct.
 
 ## [1.3.1] - 2018-02-16
 
