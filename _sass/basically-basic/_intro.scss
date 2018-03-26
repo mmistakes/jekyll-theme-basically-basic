@@ -19,7 +19,9 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba($accent-color, 0.25);
+    @if $intro-image-color-overlay == true {
+      background-color: rgba($accent-color, 0.25);
+    };
     content: '';
   }
 
