@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Accessibility enhancements for Lunr search form.
-- Add SCSS `$intro-image-color-overlay` variable to disable color overlay on hero images. [#55](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/55)
+- Add SCSS `$intro-image-color-overlay` variable to enable color overlay on hero images (disabled by default). [#55](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/55)
 - Add new archive layouts: `categories`, `category`, `collection`, `tag`, and `tags`.
 
 ### Fixed

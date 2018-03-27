@@ -603,10 +603,10 @@ author:
 comments: false  # disable comments on this post
 ```
 
-**Note:** Hero images are overlaid with a transparent "accent" color to unify them with the theme's palette. To disable [customize the CSS](#customizing-sass-scss) with the following Sass variable override:
+**Note:** Hero images can be overlaid with a transparent "accent" color to unify them with the theme's palette. To enable [customize the CSS](#customizing-sass-scss) with the following Sass variable override:
 
 ```scss
-$intro-image-color-overlay: false;
+$intro-image-color-overlay: true;
 ```
 
 ### `layout: page`
