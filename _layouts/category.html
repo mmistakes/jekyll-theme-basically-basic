@@ -4,6 +4,6 @@ layout: page
 
 {{ content }}
 
-<div class="entries">
+<div class="entries-{{ page.entries_layout | default: 'list' }}">
   {% include posts-category.html taxonomy=page.taxonomy %}
 </div>

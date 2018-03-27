@@ -36,7 +36,7 @@ layout: page
     {% if tag[1].size == i %}
       <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy-section">
         <h2 class="taxonomy-title">{{ tag[0] }}</h2>
-        <div class="entries">
+        <div class="entries-{{ page.entries_layout | default: 'list' }}">
           {% for post in tag.last %}
             {% include entry.html %}
           {% endfor %}
