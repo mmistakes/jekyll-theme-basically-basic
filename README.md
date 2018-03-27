@@ -6,9 +6,8 @@
 [![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
 
 Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as 
-a substitute for the default --- [Minima](https://github.com/jekyll/minima). 
-Conventions and features found there are fully supported by **Basically Basic**, 
-with a few enhancements thrown in for good measure:
+a substitute for the default [Minima](https://github.com/jekyll/minima), with a 
+few enhancements thrown in for good measure:
 
 - Clean responsive design with [six customizable skins](#skin)
 - Curriculum Vitæ/Resume layout powered by [JSON data](http://registry.jsonresume.org/)
@@ -651,6 +650,16 @@ resume data to conveniently render a curriculum vitæ or resume painlessly.
 
 Simply use JSON Resume's [in-browser resume builder](http://registry.jsonresume.org/) 
 to export a JSON file and save to your project as `_data/cv.json`.
+
+## Images
+
+Suggested image sizes in pixels are as follows:
+
+| Image | Description | Size |
+| ----- | ----------- | ---- |
+| `page.image.path` | Large full-width document image. | Tall images will push content down the page. `1600 x 600` is a good middle-ground size to aim for. |
+| `page.image` | Short-hand for `page.image.path` when used alone (without `thumbnail`, `caption`, or other variables). | Same as `page.image.path` |
+| `page.image.thumbnail` | Small document image used in grid view. | `400 x 200` |
 
 ## Customization
 
