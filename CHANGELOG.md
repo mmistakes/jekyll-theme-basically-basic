@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Changed
 - Lint JavaScript.
+- Update gemspec to use jekyll-seo-tag version `2.4`. [#47](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/47)
 
 ### Added
 - Accessibility enhancements for Lunr search form.
