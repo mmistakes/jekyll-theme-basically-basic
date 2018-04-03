@@ -1,7 +1,7 @@
 <!--
   Before opening a new issue please:
   
-  - Verify you have the latest versions of Jekyll and Minimal Mistakes 
+  - Verify you have the latest versions of Jekyll and Basically Basic
     installed by running `bundle update`.
   - Thoroughly read the theme's documentation at
     https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/README.md
