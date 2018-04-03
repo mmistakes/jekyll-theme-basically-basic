@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [1.4.0] - 2018-04-02
 
-## Changed
+### Changed
 - Lint JavaScript.
 - Update gemspec to use jekyll-seo-tag version `2.4`. [#47](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/47)
 
