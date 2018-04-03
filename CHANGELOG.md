@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## Unreleased
+## [1.4.0] - 2018-04-02
 
 ## Changed
 - Lint JavaScript.
@@ -13,11 +13,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Accessibility enhancements for Lunr search form.
-- Add SCSS `$intro-image-color-overlay` variable to disable color overlay on hero images. [#55](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/55)
+- Add SCSS `$intro-image-color-overlay` variable to enable color overlay on hero images (disabled by default). [#55](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/55)
+- Add new archive layouts: `posts`, `categories`, `category`, `collection`, `tag`, and `tags`.
+- Add grid layout via `entries_layout: grid` front matter.
+- Add support for image thumbnails vial `image.thumbnail` front matter.
 
 ### Fixed
 - Fix Firefox [flexbox bug](https://bugzilla.mozilla.org/show_bug.cgi?id=939897) when printing pages.
 - Fix search excerpts that run together because of implied spaces.
+- Moved `<footer>` outside of `<main>` to be semantically correct.
 
 ## [1.3.1] - 2018-02-16
 

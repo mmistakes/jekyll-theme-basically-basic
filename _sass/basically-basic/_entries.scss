@@ -27,9 +27,31 @@
   }
 }
 
+.entry-image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 .entry-meta {
   @include fluid-type($min-vw, $max-vw, 12px, 16px);
   margin-bottom: 1rem;
+
+  ul {
+    @include list-unstyled();
+
+    @include breakpoint(max-width $medium) {
+      li {
+        display: inline-block;
+        margin-right: 1.5rem;
+      }
+    }
+
+    @include breakpoint($medium) {
+      li {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
 
   a {
     color: inherit;
@@ -51,7 +73,7 @@
    Entry list
    ========================================================================== */
 
-.entries {
+.entries-list {
   .entry-title {
     word-wrap: break-word; /* break long words that could overflow */
 
@@ -93,23 +115,6 @@
       width: span(5 of 16 last);
       padding-left: gutter(1 of 16);
     }
-
-    ul {
-      @include list-unstyled();
-
-      @include breakpoint(max-width $medium) {
-        li {
-          display: inline-block;
-          margin-right: 1.5rem;
-        }
-      }
-
-      @include breakpoint($medium) {
-        li {
-          padding-bottom: 0.5rem;
-        }
-      }
-    }
   }
 
   > .summary {
@@ -119,6 +124,79 @@
     }
   }
 }
+
+/*
+   Entries Grid Layout
+   ========================================================================== */
+
+   .entries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2em;
+
+    .entry {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-bottom: 0;
+      padding-bottom: 2rem;
+      border-bottom: none;
+    }
+
+    .entry-title {
+      @include fluid-type($min-vw, $max-vw, 18px, 24px);
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+    }
+
+    .entry-excerpt,
+    .entry-content {
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3;
+
+      /* remove space after last child element */
+      > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .entry-excerpt {
+      /* normalize font sizes */
+      > * {
+        font-size: 1em;
+      }
+    }
+
+    .entry-meta {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+      margin-bottom: 1em;
+      font-size: 0.75em;
+
+      ul {
+        li {
+          display: inline-block;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+
+    .more-link {
+      margin-top: -1em;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
 
 .entry-content {
   > p:first-child {

@@ -6,9 +6,8 @@
 [![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
 
 Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as 
-a substitute for the default --- [Minima](https://github.com/jekyll/minima). 
-Conventions and features found there are fully supported by **Basically Basic**, 
-with a few enhancements thrown in for good measure:
+a substitute for the default [Minima](https://github.com/jekyll/minima), with a 
+few enhancements thrown in for good measure:
 
 - Clean responsive design with [six customizable skins](#skin)
 - Curriculum Vitæ/Resume layout powered by [JSON data](http://registry.jsonresume.org/)
@@ -25,49 +24,55 @@ with a few enhancements thrown in for good measure:
 ## Table of Contents
 
 1. [Installation](#installation)
-    1. [Ruby Gem Method](#ruby-gem-method)
-    2. [GitHub Pages Method](#github-pages-method)
-        1. [Remove the Unnecessary](#remove-the-unnecessary)
+   1. [Ruby Gem Method](#ruby-gem-method)
+   2. [GitHub Pages Method](#github-pages-method)
+      1. [Remove the Unnecessary](#remove-the-unnecessary)
 2. [Upgrading](#upgrading)
-    1. [Ruby Gem](#ruby-gem)
-    2. [Remote Theme](#remote-theme)
-    3. [Use Git](#use-git)
-        1. [Pull Down Updates](#pull-down-updates)
-    4. [Update Files Manually](#update-files-manually)
+   1. [Ruby Gem](#ruby-gem)
+   2. [Remote Theme](#remote-theme)
+   3. [Use Git](#use-git)
+      1. [Pull Down Updates](#pull-down-updates)
+   4. [Update Files Manually](#update-files-manually)
 3. [Structure](#structure)
-    1. [Starting Fresh](#starting-fresh)
-    2. [Starting from `jekyll new`](#starting-from-jekyll-new)
+   1. [Starting Fresh](#starting-fresh)
+   2. [Starting from `jekyll new`](#starting-from-jekyll-new)
 4. [Configuration](#configuration)
-    1. [Skin](#skin)
-    2. [Google Fonts](#google-fonts)
-    3. [Text](#text)
-    4. [Navigation](#navigation)
-    5. [Pagination](#pagination)
-    6. [Search](#search)
-        1. [Lunr (default)](#lunr-default)
-        2. [Algolia](#algolia)
-    7. [Author](#author)
-    8. [Reading Time](#reading-time)
-    9. [Comments (via Disqus)](#comments-via-disqus)
-    10. [Google Analytics](#google-analytics)
+   1. [Skin](#skin)
+   2. [Google Fonts](#google-fonts)
+   3. [Text](#text)
+   4. [Navigation](#navigation)
+   5. [Pagination](#pagination)
+   6. [Search](#search)
+      1. [Lunr (default)](#lunr-default)
+      2. [Algolia](#algolia)
+   7. [Author](#author)
+   8. [Reading Time](#reading-time)
+   9. [Comments (via Disqus)](#comments-via-disqus)
+   10. [Google Analytics](#google-analytics)
 5. [Layouts](#layouts)
-    1. [`layout: default`](#layout-default)
-    2. [`layout: post`](#layout-post)
-    3. [`layout: page`](#layout-page)
-    4. [`layout: home`](#layout-home)
-    5. [`layout: about`](#layout-about)
-    6. [`layout: cv`](#layout-cv)
-6. [Customization](#customization)
-    1. [Overriding Includes and Layouts](#overriding-includes-and-layouts)
-    2. [Customizing Sass (SCSS)](#customizing-sass-scss)
-    3. [Customizing JavaScript](#customizing-javascript)
-    4. [SVG Icons](#svg-icons)
-    5. [Customizing Sidebar Content](#customizing-sidebar-content)
-7. [Development](#development)
-8. [Contributing](#contributing)
-    1. [Pull Requests](#pull-requests)
-9. [Credits](#credits)
-10. [License](#license)
+   1. [`layout: default`](#layout-default)
+   2. [`layout: post`](#layout-post)
+   3. [`layout: page`](#layout-page)
+   4. [`layout: home`](#layout-home)
+   5. [`layout: posts`](#layout-posts)
+   6. [`layout: categories`](#layout-categories)
+   7. [`layout: tags`](#layout-tags)
+   8. [`layout: collection`](#layout-collection)
+   9. [`layout: category`](#layout-category)
+   10. [`layout: tag`](#layout-tag)
+   11. [`layout: about`](#layout-about)
+   12. [`layout: cv`](#layout-cv)
+6. [Images](#images)
+7. [Customization](#customization)
+   1. [Overriding Includes and Layouts](#overriding-includes-and-layouts)
+   2. [Customizing Sass (SCSS)](#customizing-sass-scss)
+   3. [Customizing JavaScript](#customizing-javascript)
+   4. [SVG Icons](#svg-icons)
+   5. [Customizing Sidebar Content](#customizing-sidebar-content)
+8. [Development](#development)
+9. [Contributing](#contributing)
+10. [Credits](#credits)
+11. [License](#license)
 
 ## Installation
 
@@ -603,10 +608,10 @@ author:
 comments: false  # disable comments on this post
 ```
 
-**Note:** Hero images are overlaid with a transparent "accent" color to unify them with the theme's palette. To disable [customize the CSS](#customizing-sass-scss) with the following Sass variable override:
+**Note:** Hero images can be overlaid with a transparent "accent" color to unify them with the theme's palette. To enable, [customize the CSS](#customizing-sass-scss) with the following Sass variable override:
 
 ```scss
-$intro-image-color-overlay: false;
+$intro-image-color-overlay: true;
 ```
 
 ### `layout: page`
@@ -624,6 +629,90 @@ addition of the following:
 
 ```yaml
 paginate: true  # enables pagination loop, see section above for additional setup
+entries_layout: # list (default), grid
+```
+
+By default, posts are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter.
+
+### `layout: posts`
+
+This layout displays all posts grouped by the year they were published. It accommodates the same front matter as `layout: page`.
+
+By default, posts are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter.
+
+### `layout: categories`
+
+This layout displays all posts grouped category. It accommodates the same front matter as `layout: page`.
+
+By default, posts are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter.
+
+### `layout: tags`
+
+This layout displays all posts grouped by tag. It accommodates the same front matter as `layout: page`.
+
+By default, posts are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter.
+
+### `layout: collection`
+
+This layout displays all documents grouped by a specific collection. It accommodates the same front matter as `layout: page` with the addition of the following:
+
+```yaml
+collection: # collection name
+entries_layout: # list (default), grid
+show_excerpts: # true (default), false
+sort_by: # date (default) title
+sort_order: # forward (default), reverse
+```
+
+To create a page showing all documents in the `recipes` collection you'd create `recipes.md` in the root of your project and add this front matter:
+
+```yaml
+title: Recipes
+layout: collection
+permalink: /recipes/
+collection: recipes
+```
+
+By default, documents are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter. If you want to sort the collection by title add `sort_by: title`. If you want reverse sorting, add `sort_order: reverse`.
+
+### `layout: category`
+
+This layout displays all posts grouped by a specific category. It accommodates the same front matter as `layout: page` with the addition of the following:
+
+```yaml
+taxonomy: # category name
+entries_layout: # list (default), grid
+```
+
+By default, posts are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter.
+
+To create a page showing all posts assigned to the category `foo` you'd create `foo.md` in the root of your project and add this front matter:
+
+```yaml
+title: Foo
+layout: category
+permalink: /categories/foo/
+taxonomy: foo
+```
+
+### `layout: tag`
+
+This layout displays all posts grouped by a specific tag. It accommodates the same front matter as `layout: page` with the addition of the following:
+
+```yaml
+taxonomy: # tag name
+entries_layout: # list (default), grid
+```
+
+By default, posts are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter.
+
+To create a page showing all posts assigned to the tag `foo bar` you'd create `foo-bar.md` in the root of your project and add this front matter:
+
+```yaml
+title: Foo Bar
+layout: tag
+permalink: /tags/foo-bar/
+taxonomy: foo bar
 ```
 
 ### `layout: about`
@@ -651,6 +740,17 @@ resume data to conveniently render a curriculum vitæ or resume painlessly.
 
 Simply use JSON Resume's [in-browser resume builder](http://registry.jsonresume.org/) 
 to export a JSON file and save to your project as `_data/cv.json`.
+
+## Images
+
+Suggested image sizes in pixels are as follows:
+
+| Image | Description | Size |
+| ----- | ----------- | ---- |
+| `page.image.path` | Large full-width document image. | Tall images will push content down the page. `1600 x 600` is a good middle-ground size to aim for. |
+| `page.image` | Short-hand for `page.image.path` when used alone (without `thumbnail`, `caption`, or other variables). | Same as `page.image.path` |
+| `page.image.thumbnail` | Small document image used in grid view. | `400 x 200` |
+| `author.picture` | Author page image. | `300 x 300` |
 
 ## Customization
 

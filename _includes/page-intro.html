@@ -12,7 +12,7 @@
 
   <div class="inner">
     <div class="intro-text">
-      <h1 class="intro-title">{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</h1>
+      <h1 id="page-title" class="intro-title">{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</h1>
       {% if page.sub_title %}
         <p class="intro-subtitle">{{ page.sub_title | markdownify | strip_html }}</p>
       {% endif %}
