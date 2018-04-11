@@ -1,4 +1,7 @@
 <header class="intro">
+  {% if page.intro_asset %}
+    {{ page.intro_asset | markdownify }}
+  {% endif %}
   {% if page.image %}
     {% assign intro_image = page.image.path | default: page.image %}
     {% unless intro_image contains '://' %}
