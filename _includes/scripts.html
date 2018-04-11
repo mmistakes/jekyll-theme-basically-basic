@@ -13,3 +13,7 @@
       {% include search/algolia-search-scripts.html %}
   {%- endcase -%}
 {% endif %}
+
+{% for script in page.scripts %}
+  <script src="{% if script contains "://" %}{{ script }}{% else %}{{ '/assets/javascripts/' | append: script | relative_url }}{% endif %}"></script>
+{% endfor %}

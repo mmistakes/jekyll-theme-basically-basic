@@ -32,4 +32,8 @@
     {% endcomment %}
     {% include head-feed.html %}
   {% endif %}
+
+  {% for style in page.styles %}
+    <link rel="stylesheet" href="{% if script contains "://" %}{{ style }}{% else %}{{ '/assets/stylesheets/' | append: style | relative_url }}{% endif %}">
+  {% endfor %}
 </head>
