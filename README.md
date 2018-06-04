@@ -133,7 +133,6 @@ branch off of `master`. For more details on how to set things up check
 If you forked or downloaded the `jekyll-theme-basically-basic` repo you can 
 safely remove the following files and folders:
 
-- `.codeclimate.yml`
 - `.editorconfig`
 - `.gitattributes`
 - `.github`
