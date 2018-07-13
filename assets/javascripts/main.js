@@ -60,9 +60,11 @@ myMenu.addEventListener('click', function () {
   toggleClassMenu();
   animateMenuItems();
 }, false);
-mySearchToggle.addEventListener('click', function () {
-  toggleClassSearch();
-}, false);
+if (mySearchToggle) {
+  mySearchToggle.addEventListener('click', function () {
+    toggleClassSearch();
+  }, false);
+}
 
 // Toggle search input and content visibility
 function toggleClassSearch() {
