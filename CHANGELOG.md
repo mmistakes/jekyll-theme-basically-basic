@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Adjust default skin colors to meet WCAG 2 AA. [#68](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/68)
 
 ### Fixed
+- Remove extra footer from cv.html `layout`. [#69](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/69)
 - Fix JavaScript error when search is not enabled. [#66](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/66)
 
 ## [1.4.0] - 2018-04-02
