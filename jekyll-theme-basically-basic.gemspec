@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name                    = "jekyll-theme-basically-basic"
-  spec.version                 = "1.4.0"
+  spec.version                 = "1.4.1"
   spec.authors                 = ["Michael Rose"]
 
   spec.summary                 = %q{Your new Jekyll default theme.}

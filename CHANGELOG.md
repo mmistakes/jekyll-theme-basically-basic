@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased] -
+## [1.4.1] - 2018-08-07
 
 ### Added
 - Add sample "404 not found page" to `/docs/404.html` and `/example/404.html`. [#12](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/12)
