@@ -1,6 +1,6 @@
 # [Basically Basic Jekyll Theme][1]
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/LICENSE.md)
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/)
 [![Ruby gem](https://img.shields.io/gem/v/jekyll-theme-basically-basic.svg)](https://rubygems.org/gems/jekyll-theme-basically-basic)
 [![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
@@ -139,7 +139,7 @@ safely remove the following files and folders:
 - `.scss-lint.yml`
 - `CHANGELOG.md`
 - `jekyll-theme-basically-basic.gemspec`
-- `LICENSE.md`
+- `LICENSE`
 - `Rakefile`
 - `README.md`
 - `screenshot.png`
@@ -159,7 +159,7 @@ site and you should something similar to:
     Basically Basic Jekyll Theme 1.2.0
     Copyright 2017-2018 Michael Rose - mademistakes.com | @mmistakes
     Free for personal and commercial use under the MIT license
-    https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE.md
+    https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE
 -->
 ```
 
