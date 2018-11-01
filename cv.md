@@ -11,17 +11,3 @@ actions:
 
 Game, App, Interaction Developer<br>
 게임, 앱, 인터렉션 개발자<br>
-
-## Contact
-**Email** : taehyung0116@gmail.com <br>
-**Kakaotalk** : rosewrite
-
-## Work
-**(주)영우씨엔아이**
-2018.05 ~ 
-
-**(주)마인더스**
-2018.04 ~ 2018.05
-
-**d.AntWort.Inc**
-2016.09 ~ 2018.01
