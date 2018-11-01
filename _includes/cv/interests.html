@@ -12,9 +12,13 @@
         {% if a.date %}
           <div class="date">{{ a.date }}</div>
         {% endif %}
-        {% if a.summary %}
-          <div class="summary">{{ a.summary | markdownify }}</div>
-        {% endif %}
+        {% if v.highlights %}
+        <ul class="highlights">
+          {% for highlight in v.highlights %}
+            <li>{{ highlight }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
