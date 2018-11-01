@@ -12,9 +12,9 @@
         {% if a.date %}
           <div class="date">{{ a.date }}</div>
         {% endif %}
-        {% if v.highlights %}
+        {% if a.highlights %}
         <ul class="highlights">
-          {% for highlight in v.highlights %}
+          {% for highlight in a.highlights %}
             <li>{{ highlight }}</li>
           {% endfor %}
         </ul>
