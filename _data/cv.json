@@ -45,7 +45,7 @@
     {
       "organization": "코딩클럽 Coding Club",
       "position": "4기 선생님",
-      "website": "codingclubs.org",
+      "website": "http://codingclubs.org/?fbclid=IwAR2qv1wRpRnOcyMkGwg84zOWMaNZKmJqop3Kj1XYzEErCFG9UBE2yZgdJEY",
       "startDate": "2017-03",
       "endDate": "2017-06",
       "summary": "초중등 학생들에게 스크래치와 앱인벤터 교육 진행",
@@ -55,15 +55,13 @@
   ],
   "education": [
     {
-      "institution": "University of Ointment",
-      "area": "Digital Skillets",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
+      "institution": "호서대학교",
+      "area": "게임학과",
+      "studyType": "4학년 1학기 수료",
+      "startDate": "2013-02",
+      "endDate": "2016-06",
+      "gpa": "3.8",
       "courses": [
-        "DB1101 - Perpendicular Crosstalk",
-        "CS2011 - Introduction to Moisturization"
       ]
     }
   ],
