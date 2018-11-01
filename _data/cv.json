@@ -185,11 +185,49 @@
     },
     {
       "title": "GOOD GAME SHOW KOREA 2015",
-      "date": "2015.05.29 ~ 2015.05.31",
+      "date": "2015.05.29 ─ 2015.05.31",
       "highlights": [
         "노인들의 치매예방과 운동증진을 위한 기능성 게임 프로젝트 '팔도강산3' 부스 운영",
         "유니티와 키넥트를 사용한 프로젝트",
         "KBS 뉴스 취재 : http://news.kbs.co.kr/news/view.do?ref=A&ncd=3085561"
+      ]
+    },
+    {
+      "title": "2016 PlayX4(플레이엑스포)",
+      "date": "2016.05.19 ─ 2016.05.22",
+      "highlights": [
+        "노인들의 치매예방과 운동증진을 위한 기능성 게임 프로젝트 '팔도강산4' 부스 운영",
+        "유니티와 키넥트를 사용한 프로젝트"
+      ]
+    },
+    {
+      "title": "G-NEXT GAME JAM",
+      "date": "2016.08.12 ─ 2016.08.14",
+      "highlights": [
+        "참여자들 간에 팀을 구성해 48시간동안 '여름' 이라는 주제로 게임을 만듦.",
+        "프로젝트 파일 : https://gamejolt.com/games/the-world-of-awesome-juice/178254"
+      ]
+    },
+    {
+      "title": "Global Applied Game Jam 2016",
+      "date": "2016.08.24 ─ 2016.08.26",
+      "highlights": [
+        "포항공대에서 열린 48시간동안 주어진 주제로 게임을 만드는 행사",
+        "당시 행사 미션용으로 사용했던 페이스북 페이지 : https://www.facebook.com/GameJam2016MultiTap/"
+      ]
+    },
+    {
+      "title": "한국게임학회 논문 등재",
+      "date": "2016.10",
+      "highlights": [
+        "[‘키넥트2’를 이용한 노인용 걷기게임 ‘팔도강산4’의 개발] 논문 등재"
+      ]
+    },
+    {
+      "title": "IF 2017",
+      "date": "2017.09.16 ─ 2017.09.17",
+      "highlights": [
+        "'JEJU TOVR 360 Renewal' 부스 운영"
       ]
     }
   ]
