@@ -43,14 +43,13 @@
   ],
   "volunteer": [
     {
-      "organization": "Steve's Meat Market",
-      "position": "Assistant",
-      "website": "",
-      "startDate": "1995-01-01",
-      "endDate": "1997-03-20",
-      "summary": "Ground up some sort of grasshopper mash for fishing.",
+      "organization": "코딩클럽 Coding Club",
+      "position": "4기 선생님",
+      "website": "codingclubs.org",
+      "startDate": "2017-03",
+      "endDate": "2017-06",
+      "summary": "초중등 학생들에게 스크래치와 앱인벤터 교육 진행",
       "highlights": [
-        "Awarded a 'Helium Biscuit'"
       ]
     }
   ],
