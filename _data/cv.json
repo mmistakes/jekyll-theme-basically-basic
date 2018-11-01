@@ -61,6 +61,8 @@
       "summary": "제주도 핫스팟을 360도 카메라로 찍어, VR로 볼 수 있도록 앱 개발",
       "highlights": [
         "JEJU TOVR 360: Android, iOS 앱 개발",
+        "Android: https://play.google.com/store/apps/details?id=com.dantwort.JEJOTOVR&hl=ko",
+        "iOS: https://itunes.apple.com/kr/app/제주여행-필수앱-여행정보는-제주투브이알/id1225792334?mt=8(https://itunes.apple.com/kr/app/제주여행-필수앱-여행정보는-제주투브이알/id1225792334?mt=8)",
         "화성 동탄 신도시 전시용 VR 앱 개발"
       ]
     }   
@@ -91,37 +93,55 @@
   ],
   "awards": [
     {
-      "title": "Warble Pioneer Award",
-      "date": "2001-11-01",
-      "awarder": "Levi Goulet",
-      "summary": "Have you seen my turtle?"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Radio Julius",
-      "publisher": "Tanyo Lubbock",
-      "releaseDate": "2014-10-01",
-      "website": "https://en.rhy.es",
-      "summary": "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test."
+      "title": "KOREA VR FESTIVAL 2017 NIPA 원장상",
+      "date": "2017-09-20",
+      "awarder": "NIPA(정보통신산업진흥원)",
+      "summary": "JEJUTOVR 360으로 NIPA 원장상 수상"
     }
   ],
   "skills": [
     {
-      "name": "Audio Juggling",
-      "level": "Master",
+      "name": "Unity",
+      "level": "Expert",
       "keywords": [
-        "Ointment",
-        "Voltor",
-        "Millipedes"
+        "Game",
+        "App",
+        "Interaction"
       ]
     },
     {
-      "name": "Bruschotti",
-      "level": "Satisfactory",
+      "name": "Database",
+      "level": "Beginner",
       "keywords": [
-        "Snow camp",
-        "Owl"
+        "Postgresql",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Server",
+      "level": "Beginner",
+      "keywords": [
+        "C# Socket"
+      ]
+    },
+    {
+      "name": "AWS",
+      "level": "Beginner",
+      "keywords": [
+        "EC2",
+        "RDS",
+        "S3"
+      ]
+    },
+    {
+      "name": "Language",
+      "level": "IDK",
+      "keywords": [
+        "C",
+        "C++",
+        "C#",
+        "Solidity",
+        "Swift"
       ]
     }
   ],
