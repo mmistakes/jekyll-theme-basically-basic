@@ -143,7 +143,23 @@
         "Solidity",
         "Swift"
       ]
-    }
+    },
+    {
+      "name": "Firebase",
+      "level": "IDK",
+      "keywords": [
+        "Push Notification",
+        "Analytics",
+        "Deep Link"
+      ]
+    },
+    {
+      "name": "VR",
+      "level": "IDK",
+      "keywords": [
+        "Google Cardboard"
+      ]
+    }     
   ],
   "languages": [
     {
