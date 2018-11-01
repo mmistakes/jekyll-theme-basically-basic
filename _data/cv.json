@@ -29,17 +29,41 @@
   },
   "work": [
     {
-      "company": "The Whip",
-      "position": "CEO/President",
-      "website": "https://thewh.ip",
-      "startDate": "2013-12-01",
+      "company": "(주)영우씨엔아이",
+      "position": "연구개발부 사원",
+      "website": "http://www.texclub.com/",
+      "startDate": "2018-05-08",
       "endDate": "",
-      "summary": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+      "summary": "정보처리 산업기능요원",
       "highlights": [
-        "Concealed nipper in embrodiery.",
-        "Dealt with Elastical Gomez on a daily basis."
+        "Unity를 활용해 편직물의 일종인 트리코트와 더블라셀을 설계하고, 설계된 데이터를 바탕으로 3D 시뮬레이션해주는 프로그램 개발",
+        "Swift와 Beacon을 활용해 스마트 파우치 앱 개발"
       ]
-    }
+    },
+    {
+      "company": "(주)마인더스",
+      "position": "R&D팀 팀장",
+      "website": "http://www.minders.co.kr/",
+      "startDate": "2018-04-02",
+      "endDate": "2018-05-04",
+      "summary": "병역특례로 인한 퇴사",
+      "highlights": [
+        "뇌파 센서의 데이터를 활용해 Unity로 프로그램을 제작할 수 있도록 플러그인 제작",
+        "데이터를 저장할 서버와 DB 구축"
+      ]
+    },
+    {
+      "company": "d.AntWort Inc",
+      "position": "Content • Platform developer",
+      "website": "http://www.d-antwort.com/",
+      "startDate": "2016-09-01",
+      "endDate": "2018-01-31",
+      "summary": "제주도 핫스팟을 360도 카메라로 찍어, VR로 볼 수 있도록 앱 개발",
+      "highlights": [
+        "JEJU TOVR 360: Android, iOS 앱 개발",
+        "화성 동탄 신도시 전시용 VR 앱 개발"
+      ]
+    }   
   ],
   "volunteer": [
     {
