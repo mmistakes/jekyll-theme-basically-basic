@@ -32,7 +32,7 @@
       "company": "영우씨엔아이",
       "position": "연구개발부 사원",
       "website": "http://www.texclub.com/",
-      "startDate": "2018-05-08",
+      "startDate": "2018.05.08",
       "endDate": "",
       "summary": "정보처리 산업기능요원",
       "highlights": [
@@ -44,8 +44,8 @@
       "company": "마인더스",
       "position": "R&D팀 팀장",
       "website": "http://www.minders.co.kr/",
-      "startDate": "2018-04-02",
-      "endDate": "2018-05-04",
+      "startDate": "2018.04.02",
+      "endDate": "2018.05.04",
       "summary": "병역특례로 인한 퇴사",
       "highlights": [
         "뇌파 센서의 데이터를 활용해 Unity로 프로그램을 제작할 수 있도록 플러그인 제작",
@@ -56,8 +56,8 @@
       "company": "d.AntWort Inc",
       "position": "Content • Platform developer",
       "website": "http://www.d-antwort.com/",
-      "startDate": "2016-09-01",
-      "endDate": "2018-01-31",
+      "startDate": "2016.09.01",
+      "endDate": "2018.01.31",
       "summary": "제주도 핫스팟을 360도 카메라로 찍어, VR로 볼 수 있도록 앱 개발",
       "highlights": [
         "JEJU TOVR 360: Android, iOS 앱 개발",
@@ -72,8 +72,8 @@
       "organization": "코딩클럽 Coding Club",
       "position": "4기 선생님",
       "website": "http://codingclubs.org/?fbclid=IwAR2qv1wRpRnOcyMkGwg84zOWMaNZKmJqop3Kj1XYzEErCFG9UBE2yZgdJEY",
-      "startDate": "2017-03",
-      "endDate": "2017-06",
+      "startDate": "2017.03",
+      "endDate": "2017.06",
       "summary": "초중등 학생들에게 스크래치와 앱인벤터 교육 진행",
       "highlights": [
       ]
@@ -84,8 +84,8 @@
       "institution": "호서대학교",
       "area": "게임학과",
       "studyType": "4학년 1학기 수료",
-      "startDate": "2013-02",
-      "endDate": "2016-06",
+      "startDate": "2013.02",
+      "endDate": "2016.06",
       "gpa": "3.8",
       "courses": [
       ]
@@ -94,7 +94,7 @@
   "awards": [
     {
       "title": "KOREA VR FESTIVAL 2017 NIPA 원장상",
-      "date": "2017-09-20",
+      "date": "2017.09.20",
       "awarder": "NIPA(정보통신산업진흥원)",
       "summary": "JEJUTOVR 360으로 NIPA 원장상 수상"
     }
