@@ -37,7 +37,7 @@ algolia:
 
 # Disqus
 disqus: true
-disqus_id: catsirup
+disqus_shortname: catsirup
 
 # Build settings
 markdown: kramdown
