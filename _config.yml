@@ -37,7 +37,8 @@ algolia:
 
 # Disqus
 disqus: true
-disqus_shortname: catsirup
+disqus_url: taehyung0116@gmail.com
+disqus_id: catsirup
 
 # Build settings
 markdown: kramdown
