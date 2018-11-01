@@ -6,6 +6,7 @@ layout: about
 ![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/profile.jpg){: .align-right}
 
 **Skills**
+
 - 주력 언어로 C/C++/C# 사용합니다.
 - Unity를 사용한 다수 프로젝트 제작 경험 및 출시 경험이 있습니다.
 - Swift를 활용한 iOS 앱 개발 경험이 있습니다.
