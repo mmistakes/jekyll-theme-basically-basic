@@ -22,14 +22,6 @@
         {% if e.area %}
           <div class="area"><strong>{{ e.area }}{% if e.studyType %}<span class="studyType">{{ e.studyType | prepend: ', ' }}</span>{% endif %}</strong>{% if e.gpa %}<span class="gpa">{{ e.gpa | prepend: ' (' | append: ' GPA)' }}</span>{% endif %}</div>
         {% endif %}
-        {% if e.courses %}
-          <h5 class="courses-title">Courses</h5>
-          <ul class="courses">
-            {% for course in e.courses %}
-              <li>{{ course }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
       {% endfor %}
     </div>
   </div>
