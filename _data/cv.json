@@ -175,13 +175,11 @@
       "fluency": "간단한 회화 가능"
     }
   ],
-  "interests": [
+  "others": [
     {
-      "name": "The Information Superhighway",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
+      "title": "MAROSOFT 프로그래밍 팀장",
+      "date": "2014.09 ~ 2014.12",
+      "summary": "학과 내 학술 동아리 '마로소프트'에서 프로그래밍 팀장으로 부원들에게 프로그래밍 교육 및 지도."
     }
   ]
 }
