@@ -127,8 +127,16 @@
   ],
   "languages": [
     {
-      "language": "Nonsense",
-      "fluency": "Native speaker"
+      "language": "한국어",
+      "fluency": "매우 유창하게 함"
+    }, 
+    {
+      "language": "영어",
+      "fluency": "조금 느리지만 비즈니스 사용 가능"
+    }, 
+    {
+      "language": "일본어",
+      "fluency": "간단한 회화 가능"
     }
   ],
   "interests": [
