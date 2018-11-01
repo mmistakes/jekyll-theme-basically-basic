@@ -16,14 +16,14 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "Towlette_Pettetucci",
-        "url": "https://twitter.com/Towlette_Pettetucci"
+        "network": "Facebook",
+        "username": "writecameo",
+        "url": "https://www.facebook.com/writecameo"
       },
       {
-        "network": "SoundCloud",
-        "username": "Towlette_Pettetucci",
-        "url": "https://soundcloud.com/Towlette_Pettetucci"
+        "network": "GitHub",
+        "username": "catSirup",
+        "url": "https://github.com/catSirup"
       }
     ]
   },
