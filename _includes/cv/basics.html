@@ -16,9 +16,6 @@
     {% if cv.basics.kakaotalk %}
       <div class="kakaotalk"><strong>Kakaotalk</strong> {{ cv.basics.kakaotalk }}</div>
     {% endif %}
-    {% if cv.basics.website %}
-      <div class="website"><strong>Website</strong> <a href="{{ cv.basics.website }}">{{ cv.basics.website }}</a></div>
-    {% endif %}
     {% if cv.basics.profiles %}
       {% for p in cv.basics.profiles %}
         <div class="item">
