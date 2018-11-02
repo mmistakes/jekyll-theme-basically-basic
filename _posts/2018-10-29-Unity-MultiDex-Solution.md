@@ -10,7 +10,7 @@ tags:
   - Develop
   - Android
   - MultiDex
-cover:
+image: /assets/images/Multidex/m1.PNG
 comments: true
 ---
 
