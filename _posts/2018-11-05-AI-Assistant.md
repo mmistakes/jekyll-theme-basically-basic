@@ -33,7 +33,7 @@ cover:
 2018년 5월 8일, 구글 I/O 개발자 컨퍼런스에서 **듀플렉스(Duplex)** 가 공개됐을 때, 경악을 금치 못했다. 여태껏 봐왔던 AI 비서와는 차원이 달랐다.
 <iframe width="1278" height="719" src="https://www.youtube.com/embed/bd1mEm2Fy08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 
-Google Now에서 업그레이드 된 Google Assistant로 미용실 약속을 사용자가 잡아놓으면, Google Assistant가 미용실에 직접 전화를 걸어 미용사와 통화를 해 예약을 잡아주는 방식이었다. 더욱 놀라웠던 것은 대화 중 긍정을 뜻하는 '으흠' 이나 잠시 머뭇거리는 '음...' 등을 사용해 실제 사람처럼 말을 했다.
+Google Now에서 업그레이드 된 Google Assistant로 미용실 약속을 사용자가 잡아놓으면, Google Assistant가 미용실에 직접 전화를 걸어 미용사와 통화를 해 예약을 잡아주는 방식이었다. 더욱 놀라웠던 것은 대화 중 긍정을 뜻하는 '으흠' 이나 잠시 머뭇거리는 '음...' 등을 사용해 실제 사람처럼 말을 했다.<br>
 ![Change World preview][1]
 
 [1]: https://1.bp.blogspot.com/-WdgRuOg6lwc/WvEZTDLYg_I/AAAAAAAACsM/QNLSl4Yid9wKij_2KNpCRiXjiyeptu9vgCLcBGAs/s640/rnn_big.png (preview)
