@@ -43,6 +43,6 @@ Google Now에서 업그레이드 된 Google Assistant로 미용실 약속을 사
 AI 비서는 우리 생활에서 스마트폰으로 날씨를 알려주던 기능부터 홈 오토메이션이 되는 스마트 스피커, 그리고 이젠 미용실이나 레스토랑까지 전화해서 예약을 해주는 수준까지 발달했다. 이제 AI 음성 비서는 스마트폰, 스피커를 넘어 가정용 기기나 자동차 등 다양한 디바이스 분야로 영역을 확대한다고 한다. 앞서 이야기했듯 "음성"을 이용하는 것은 인간과 컴퓨터의 상호작용에 가장 이상적인 인터페이스기 때문이다. 스마트폰의 등장으로 휴대전화의 패러다임이 바뀌었듯이 AI를 기반으로 한 음성 비서의 확산은 향후 대부분의 HW 기기 산업 발전 방향에 커다란 영향을 줄 것이다. 이제 우리는 냉장고와도 음성으로 대화를 해 필요한 재료를 주문할 수도 있을 것이고, 자동차에 음성으로 길을 묻는 세상이 도래할 것이다.
 
 ## 참고
-1) 음성인식 AI 비서 시장의 현황과 시사점. 최지혜, 이선희<br>
-2) 플랫폼으로 진화하는 인공지능(AI) 음성비서. 조성선, 김용균<br>
-3) [https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html](https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html)
+- 음성인식 AI 비서 시장의 현황과 시사점. 최지혜, 이선희
+- 플랫폼으로 진화하는 인공지능(AI) 음성비서. 조성선, 김용균
+- [https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html](https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html)
