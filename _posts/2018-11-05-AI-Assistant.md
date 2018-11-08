@@ -23,7 +23,7 @@ cover:
 ## 스마트폰을 넘어서 집 안에 AI 비서가 생기다.
 시리 이후 뚜렷한 진전이 없던 음성 비서 분야에서 "Always ready, connected, and fast. Just Ask" 라는 문구와 함께 2014년 11월 아마존에서 스마트 스피커 "에코"가 등장했다. 
 
-<iframe width="1278" height="719" src="https://www.youtube.com/embed/FQn6aFQwBQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="639" height="310" src="https://www.youtube.com/embed/FQn6aFQwBQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 "알렉사" 라는 별명을 가진 음성 인식 비서가 내장된 스마트 스피커였다. 시리처럼 날씨, 시간 뿐만 아니라 그 날의 주요 뉴스 브리핑, 스포츠 게임 결과, 심지어 홈 오토메이션(블루투스나 와이파이로 조절할 수 있는 물건들)이 되는 게 가능하도록 디자인 된 전등, 전원 스위치는 알렉사가 해결해줄 수 있었다. 잠자리에 누웠다가 전원을 끄기 위해 다시 일어나야 하는 불편함 대신, "불 꺼(turn the light off)" 한 마디로 해결할 수 있었다. 
 
@@ -31,7 +31,7 @@ cover:
 
 ## AI 음성 비서가 직접 전화를 걸어 미용실을 예약했다.
 2018년 5월 8일, 구글 I/O 개발자 컨퍼런스에서 **듀플렉스(Duplex)** 가 공개됐을 때, 경악을 금치 못했다. 여태껏 봐왔던 AI 비서와는 차원이 달랐다.
-<iframe width="1278" height="719" src="https://www.youtube.com/embed/bd1mEm2Fy08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+<iframe width="639" height="310" src="https://www.youtube.com/embed/bd1mEm2Fy08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 
 Google Now에서 업그레이드 된 Google Assistant로 미용실 약속을 사용자가 잡아놓으면, Google Assistant가 미용실에 직접 전화를 걸어 미용사와 통화를 해 예약을 잡아주는 방식이었다. 더욱 놀라웠던 것은 대화 중 긍정을 뜻하는 '으흠' 이나 잠시 머뭇거리는 '음...' 등을 사용해 실제 사람처럼 말을 했다.<br>
 ![Change World preview][1]
