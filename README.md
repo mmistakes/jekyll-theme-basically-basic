@@ -16,6 +16,10 @@ few enhancements thrown in for good measure:
 - Disqus Comments and Google Analytics support
 - SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
 
+**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) for developing and maintaining it.**
+
+[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
+
 [![Basically Basic live preview][2]][1]
 
 [1]: https://mmistakes.github.io/jekyll-theme-basically-basic/
