@@ -12,6 +12,6 @@ tags:
   - 컬럼
 cover:
 ---
-<iframe width="639" height="310" src="https://www.youtube.com/watch?v=33pp4CLJhms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+<iframe width="639" height="310" src="https://www.youtube.com/embed/33pp4CLJhms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 
 본 영상은 [AI 음성비서, 어디까지 왔을까?](https://catsirup.github.io/ai/2018/11/08/AI-Assistant.html)를 바탕으로 제작한 영상입니다.
