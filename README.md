@@ -53,6 +53,7 @@ few enhancements thrown in for good measure:
    8. [Reading Time](#reading-time)
    9. [Comments (via Disqus)](#comments-via-disqus)
    10. [Google Analytics](#google-analytics)
+   11. [Copyright](#copyright)
 5. [Layouts](#layouts)
    1. [`layout: default`](#layout-default)
    2. [`layout: post`](#layout-post)
@@ -558,6 +559,18 @@ to `_config.yml` like so:
 
 Similar to comments, the Google Analytics tracking script will only appear in 
 production when using the following environment value: `JEKYLL_ENV=production`.
+
+### Copyright
+
+By default the copyright line in the footer displays the current year 
+(at build time) followed by your site's title. e.g. `© 2018 Basically Basic.`
+
+If you would like to change this add `copyright` to your `_config.yml` file 
+with appropriate text:
+
+```yaml
+copyright: "My custom copyright."
+```
 
 ## Layouts
 
