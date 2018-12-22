@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- Document `site.copyright` override for customizing footer copyright text.
+
 ### Changed
 - Update GitHub issue templates.
 
