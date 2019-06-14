@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 lang: en-US
 title: Autumnhui
-email:
-description:
+email:autumnhui@outlook.com
+description:Here is decription.
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
