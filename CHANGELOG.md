@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Document `site.copyright` override for customizing footer copyright text.
 
 ### Changed
+- Update links to LICENSE. [#102](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/102)
 - Update GitHub issue templates.
 
 ### Fixed
