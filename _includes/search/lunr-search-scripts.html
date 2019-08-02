@@ -86,7 +86,7 @@
             })
           });
         resultdiv.empty();
-        resultdiv.prepend('<p id="results-count" class="results-found">' + result.length + ' {{ site.data.theme.t.menu.results_found | default: "Result(s) found" }}</p>');
+        resultdiv.prepend('<p id="results-count" class="results-found">' + result.length + ' {{ site.data.theme.t.results_found | default: "Result(s) found" }}</p>');
         for (var item in result) {
           var ref = result[item].ref;
           var searchitem =

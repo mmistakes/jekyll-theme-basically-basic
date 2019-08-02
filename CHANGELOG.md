@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Update GitHub issue templates.
 
 ### Fixed
+- Fix theme text strings for `search_placeholder_text` and `results_found`. [#104](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/104)
 - Remove stray `console.log` from lunr-search-scripts [#105](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/105)
 - Add missing `/` in icon-gitlab.html. [#80](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/80)
 
