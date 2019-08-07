@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+
+### Fixed
+- Fix MIME-type issues with Lunr search by renaming `search-data.json` to `lunr/lunr.store.js`. [#82](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/82)
+
 ## [1.4.2] - 2019-07-18
 
 ### Added
