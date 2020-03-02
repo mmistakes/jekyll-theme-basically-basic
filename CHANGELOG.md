@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased] -
+
+### Fixed
+- Fix rake vulnerability in `.gemspec` file.
+
 ## [1.4.4] - 2019-08-20
 
 ### Fixed
