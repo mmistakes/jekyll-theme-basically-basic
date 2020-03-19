@@ -1,6 +1,9 @@
 ---
 title: "About"
 layout: about
+author:
+  name: Mithil Vakde
+  picture: /assets/images/300x300.png
 ---
 
 Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default --- [Minima](https://github.com/jekyll/minima). Conventions and features found there are fully supported by **Basically Basic**, with a few enhancements thrown in for good measure:
