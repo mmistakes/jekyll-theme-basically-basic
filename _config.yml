@@ -71,8 +71,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-#   - /docs # ignore Basically Basic sample site
-#   - /example # ignore Basically Basic dev site
 
 # Front Matter Defaults
 defaults:
