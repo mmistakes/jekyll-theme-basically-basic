@@ -16,4 +16,5 @@ I'm a dancer, a drummer and I play volleball as an outside hitter (hoping to mak
 I love Physics, Mathematics and the general pursuit of knowledge.
 
 ### Currently Working on  
-Making an OCR on images captured by a drone in natural backgrounds.
+Making an OCR on images captured by a drone in natural backgrounds.  
+Making this Website.
