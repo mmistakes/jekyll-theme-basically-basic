@@ -1,9 +1,6 @@
 ---
 title: "About Me"
 layout: about
-author:
-  name: Mithil Vakde
-  picture: /assets/images/300x300 .png
 ---
 
 Ha! You fell for the ol' reverse psych trick.
