@@ -15,6 +15,7 @@ I'm an undergrad pursuing a B.Tech in Chemical Engineering at IIT Bombay. (Might
 ### Hobbies  
 I'm a dancer, a drummer and I play volleball as an outside hitter (hoping to make it to the college team).   
 I love Physics, Mathematics and the general pursuit of knowledge.
+Devouring novels is one of my pasttime (except Dostoevsky. Way too long) along with making puns and finding anagrams.
 
 ### Currently Working on  
 Making an OCR on images captured by a drone in natural backgrounds.  
@@ -25,4 +26,4 @@ A few other things that are kept secret _for now_.
 Lorem ipsum.
 
 Hit me up if you wanna talk about Lorem Ipsum  
-Conversations are a welcome distraction from the _fine game of nil._
+Conversations are a welcome distraction from *the fine game of nil
