@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Me"
 layout: about
 author:
   name: Mithil Vakde
