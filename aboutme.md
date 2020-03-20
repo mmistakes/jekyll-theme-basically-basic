@@ -29,5 +29,5 @@ A few other things that are kept secret _for now_.
 Lorem ipsum.
 
 
-Hit me up if you wanna talk about .....
+Hit me up if you wanna talk about .....  
 Conversations are always a welcome distraction from the _**fine game of nil.**_
