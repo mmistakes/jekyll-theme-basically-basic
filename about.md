@@ -6,12 +6,14 @@ author:
   picture: /assets/images/300x300 .png
 ---
 
-Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default --- [Minima](https://github.com/jekyll/minima). Conventions and features found there are fully supported by **Basically Basic**, with a few enhancements thrown in for good measure:
+My name is Mithil Vakde.  
+I'm an undergrad pursuing a B.Tech in Chemical Engineering at IIT Bombay. (Might change to Engineering Physics in the near future)   
+Currently, I work in the Machine Learning Subdivision at Innovation Cell, IIT Bombay.  
+You can find me at the UMIC lab or at the Volleyball court.
 
-- Clean responsive design with [six customizable skins](#skin)
-- Curriculum Vitæ/Resume layout powered by [JSON data](http://registry.jsonresume.org/)
-- About page layout
-- Disqus Comments and Google Analytics support
-- SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
+### Hobbies  
+I'm a dancer, a drummer and I play volleball as an outside hitter (hoping to make it to the college team).   
+I love Physics, Mathematics and the general pursuit of knowledge.
 
-You can find the source code for this theme at: {% include icon-github.html username="mmistakes" %}/[jekyll-theme-basically-basic](https://github.com/mmistakes/jekyll-theme-basically-basic)
+### Currently Working on  
+Making an OCR on images captured by a drone in natural backgrounds.
