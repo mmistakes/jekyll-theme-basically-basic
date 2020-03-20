@@ -10,4 +10,4 @@ actions:
 Hey! I'm still in the process of constructing this website.  
 Stop peeking into my private work!
 
-P.S, there's an about me section if you wanna know me _*wink_
+And whatever you do, **don't** go to the "About Me" Page.
