@@ -4,8 +4,8 @@ layout: about
 ---
 
 Ha! You fell for the ol' reverse psych trick.  
-So, interested to know me? *wink*  
-Read on then.
+So, interested to know me?  
+Read on then. *wink*
   
   
   
