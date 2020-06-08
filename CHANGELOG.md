@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased] -
 
 ### Fixed
+- Add `relative_url` filter to author profile image. [#125](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/125)
 - Fix rake vulnerability in `.gemspec` file.
 
 ## [1.4.4] - 2019-08-20
