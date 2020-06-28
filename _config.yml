@@ -13,20 +13,21 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+remote_theme: "mmistakes/jekyll-theme-basically-basic"
 lang: en-US
-title: My Awesome Site
-email:
-description:
+title: Kiiroi Tori Kago Datshutsu
+email: 079111w@gmail.com
+description: Nouriue no Memochou
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-author:
-  name:
-  twitter:
+url: "https://binchoo.github.io"
+author: "/bin/choo"
+  name: "jaebin"
+  twitter: 
   picture:
 twitter_username:
 github_username:
 logo: # path of site logo, e.g. "/assets/images/logo.png"
-search: # true, false (default)
+search: true # true, false (default)
 search_full_content: false # true, false (default)
 search_provider: # lunr (default), algolia
 algolia:
