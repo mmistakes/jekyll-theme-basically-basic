@@ -789,7 +789,7 @@ file, create an `_includes` directory in your project, copy
 `<your_project>/_includes` and start editing that file.
 
 **ProTip:** to locate the theme's files on your computer run 
-`bundle show jekyll-theme-basically-basic`. This returns the location of the 
+`bundle info jekyll-theme-basically-basic`. This returns the location of the 
 gem-based theme files.
 
 ### Customizing Sass (SCSS)
@@ -800,7 +800,7 @@ To override the default [Sass](http://sass-lang.com/guide) (located in theme's
 1. Copy directly from the Basically Basic gem
 
    - Go to your local Basically Basic gem installation directory (run 
-     `bundle show jekyll-theme-basically-basic` to get the path to it).
+     `bundle info jekyll-theme-basically-basic` to get the path to it).
    - Copy the contents of `/assets/stylesheets/main.scss` from there to 
      `<your_project>`.
    - Customize what you want inside `<your_project>/assets/stylesheets/main.scss`.
@@ -830,7 +830,7 @@ To override the default JavaScript bundled in the theme, do one of the following
 1. Copy directly from the Basically Basic gem
 
    - Go to your local Basically Basic gem installation directory (run 
-     `bundle show jekyll-theme-basically-basic` to get the path to it).
+     `bundle info jekyll-theme-basically-basic` to get the path to it).
    - Copy the contents of `/assets/javascripts/main.js` from there to 
      `<your_project>`.
    - Customize what you want inside `<your_project>/assets/javascripts/main.js`.
