@@ -18,6 +18,7 @@ A few other things that are kept secret _for now_.
 
 ### Contact me
 Lorem ipsum.
-
 Hit me up if you wanna talk about Lorem Ipsum  
 Conversations are a welcome distraction from *the fine game of nil
+
+{% include button.html url = "mvakde.github.io/documents/resume.pdf" icon = "pdf" label = "Curriculum Vitae" %}
