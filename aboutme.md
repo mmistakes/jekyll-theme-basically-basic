@@ -3,14 +3,8 @@ title: "About Me"
 layout: about
 ---
 
-Ha! You fell for the ol' reverse psych trick.  
-So, interested to know me?  
-Read on then. *wink*
-  
-  
-  
 Hi! I'm Mithil Vakde.  
-I'm an undergrad pursuing a B.Tech in Chemical Engineering at IIT Bombay. (Might change to Engineering Physics in the near future) Currently, I work in the Machine Learning Subdivision at Innovation Cell, IIT Bombay. You can find me either toling away at the UMIC lab or at the Volleyball court. Read my CV if you wanna know about my Technical skills.
+I'm an undergrad pursuing a B.Tech in Chemical Engineering at IIT Bombay. (Might change to Engineering Physics in the near future) Currently, I work in the Machine Learning Subdivision at Innovation Cell, IIT Bombay. You can find me either toling away at the UMIC lab or at the Volleyball court.
 
 ### Hobbies  
 I'm a dancer, a drummer and I play volleball as an outside hitter (hoping to make it to the college team).   
