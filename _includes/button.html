@@ -1,1 +1,1 @@
-<a href="{{ include.url }}" class="btn">{% if include.icon %}<span class="icon">{% include {{ action.icon | prepend: 'icon-' | append: '.svg' }} %}</span>{% endif %}{{ include.label }}</a>
+<button type="button" class="btn btn-{{include.button_class}} active">{{include.button_name}}</button>
