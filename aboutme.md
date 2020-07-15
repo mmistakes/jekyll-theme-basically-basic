@@ -17,7 +17,7 @@ Making this Website.
 A few other things that are kept secret _for now_.
 
 ### Contact me
-Lorem ipsum. Hit me up if you wanna talk about Lorem Ipsum  
+Lorem iHit me up if you wanna talk about Lorem Ipsum  
 Conversations are a welcome distraction from *the fine game of nil
 [cv](https://shopify.github.io/liquid/){: .btn}
 {% include button.html button_name="My Button" button_class="primary" %}
