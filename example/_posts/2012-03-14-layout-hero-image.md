@@ -1,6 +1,8 @@
 ---
 title: "Layout: Hero Image"
-image: /assets/images/eder-oliveira-180877.jpg
+image: 
+  path: /assets/images/eder-oliveira-180877.jpg
+  caption: "Right [here](https://apple.com)"
 categories:
   - Layout
 tags:
