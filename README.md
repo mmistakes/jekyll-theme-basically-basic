@@ -4,6 +4,7 @@
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/)
 [![Ruby gem](https://img.shields.io/gem/v/jekyll-theme-basically-basic.svg)](https://rubygems.org/gems/jekyll-theme-basically-basic)
 [![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
+[![Donate to this project using Buy Me A Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](https://www.buymeacoffee.com/mmistakes)
 
 Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as 
 a substitute for the default [Minima](https://github.com/jekyll/minima), with a 
@@ -16,68 +17,15 @@ few enhancements thrown in for good measure:
 - Disqus Comments and Google Analytics support
 - SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
 
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) for developing and maintaining it.**
+**If you enjoy this theme, please consider sponsoring:**
 
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
+[!["Buy Me A Coffee"](https://user-images.githubusercontent.com/1376749/120938564-50c59780-c6e1-11eb-814f-22a0399623c5.png)](https://www.buymeacoffee.com/mmistakes)
+ [![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
 
 [![Basically Basic live preview][2]][1]
 
 [1]: https://mmistakes.github.io/jekyll-theme-basically-basic/
 [2]: https://cloud.githubusercontent.com/assets/1376749/24117647/6dede894-0d81-11e7-9c2c-f19bea45e219.jpg (live preview)
-
-## Table of Contents
-
-1. [Installation](#installation)
-   1. [Ruby Gem Method](#ruby-gem-method)
-   2. [GitHub Pages Method](#github-pages-method)
-      1. [Remove the Unnecessary](#remove-the-unnecessary)
-2. [Upgrading](#upgrading)
-   1. [Ruby Gem](#ruby-gem)
-   2. [Remote Theme](#remote-theme)
-   3. [Use Git](#use-git)
-      1. [Pull Down Updates](#pull-down-updates)
-   4. [Update Files Manually](#update-files-manually)
-3. [Structure](#structure)
-   1. [Starting Fresh](#starting-fresh)
-   2. [Starting from `jekyll new`](#starting-from-jekyll-new)
-4. [Configuration](#configuration)
-   1. [Skin](#skin)
-   2. [Google Fonts](#google-fonts)
-   3. [Text](#text)
-   4. [Navigation](#navigation)
-   5. [Pagination](#pagination)
-   6. [Search](#search)
-      1. [Lunr (default)](#lunr-default)
-      2. [Algolia](#algolia)
-   7. [Author](#author)
-   8. [Reading Time](#reading-time)
-   9. [Comments (via Disqus)](#comments-via-disqus)
-   10. [Google Analytics](#google-analytics)
-   11. [Copyright](#copyright)
-5. [Layouts](#layouts)
-   1. [`layout: default`](#layout-default)
-   2. [`layout: post`](#layout-post)
-   3. [`layout: page`](#layout-page)
-   4. [`layout: home`](#layout-home)
-   5. [`layout: posts`](#layout-posts)
-   6. [`layout: categories`](#layout-categories)
-   7. [`layout: tags`](#layout-tags)
-   8. [`layout: collection`](#layout-collection)
-   9. [`layout: category`](#layout-category)
-   10. [`layout: tag`](#layout-tag)
-   11. [`layout: about`](#layout-about)
-   12. [`layout: cv`](#layout-cv)
-6. [Images](#images)
-7. [Customization](#customization)
-   1. [Overriding Includes and Layouts](#overriding-includes-and-layouts)
-   2. [Customizing Sass (SCSS)](#customizing-sass-scss)
-   3. [Customizing JavaScript](#customizing-javascript)
-   4. [SVG Icons](#svg-icons)
-   5. [Customizing Sidebar Content](#customizing-sidebar-content)
-8. [Development](#development)
-9. [Contributing](#contributing)
-10. [Credits](#credits)
-11. [License](#license)
 
 ## Installation
 
