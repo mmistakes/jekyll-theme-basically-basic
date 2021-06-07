@@ -24,7 +24,7 @@ github_username: Towlette_Pettetucci
 logo: /assets/icons/basically-basic-logo-light.svg
 google_analytics: UA-2011187-6
 disqus:
-  shortname: basically-basic-theme
+  shortname:
 search: true
 search_full_content: true
 search_provider: lunr
