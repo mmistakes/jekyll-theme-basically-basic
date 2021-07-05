@@ -1,7 +1,7 @@
 {% if cv.work %}
   <div id="work" class="entry">
     <header class="entry-header">
-      <h3 class="entry-title">Work</h3>
+      <h3 class="entry-title">{{ site.data.theme.t.cv_work | default: 'Work' }}</h3>
     </header>
 
     <div class="entry-content">
