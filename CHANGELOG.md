@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased] -
 
 ## Added
+- Add translation keys for CV layout. [#145](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/145)
 - Display 'Posts' header only if the site has posts. [#144](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/144)
 
 ### Fixed
