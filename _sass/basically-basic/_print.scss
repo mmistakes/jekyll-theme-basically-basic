@@ -235,6 +235,18 @@
     color: #000;
   }
 
+  .intro-image {
+    .image-caption {
+      color: #000 !important;
+      background: #fff !important;
+      opacity: 1;
+
+      a {
+        color: #000 !important;
+      }
+    }
+  }
+
 /*
    Hide the following elements on print
    ========================================================================== */
