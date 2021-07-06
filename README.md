@@ -66,7 +66,7 @@ for any GitHub-hosted theme.
 
 2. Run `bundle update` and verify that all gems install properly.
 
-3. Add `remote_theme: "mmistakes/jekyll-theme-basically-basic"` to your 
+3. Add `remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.4"` to your 
    `_config.yml` file. Remove any other `theme:` or `remote_theme:` entries.
 
 ---
@@ -125,11 +125,17 @@ update jekyll-theme-basically-basic` if you're not.
 
 ### Remote Theme
 
-When hosting with GitHub Pages you'll need to push up a commit to force a 
-rebuild with the latest [theme release](https://github.com/mmistakes/jekyll-theme-basically-basic/releases).
+Verify you have the [latest version](https://github.com/mmistakes/jekyll-theme-basically-basic/releases) assigned in `_config.yml`
 
-An empty commit will get the job done too if you don't have anything to push at 
-the moment:
+```
+remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.4"
+```
+
+Note: If `@x.x.x` is omitted the theme's current `master` branch will be used. It is advised to ["lock" `remote_theme`](https://github.com/benbalter/jekyll-remote-theme#declaring-your-theme) at a specific version to avoid introducing breaking changes to your site.
+
+The next step requires rebuilding your [GitHub Pages](https://pages.github.com/) site so it can pull down the latest theme updates. This can be achieved by pushing up a commit to your GitHub repo.
+
+An empty commit will get the job done too if you don't have anything to push at the moment:
 
 ```terminal
 git commit --allow-empty -m "Force rebuild of site"

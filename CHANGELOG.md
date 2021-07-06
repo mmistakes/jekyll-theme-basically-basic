@@ -12,7 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Display 'Posts' header only if the site has posts. [#144](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/144)
 
 ## Changed
-- Simplified image assigns.
+- Improve remote theme upgrading documentation.
+- Simplify image assigns.
 ### Fixed
 - Fix to use current `bundle info` syntax. [#127](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/127)
 - Add `relative_url` filter to author profile image. [#125](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/125)
