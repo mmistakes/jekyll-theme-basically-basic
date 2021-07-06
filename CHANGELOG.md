@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased] -
+## [1.4.5] - 2021-07-05
 
 ## Added
 - Add translation keys for CV layout. [#145](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/145)

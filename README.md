@@ -66,7 +66,7 @@ for any GitHub-hosted theme.
 
 2. Run `bundle update` and verify that all gems install properly.
 
-3. Add `remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.4"` to your 
+3. Add `remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"` to your 
    `_config.yml` file. Remove any other `theme:` or `remote_theme:` entries.
 
 ---
@@ -109,7 +109,7 @@ site and you should something similar to:
 
 ```
 <!--
-    Basically Basic Jekyll Theme 1.4.4
+    Basically Basic Jekyll Theme 1.4.5
     Copyright 2017-2018 Michael Rose - mademistakes.com | @mmistakes
     Free for personal and commercial use under the MIT license
     https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE
@@ -128,7 +128,7 @@ update jekyll-theme-basically-basic` if you're not.
 Verify you have the [latest version](https://github.com/mmistakes/jekyll-theme-basically-basic/releases) assigned in `_config.yml`
 
 ```
-remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.4"
+remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 ```
 
 Note: If `@x.x.x` is omitted the theme's current `master` branch will be used. It is advised to ["lock" `remote_theme`](https://github.com/benbalter/jekyll-remote-theme#declaring-your-theme) at a specific version to avoid introducing breaking changes to your site.
