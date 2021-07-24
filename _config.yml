@@ -25,7 +25,7 @@ author:
   picture:
 twitter_username:
 github_username: minecode0606
-logo: /assets/images/minecodelogo.png
+logo:
 search: # true, false (default)
 search_full_content: false # true, false (default)
 search_provider: # lunr (default), algolia
