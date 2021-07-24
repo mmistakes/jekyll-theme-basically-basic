@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: minecode0606's profile
+title: minecode0606
 email: minseo_0606@naver.com
 description: This is minecode's profile
 baseurl: # "/profile"
