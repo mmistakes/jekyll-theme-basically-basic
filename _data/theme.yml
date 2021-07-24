@@ -51,6 +51,3 @@ google_fonts:
 navigation_pages:
   - about.md
   - cv.md
-
-image:
-  path: /assets/images/view.jpeg

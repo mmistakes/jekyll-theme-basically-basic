@@ -85,4 +85,4 @@ defaults:
       read_time: true
 
 image:
-  path: /assets/images/view.jpeg
+  path: assets/images/view.jpeg
