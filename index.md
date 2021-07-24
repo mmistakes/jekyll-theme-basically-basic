@@ -1,4 +1,5 @@
 ---
 layout: home
 ---
-gkgkgk
+![view](assets/images/view.jpeg)
+
