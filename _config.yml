@@ -15,12 +15,12 @@
 # in the templates via {{ site.myvariable }}.
 lang: en-US
 title: minecode0606's profile
-email:
+email: minseo_0606@naver.com
 description:
 baseurl: # "/profile"
 url: # "https://minecode0606.github.io"
 author:
-  name:
+  name: MinseoKang
   twitter:
   picture:
 twitter_username:
