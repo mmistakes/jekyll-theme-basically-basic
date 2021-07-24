@@ -83,3 +83,5 @@ defaults:
     values:
       layout: post
       read_time: true
+
+image: /ssets/images/view.jpeg
