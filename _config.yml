@@ -17,7 +17,7 @@ lang: en-US
 title: My Awesome Site
 email:
 description:
-baseurl: "/profile"
+baseurl: # "/profile"
 url: "https://minecode0606.github.io"
 author:
   name:
