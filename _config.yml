@@ -18,7 +18,7 @@ title: My Awesome Site
 email:
 description:
 baseurl: # "/profile"
-url: "https://minecode0606.github.io"
+url: # "https://minecode0606.github.io"
 author:
   name:
   twitter:
