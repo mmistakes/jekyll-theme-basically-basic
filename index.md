@@ -12,5 +12,5 @@ sub_title: "Artificial Intelligence & Server Developer"
 그때그때 생각나는 아이디어를 바로 구현할수 있는 개발자가 되기위해 공부합니다.
 
 
-
-
+# 💻Languages
+저는 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>을 통해 
