@@ -34,7 +34,7 @@ sub_title: "Artificial Intelligence & Server Developer"
 
   
 **현암중학교** - 2020.03 - 재학중  
-🌐2021년 정보동아리 동아리장  
+🌐2021년 현암중학교 정보동아리 동아리장  
 
 <br>
 <br>
