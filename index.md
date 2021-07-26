@@ -9,7 +9,7 @@ sub_title: "Artificial Intelligence & Server Developer"
 # ADOUT ME.
 안녕하세요 👋  
 저는 현암중학교에 재학중인 강민서 입니다.  
-주로 Tensorflow를 사용해 인공지능 개발을 하며, Django로 백엔드 개발을 합니다.
+주로 Tensorflow를 사용해 인공지능 개발을 하며, Django로 백엔드 개발을 합니다.  
 제가 작성한 코드들이 사회적으로 선한 영향력을 주고, 더 나아가 4차산업발전에 기여를 할수 있는 코드를 연구합니다.
   
 <br>
