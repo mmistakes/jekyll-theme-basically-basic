@@ -75,12 +75,12 @@ exclude:
   - /example # ignore Basically Basic dev site
 
 # Front Matter Defaults
-#defaults:
-#  # _posts
-#  - scope:
-#      path: "_posts"
-#      type: posts
-#    values:
-#      layout: post
-#      read_time: true
-#
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      read_time: true
+
