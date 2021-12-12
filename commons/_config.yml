@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-lang: en-US
-title: Basically Basic
+lang: zh-HK
+title: Urban Commons Page
 email: dugan.nash@mailinator.com
 description: "Your new default Jekyll theme"
-baseurl: "/example"  # the subpath of your site, e.g. /blog
-url: ""  # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/commons"  # the subpath of your site, e.g. /blog
+url: "https://ccrd-ln.github.io"  # the base hostname & protocol for your site, e.g. http://example.com
 author:
-  name: Dugan Nash
+  name: Centre for Cultural Research and Development
   twitter: Towlette_Pettetucci
   picture: /assets/images/johndoe.png
 twitter_username: Towlette_Pettetucci

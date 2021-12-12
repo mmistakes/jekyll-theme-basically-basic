@@ -1,5 +1,5 @@
 # Theme Skin
-skin: default # default, night, plum, sea, soft, steel
+skin: soft
 
 # Theme Text
 t:
@@ -51,3 +51,4 @@ google_fonts:
 navigation_pages:
   - about.md
   - cv.md
+  - categories.md
