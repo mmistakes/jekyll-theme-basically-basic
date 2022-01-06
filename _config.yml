@@ -17,7 +17,7 @@ lang: en-US
 title: My Awesome Site
 email:
 description:
-baseurl: corticon
+baseurl: /corticon/
 url: https://notedhelms.github.io
 author:
   name:
