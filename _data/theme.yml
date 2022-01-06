@@ -1,5 +1,5 @@
 # Theme Skin
-skin: steel # default, night, plum, sea, soft, steel
+skin: default # default, night, plum, sea, soft, steel
 
 # Theme Text
 t:
@@ -9,7 +9,6 @@ t:
   skip_footer: "Skip to footer"
   menu: "Menu"
   search: "Search"
-  site_search: "Site Search"
   results_found: "Result(s) found"
   search_placeholder_text: "Enter your search term..."
   home: "Home"
@@ -51,3 +50,5 @@ google_fonts:
 navigation_pages:
   - about.md
   - cv.md
+  - recipes.md
+  - tags.md
