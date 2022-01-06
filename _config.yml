@@ -18,7 +18,8 @@ title: My Awesome Site
 email:
 description:
 baseurl: /corticon/
-url: https://notedhelms.github.io
+domain: notedhelms.github.io
+url: https:// notedhelms.github.io
 author:
   name:
   twitter:
