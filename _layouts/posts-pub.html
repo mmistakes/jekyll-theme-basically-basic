@@ -14,6 +14,30 @@ layout: page
 
 <br>
 
+<!--List by year-->
+<h1> By Year </h1>
+<ul class="taxonomy-index">
+  {% assign postsInYear = posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year in postsInYear %}
+    {% assign isAllNewsInYear = true %}
+    {% for post in year.items %}
+      {% if post.news == false %}
+        {% assign isAllNewsInYear = false %}
+      {% endif %}
+    {% endfor %}
+
+    {% if isAllNewsInYear == false %}
+      <li>
+        <a href="#{{ year.name }}">
+          <strong>{{ year.name }}</strong> <span class="taxonomy-count">{{ year.items | size }}</span>
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<br>
+
 <!--List by category-->
 <h1> By Category </h1>
 <ul class="taxonomy-index">
@@ -39,7 +63,7 @@ layout: page
 <br>
 
 <!--List by tag-->
-<h1> By Tag </h1>
+<h1> By Publisher </h1>
 <ul class="taxonomy-index">
   {% assign tags_max = 0 %}
   {% for tag in site.tags %}
@@ -61,84 +85,7 @@ layout: page
 </ul>
 
 <br>
-
-<!--List by year-->
-<h1> By Year </h1>
-<ul class="taxonomy-index">
-  {% assign postsInYear = posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
-  {% for year in postsInYear %}
-    {% assign isAllNewsInYear = true %}
-    {% for post in year.items %}
-      {% if post.news == false %}
-        {% assign isAllNewsInYear = false %}
-      {% endif %}
-    {% endfor %}
-
-    {% if isAllNewsInYear == false %}
-      <li>
-        <a href="#{{ year.name }}">
-          <strong>{{ year.name }}</strong> <span class="taxonomy-count">{{ year.items | size }}</span>
-        </a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-
-
-<br>
 <hr>
-
-
-
-
-<!--Categories-->
-{% assign categories_max = 0 %}
-{% for category in site.categories %}
-  {% if category[1].size > categories_max %}
-    {% assign categories_max = category[1].size %}
-  {% endif %}
-{% endfor %}
-
-{% for i in (1..categories_max) reversed %}
-  {% for category in site.categories %}
-    {% if category[1].size == i %}
-      <section id="{{ category[0] | slugify | downcase }}" class="taxonomy-section">
-        <h2 class="taxonomy-title">{{ category[0] }}</h2>
-        <div class="entries-{{ page.entries_layout | default: 'list' }}">
-          {% for post in category.last %}
-            {% include entry-pub.html %}
-          {% endfor %}
-        </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-      </section>
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-
-<!--Tags-->
-{% assign tags_max = 0 %}
-{% for tag in site.tags %}
-  {% if tag[1].size > tags_max %}
-    {% assign tags_max = tag[1].size %}
-  {% endif %}
-{% endfor %}
-
-{% for i in (1..tags_max) reversed %}
-  {% for tag in site.tags %}
-    {% if tag[1].size == i %}
-      <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy-section">
-        <h2 class="taxonomy-title">{{ tag[0] }}</h2>
-        <div class="entries-{{ page.entries_layout | default: 'list' }}">
-          {% for post in tag.last %}
-            {% include entry-pub.html %}
-          {% endfor %}
-        </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-      </section>
-    {% endif %}
-  {% endfor %}
-{% endfor %}
 
 
 <!--Years-->
@@ -165,4 +112,58 @@ layout: page
     </section>
   {% endif %}
 {% endfor %}
+
+{{ "----" | markdownify }}
+
+<!--Categories-->
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+  {% if category[1].size > categories_max %}
+    {% assign categories_max = category[1].size %}
+  {% endif %}
+{% endfor %}
+
+{% for i in (1..categories_max) reversed %}
+  {% for category in site.categories %}
+    {% if category[1].size == i %}
+      <section id="{{ category[0] | slugify | downcase }}" class="taxonomy-section">
+        <h2 class="taxonomy-title">{{ category[0] }}</h2>
+        <div class="entries-{{ page.entries_layout | default: 'list' }}">
+          {% for post in category.last %}
+            {% include entry-pub.html %}
+          {% endfor %}
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+
+{{ "----" | markdownify }}
+
+<!--Tags-->
+{% assign tags_max = 0 %}
+{% for tag in site.tags %}
+  {% if tag[1].size > tags_max %}
+    {% assign tags_max = tag[1].size %}
+  {% endif %}
+{% endfor %}
+
+{% for i in (1..tags_max) reversed %}
+  {% for tag in site.tags %}
+    {% if tag[1].size == i %}
+      <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy-section">
+        <h2 class="taxonomy-title">{{ tag[0] }}</h2>
+        <div class="entries-{{ page.entries_layout | default: 'list' }}">
+          {% for post in tag.last %}
+            {% include entry-pub.html %}
+          {% endfor %}
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
 

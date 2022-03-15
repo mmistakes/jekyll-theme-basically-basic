@@ -1,27 +1,21 @@
 {% assign title = post.title %}
 {% assign date = post.date %}
-{% for tag in post.tags %}
-  {% assign pub = tag %}
-{% endfor %}
+{% if post.tags.size > 0 %}
+  {% for tag in post.tags %}
+    {% assign pub = tag %}
+  {% endfor %}
+{% else %}
+  {% assign pub = "" %}
+{% endif %}
 
 <article class="entry">
   <header class="entry-header">
     <h3 class="entry-title">
-      <a href="{{ post.url | relative_url }}" rel="bookmark">[{{ pub }}'{{ date | date: "%y"}}] {{ title }}</a>
+      <a rel="bookmark">[{{ pub }}'{{ date | date: "%y"}}] {{ title }}</a>
     </h3>
   </header>
-  <footer class="entry-meta">
-    <ul>
-    {% if post.date %}
-      <li><span class="icon">{% include icon-calendar.svg %}</span><time class="entry-time" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></li>
-    {% endif %}
-    </ul>
-  </footer>
   <div class="entry-excerpt">
-    {% if post.excerpt %}
-      {{ post.excerpt | markdownify }}
-      <p><a href="{{ post.url | relative_url }}" class="more-link">{{ site.data.theme.t.read_more | default: 'Read More' }} <span class="icon icon--arrow-right">{% include icon-arrow-right.svg %}</span></a></p>
-    {% endif %}
+    {{ post.excerpt | markdownify }}
   </div>
 </article>
 

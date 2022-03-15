@@ -1,17 +1,12 @@
 ---
 title: "Test2"
 category: Computer Architecture
-tags:
-  - ISCA
+tags: ISCA
+pub-type: 
 ---
 
-# Authors
-A, B, C, D, ...
-
-# Abstract
-Blah, blah...
-
-### [DOI](https://doi.org10.1109/ISCA.2016.37)
+A, B, C, D, ...<br>
+etc.
 
 <% comment %>
 작성 요령
@@ -27,13 +22,16 @@ Blah, blah...
     - HPCA
     - MICRO
     - 등등...
+  - pub-type: 출판물의 종류
+    - J: Refereed Journal
+    - C: Refereed Conference Proceedings
+    - W: Refereed Workshop Proceedings
+    - P: Patent (filed+granted)
+    - T: Technical report
 
 - 본문 구역
-  - Authors
-    - 저자의 이름 작성
-  - Abstract
-    - 논문의 초록 작성
-  - DOI
-    - 논문의 DOI를 하이퍼링크로 작성
+  - 저자의 이름 작성
+    - SAL 소속 인원은 Bold 처리
+  - 기타 내용 작성
 
 <% endcomment %>
