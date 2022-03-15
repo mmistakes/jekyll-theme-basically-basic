@@ -3,6 +3,7 @@
    ========================================================================== */
 
 /* Breakpoint widths */
+$xsmall: 210px !default;
 $small: 320px !default;
 $medium: 768px !default;
 $large: 1024px !default;
@@ -11,13 +12,15 @@ $xlarge: 1280px !default;
 /* Fluid type */
 $base-font-size: 16px !default;
 $min-vw: $small !default;
-$max-vw: $xlarge !default;
+$max-vw: $large !default;
 $min-font-size: 14px !default;
 $max-font-size: 18px !default;
 
 /* Calculate Modular Scale */
 $modular-scale-1: 1.067 !default; /* small */
 $modular-scale-2: 1.296 !default; /* large */
+//$modular-scale-1: 1.000 !default; /* small */
+//$modular-scale-2: 1.250 !default; /* large */
 /* Heading 1 */
 $h1-min: $modular-scale-1 * $modular-scale-1 * $modular-scale-1 *
   $modular-scale-1 * $base-font-size !default;
@@ -79,7 +82,7 @@ $base0f: #c79595 !default;
 $main-max-width: $xlarge !default;
 
 /* Width of the sidebar */
-$sidebar-width: $small !default;
+$sidebar-width: $xsmall !default;
 
 /* Background color of the sidebar */
 $sidebar-background-color: #fff !default;
