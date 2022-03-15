@@ -1,0 +1,32 @@
+<header class="intro">
+  {% if page.image %}
+    {% assign intro_image = page.image.path | default: page.image | relative_url | escape %}
+    <div class="intro-image">
+      <img src="{{ intro_image }}" alt="{{ page.title }}">
+    </div>
+  {% endif %}
+
+  <div class="inner">
+    <div class="intro-text">
+      <h1 id="page-title" class="intro-title">{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</h1>
+      {% if page.sub_title %}
+        <p class="intro-subtitle">{{ page.sub_title | markdownify | strip_html }}</p>
+      {% endif %}
+
+      {% if page.introduction %}
+        <div class="intro-more">
+          {{ page.introduction | markdownify }}
+        </div>
+      {% endif %}
+
+      {% if page.actions %}
+        <ul class="intro-actions">
+          {% for action in page.actions %}
+            <li><a href="{{ action.url }}" class="btn">{% if action.icon %}<span class="icon">{% include {{ action.icon | prepend: 'icon-' | append: '.svg' }} %}</span>{% endif %}{{ action.label }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</header>
+

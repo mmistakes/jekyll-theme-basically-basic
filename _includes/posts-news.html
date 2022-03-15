@@ -1,0 +1,5 @@
+{% for post in site.posts %}
+  {% if post.news %}
+    {% include entry-news.html %}
+  {% endif %}
+{% endfor %}

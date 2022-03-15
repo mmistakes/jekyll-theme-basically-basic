@@ -13,19 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-lang: en-US
-title: My Awesome Site
+lang: ko-KR
+title: Scalable Architecture Lab.
 email:
 description:
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: "https://zetta.skku.edu" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
   name:
   twitter:
   picture:
 twitter_username:
 github_username:
-logo: # path of site logo, e.g. "/assets/images/logo.png"
+logo: "/assets/images/SAL-logo.svg" # path of site logo, e.g. "/assets/images/logo.png"
 search: # true, false (default)
 search_full_content: false # true, false (default)
 search_provider: # lunr (default), algolia
@@ -39,12 +39,12 @@ algolia:
 markdown: kramdown
 theme: jekyll-theme-basically-basic
 plugins: # previsously gems
-  - jekyll-feed
+#  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
-feed:
-  path: atom.xml
+#feed:
+#  path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
 paginate: 10
@@ -76,10 +76,28 @@ exclude:
 
 # Front Matter Defaults
 defaults:
-  # _posts
+  # _posts/pub
   - scope:
-      path: "_posts"
+      path: "_posts/pub"
       type: posts
     values:
       layout: post
-      read_time: true
+      read_time: false
+      author: "SAL."
+      news: false
+
+  # _posts/news
+  - scope:
+      path: "_posts/news"
+      type: posts
+    values:
+      layout: post-news
+      author: "SAL."
+      news: true
+
+#   _pages
+#  - scope:
+#      path: "/"
+#      type: pages
+#    values:
+#      layout: page

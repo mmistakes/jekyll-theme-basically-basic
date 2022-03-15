@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% include page-intro.html %}
+
+<main id="main" class="page-content" aria-label="Content">
+  <div class="index inner">
+    <div>{{ content }}</div>
+    
+    {% if site.posts.size > 0 %}
+      <div>
+        <header class="section-title">
+          <h2>{{ 'News' }}
+            {% if paginator.page > 1 %}
+              {{ site.data.theme.t.page | default: 'Page' | prepend: ' - ' | append: ' ' }}
+              {{ paginator.page }}
+              {{ site.data.theme.t.of | default: 'of' }}
+              {{ paginator.total_pages }}
+            {% endif %}
+          </h2>
+        </header>
+        <div class="entries-{{ page.entries_layout | default: 'list' }}">
+          {% include posts-news.html %}
+        </div>
+      </div>    
+    {% endif %}
+    
+  </div>
+</main>
