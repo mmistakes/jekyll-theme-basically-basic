@@ -63,6 +63,9 @@ Prof. Kim graduated from Seoul Science High School for gifted students in 1997. 
 	- E-mail : pdtowctor@gmail.com
 	- Department : Semiconductor and Display Engineering
 
+- ***Sangje Park / 박상제***
+  - E-mail : mainpower4309@gmail.com
+  - Department : Electrical and Computer Engineering
 
 - Jihun Park / 박지훈
 	- E-mail : jihun.park1012@gmail.com
