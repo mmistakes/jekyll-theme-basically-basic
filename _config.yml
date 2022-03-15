@@ -85,6 +85,7 @@ defaults:
       read_time: false
       author: "SAL."
       news: false
+      hidden: true
 
   # _posts/news
   - scope:
