@@ -5,8 +5,6 @@ layout: page
 ---
 
 
-
-
 # Conference Schedule
 
 ## Hardware

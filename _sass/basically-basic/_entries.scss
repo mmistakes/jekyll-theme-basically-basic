@@ -4,8 +4,8 @@
 
 .entry {
   @include clearfix();
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 
   &:not(:last-child) {
     border-bottom: 1px solid $border-color;

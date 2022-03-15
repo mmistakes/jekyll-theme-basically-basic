@@ -11,17 +11,14 @@ layout: default
     {% if site.posts.size > 0 %}
       <div>
         <header class="section-title">
-          <h2>{{ 'News' }}
-            {% if paginator.page > 1 %}
-              {{ site.data.theme.t.page | default: 'Page' | prepend: ' - ' | append: ' ' }}
-              {{ paginator.page }}
-              {{ site.data.theme.t.of | default: 'of' }}
-              {{ paginator.total_pages }}
-            {% endif %}
-          </h2>
+          <h2 style="display: inline-block;">News</h2> <h4 style="display: inline-block;">{% if paginator.page > 1 %}{{ site.data.theme.t.page | default: 'Page' | prepend: ' - ' | append: ' ' }}{{ paginator.page }} {{ site.data.theme.t.of | default: 'of' }} {{ paginator.total_pages }}{% endif %}</h4>
         </header>
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
-          {% include posts-news.html %}
+          {% if site.plugins contains 'jekyll-paginate' and page.paginate or site.gems contains 'jekyll-paginate' and page.paginate %}
+            {% include posts-paginated-news.html %}
+          {% else %}
+            {% include posts-news.html %}
+          {% endif %}
         </div>
       </div>    
     {% endif %}

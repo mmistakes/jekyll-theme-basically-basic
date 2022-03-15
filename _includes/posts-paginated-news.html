@@ -1,5 +1,7 @@
 {% for post in paginator.posts %}
-  {% include entry.html %}
+  {% if post.news %}
+    {% include entry-news.html %}
+  {% endif %}
 {% endfor %}
 
 <!-- Pagination links -->
@@ -14,4 +16,3 @@
     {% endif %}
   </ul>
 </nav>
-
