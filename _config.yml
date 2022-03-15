@@ -18,7 +18,7 @@ title: Scalable Architecture Lab.
 email:
 description:
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: "https://zetta.skku.edu" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: "https://scalable-arch.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
   name:
   twitter:
