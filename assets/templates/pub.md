@@ -1,8 +1,8 @@
 ---
-title: "Test2"
+title: "Test"
 category: Computer Architecture
 tags: ISCA
-pub-type: 
+pub-type: C
 ---
 
 A, B, C, D, ...<br>
@@ -16,6 +16,7 @@ etc.
   - category: 해당 논문의 분야
     - Computer Architecture
     - Reliability
+    - Artificial Intelligence
     - 등등...
   - tags: 출간된 곳의 약어
     - ISCA
