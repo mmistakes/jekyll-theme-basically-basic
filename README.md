@@ -54,11 +54,19 @@ BaseDirectory
 - Jekyll을 이용하기 위해선, Ruby, Bundle이 필요하다.
 
 ### 페이지 빌딩, 테스팅
-- $ bundle exec jekyll serve 		# 이 커맨드로 페이지 빌드 및 테스트 가능하다.
-																# http://localhost:4000 으로 로컬호스트를 통해 접속 가능
-																# 로컬호스트로 접속하면 빌드된 페이지를 미리 확인할 수 있다.
+- 아래 커맨드로 페이지 빌드 및 테스트 가능하다.
+- http://localhost:4000 으로 로컬호스트를 통해 접속 가능
+- 로컬호스트로 접속하면 빌드된 페이지를 미리 확인할 수 있다.
+```
+$ bundle exec jekyll serve
+```
 
 ### 페이지 호스팅
 - Github 레포지토리에 push하게 되면 github action에서 자동으로 빌드 후, 페이지 호스팅이 된다.
+```
+$ git add . 
+$ git commit -m "Changes updated"
+$ git push origin master
+```
 
 
