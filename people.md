@@ -49,56 +49,56 @@ Prof. Kim graduated from Seoul Science High School for gifted students in 1997. 
 
 # M.S. Students
 
-- Hoyong Jin / 진호용
-	- E-mail : jin8495@g.skku.edu
+- **Hoyong Jin / 진호용**
+	- E-mail : **jin8495** at **g** dot **skku** dot **edu**
 	- Department : Electrical and Computer Engineering
 
 
-- Donghun Jeong / 정동훈
-	- E-mail : dounghun22@g.skku.edu
+- **Donghun Jeong / 정동훈**
+	- E-mail : **dounghun22** at **g** dot **skku** dot **edu**
 	- Department : Electrical and Computer Engineering
 
 
-- Taewon Park / 박태원
-	- E-mail : pdtowctor@gmail.com
+- **Taewon Park / 박태원**
+	- E-mail : **pdtowctor** at **gmail** dot **com**
 	- Department : Semiconductor and Display Engineering
 
-- ***Sangje Park / 박상제***
-  - E-mail : mainpower4309@gmail.com
+- **Sangje Park / 박상제**
+  - E-mail : **mainpower4309** at **gmail** dot **com**
   - Department : Electrical and Computer Engineering
 
-- Jihun Park / 박지훈
-	- E-mail : jihun.park1012@gmail.com
+- **Jihun Park / 박지훈**
+	- E-mail : **jihun** dot **park1012** at **gmail** dot **com**
 	- Department : Artificial Intelligence
 
 
-- Yuseok Song / 송유석
-	- E-mail : songys1223@gmail.com
+- **Yuseok Song / 송유석**
+	- E-mail : **songys1223** at **gmail** dot **com**
 	- Department : Electrical and Computer Engineering
 
 
-- Daero Kim / 김대로
-	- E-mail : road_load@naver.com
+- **Daero Kim / 김대로**
+	- E-mail : **road_load** at **naver** dot **com**
 	- Department : Semiconductor and Display Engineering
 
 
-- Dongwhee Kim / 김동휘
-	- E-mail : xyz123479@naver.com
+- **Dongwhee Kim / 김동휘**
+	- E-mail : **xyz123479** at **naver** dot **com**
 	- Department : Semiconductor and Display Engineering
 
 
-- Kiheon Kwon / 권기헌
-	- E-mail : ytn955000@naver.com
+- **Kiheon Kwon / 권기헌**
+	- E-mail : **ytn955000** at **naver** dot **com**
 	- Department : Electrical and Computer Engineering
 
 
-- Jaeyoon Lee / 이재윤
-	- E-mail : tiflzhs@naver.com
+- **Jaeyoon Lee / 이재윤**
+	- E-mail : **tiflzhs** at **naver** dot **com**
 	- Department : Electrical and Computer Engineering
 
 
-- Wonyeong Jung / 정원영
-	- E-mail : jwy6617@gmail.com
+- **Wonyeong Jung / 정원영**
+	- E-mail : **jwy6617** at **gmail** dot **com**
 	- Department : Semiconductor and Display Engineering
 
 
