@@ -93,7 +93,7 @@ Prof. Kim graduated from Seoul Science High School for gifted students in 1997. 
 
 
 - **Jaeyoon Lee / 이재윤**
-	- E-mail : **tiflzhs** at **naver** dot **com**
+	- E-mail : **tiflzhs** at **g** dot **skku** dot **edu**
 	- Department : Electrical and Computer Engineering
 
 
