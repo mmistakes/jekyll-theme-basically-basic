@@ -6,5 +6,4 @@ pub-type: J
 ---
 
 **Hoyong Jin, Donghun Jeong, Taewon Park**, Jong Hwan Ko, and **Jungrae Kim**<br>
-Under revision on IEEE Computer Architecture Letters 
-
+Accepted on IEEE Computer Architecture Letters, impact factor = 2.62
