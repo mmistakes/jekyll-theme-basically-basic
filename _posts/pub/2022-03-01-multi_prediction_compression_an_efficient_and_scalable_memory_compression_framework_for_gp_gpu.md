@@ -6,4 +6,4 @@ pub-type: J
 ---
 
 **Hoyong Jin, Donghun Jeong, Taewon Park**, Jong Hwan Ko, and **Jungrae Kim**<br>
-Accepted on IEEE Computer Architecture Letters, impact factor = 1.269, May. 2022
+Early access published on IEEE Computer Architecture Letters, impact factor = 1.269, May. 2022
