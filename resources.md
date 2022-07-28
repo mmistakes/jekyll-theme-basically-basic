@@ -7,14 +7,13 @@ layout: page
 
 # Conference Schedule
 
-## Hardware
-<iframe src="https://confsearch.ethz.ch/confsearch/faces/pages/topic.jsp?topic=Hardware&sortMode=1&graphicView=1" class="embed-responsive" height="600px"></iframe>
 
-## Network
-<iframe src="https://confsearch.ethz.ch/confsearch/faces/pages/topic.jsp?topic=Networks&sortMode=1&graphicView=1" class="embed-responsive" height="600px"></iframe>
+<iframe src="https://confsearch.ethz.ch/?query=Computer+Architecture" class="embed-responsive" height="1200px"></iframe>
 
-## Distributed Computing
-<iframe src="https://confsearch.ethz.ch/confsearch/faces/pages/topic.jsp?topic=Distributed%20Computing&sortMode=1&graphicView=1" class="embed-responsive" height="600px"></iframe>
+#### keyword
+
+##### Hardware, Computer Architecture
+
 
 
 
@@ -37,6 +36,12 @@ layout: page
     </span>
     <span class="label">Shared Web</span>
   </a>
+
+
+<a href="https://confsearch.ethz.ch" class=btn>
+    <span class="label">Conference Search</span>
+  </a>
+
 </h4>
 
 
