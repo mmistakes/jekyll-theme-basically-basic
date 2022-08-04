@@ -8,7 +8,7 @@ layout: page
 # Conference Schedule
 
 
-<iframe src="https://confsearch.ethz.ch/?query=Computer+Architecture" class="embed-responsive" height="1200px"></iframe>
+<iframe src="https://confsearch.ethz.ch/?query=Hardware&sortby=deadline" class="embed-responsive" height="1200px"></iframe>
 
 #### keyword
 
