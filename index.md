@@ -1,6 +1,5 @@
 ---
 layout: home
-alt_title: "Daniel Hoshizaki"
 sub_title: "Geospatial data processing with deep learning"
 image: /assets/images/amine-ounnas-180287.jpg
 introduction: |
