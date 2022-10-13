@@ -18,7 +18,7 @@ title: Daniel Hoshizaki
 email: dth.hoshizaki@gmail.com
 description: Geospatial Deep Learning
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: https://danielhoshizaki.com/
 author:
   name: Daniel Hoshizaki
   twitter:
