@@ -20,11 +20,11 @@ description: Spatial stuff coming soon
 baseurl: /blog
 url: https://danielhoshizaki.com/
 author:
-  name:
+  name: Daniel Hoshizaki
   twitter:
   picture:
 twitter_username:
-github_username:
+github_username: danielhoshizaki
 logo: # path of site logo, e.g. "/assets/images/logo.png"
 search: true # true, false (default)
 search_full_content: false # true, false (default)
