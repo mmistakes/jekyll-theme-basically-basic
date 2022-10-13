@@ -16,7 +16,7 @@
 lang: en-US
 title: Daniel Hoshizaki
 email: dth.hoshizaki@gmail.com
-description: Spatial stuff coming soon
+description: Geospatial Deep Learning
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
