@@ -1,3 +1,3 @@
 ---
-layout: home post
+layout: home
 ---
