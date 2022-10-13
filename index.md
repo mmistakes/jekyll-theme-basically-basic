@@ -1,6 +1,7 @@
 ---
 layout: home
-sub_title: "Geospatial data processing with deep learning"
+alt_title: "Geospatial Data Processing"
+sub_title: "with deep learning"
 image: /assets/images/amine-ounnas-180287.jpg
 introduction: |
   One-stop shop for all the latest information on deep learning algorithms applied to geospatial data:
