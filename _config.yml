@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 lang: en-US
 title: Daniel Hoshizaki
-email:
+email: dth.hoshizaki@gmail.com
 description: Spatial stuff coming soon
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
