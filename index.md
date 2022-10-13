@@ -5,7 +5,7 @@ alt_title: "Daniel Hoshizaki"
 sub_title: "Geospatial data processing with deep learning"
 image: /assets/images/amine-ounnas-180287.jpg
 introduction: |
-  Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default --- [Minima](https://github.com/jekyll/minima). Conventions and features found there are fully supported by **Basically Basic**, with a few enhancements thrown in for good measure:
+  One-stop shop for all the latest information on deep learning algorithms applied to geospatial data:
 
   - Clean responsive design with six customizable skins
   - Curriculum Vitæ/Resume layout powered by [JSON data](http://registry.jsonresume.org/)
