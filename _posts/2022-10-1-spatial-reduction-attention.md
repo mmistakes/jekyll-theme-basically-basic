@@ -4,8 +4,6 @@ title:  "Spatial Reduction Attention"
 name:  "Daniel Hoshizaki"
 ---
 
-# SegFormer Components
-
 This notebook will explore the components of a [SegFormer model](https://arxiv.org/pdf/2105.15203.pdf) as defined by [Hugging Face (HF)](https://huggingface.co/docs/transformers/model_doc/segformer).
 
 We will first start by exploring a concept called `stochastic depth decay`, the details of which can be found [here](https://github.com/aleju/papers/blob/master/neural-nets/Deep_Networks_with_Stochastic_Depth.md):
