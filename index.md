@@ -1,6 +1,6 @@
 ---
 layout: home
-alt_title: "Geospatial Deep Leanring"
+alt_title: "Geospatial Deep Learning Blog"
 sub_title: "Exploring the frontier of geospatial data processing with deep learning"
 image: /assets/images/home.png
 introduction: |
