@@ -29,9 +29,8 @@ drop_path_rate = 0.1
 depths = [2,2,2,2]
 dpr = [x.item() for x in torch.linspace(0, drop_path_rate, sum(depths))]
 dpr
-```
-```
-[0.0,
+
+$ [0.0,
  0.014285714365541935,
  0.02857142873108387,
  0.04285714402794838,
