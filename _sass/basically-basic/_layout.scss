@@ -42,8 +42,8 @@ main {
     }
 
     @include breakpoint($xlarge) {
-      padding-right: 4rem;
-      padding-left: 4rem;
+      padding-right: 8rem;
+      padding-left: 8rem;
     }
   }
 }
