@@ -20,7 +20,6 @@ We will first start by exploring a concept called `stochastic depth decay`, the 
     * It has a regularizing effect, because blocks cannot easily co-adapt any more. (Similar to dropout avoiding co-adaption of neurons.)
     * If using an increasing removal probability for later blocks: It spends more training time on the early (and thus most important) blocks than on the later blocks.
 
-<br>
 HF approach this problem by defining the probabilities of survival for each transformer block:
 
 ```python
