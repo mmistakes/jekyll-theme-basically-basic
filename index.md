@@ -4,18 +4,5 @@ alt_title: "Geospatial Deep Leanring"
 sub_title: "Exploring the frontier of geospatial data processing with deep learning"
 image: /assets/images/home.jpg
 introduction: |
-  One-stop shop for all the latest information on deep learning algorithms applied to geospatial data:
-
-  - Clean responsive design with six customizable skins
-  - Curriculum Vitæ/Resume layout powered by [JSON data](http://registry.jsonresume.org/)
-  - About page layout
-  - Disqus Comments and Google Analytics support
-  - SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
-actions:
-  - label: "Get Started"
-    icon: github
-    url: "https://github.com/mmistakes/jekyll-theme-basically-basic"
-  - label: "Download"
-    icon: download
-    url: "https://github.com/mmistakes/jekyll-theme-basically-basic/archive/master.zip"
+  An indepth look into the latest deep learning approaches. ead on to find out more about how to apply deep learning methods to geospatial data and solve real-world geospatial problems.
 ---
