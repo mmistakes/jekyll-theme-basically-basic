@@ -24,3 +24,11 @@ We will first start by exploring a concept called `stochastic depth decay`, the 
 
 <br>
 HF approach this problem by defining the probabilities of survival for each transformer block:
+
+```python
+import torch
+drop_path_rate = 0.1
+depths = [2,2,2,2]
+dpr = [x.item() for x in torch.linspace(0, drop_path_rate, sum(depths))]
+dpr
+```
