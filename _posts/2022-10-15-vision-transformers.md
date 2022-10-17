@@ -19,9 +19,9 @@ Ideally, we would use transfer learning and save ourselves time by fine-tuning a
  
 1. Down sample the image to 1/4 the original size. A 512 x 512 image becomes 128 x 128. The self attention computation requirements are much better at this downsampled size.
 
-2. Use a convolution kernel to create patches that overlap information from neighboring pixels. Each pixel in the 128 x 128 downsampled image contains some information about its neighbors because of the convolution kernel's size and stride (more on this later).
+2. Use a convolution kernel to create patches that overlap information from neighboring pixels. Each pixel in the downsampled image contains some information about its neighbors because of the convolution kernel's size and stride (more on this later).
  
-The result of these design choices is a vision transformer that has a lower computation footprint (hence, "efficient" self attention) and an architecture that allows for better adaptation to larger image sizes.
+The result of these two design choices are a vision transformer that has a lower computation footprint (hence, "efficient" self attention) and an architecture that allows for better adaptation to larger image sizes.
  
 
 ### The Role of Convolutions
