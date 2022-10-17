@@ -6,7 +6,7 @@ name:  "Daniel Hoshizaki"
 introduction: |
     Description of this blog post goes here.
 
-image: /assets/deform_plain.png
+image: /assets/images/deform_plain.png
 ---
 
 This notebook explores the components and layers of various vision transformer models. I primarily focus on SegFormer's implementation, but will look at other models as well for brief comparisons. To start off the examination, we will take a look at the role of convolutions in transformers.
