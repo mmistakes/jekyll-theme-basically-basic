@@ -1,15 +1,30 @@
 ---
 layout: post
-title:  "Vision Transformer Notes"
+title:  "Efficient Vision Transformer From Scratch"
 name:  "Daniel Hoshizaki"
 
 introduction: |
     Description of this blog post goes here.
 
-image: /assets/images/deform_plain.png
+image: /assets/images/segformer/segformer.JPG
 ---
 
-This notebook explores the components and layers of various vision transformer models. I primarily focus on SegFormer's implementation, but will look at other models as well for brief comparisons. To start off the examination, we will take a look at the role of convolutions in transformers.
+The SegFormer transformer model is one of the most stable and powerful vision models I have ever worked with. I wanted to understand why the model performs so well, so I decided to take a deep dive and look at the inner workings and components. In this blog post I will examine each layer of the model and attempt to explain the rough intuition of why this model works so well and is so awesome.
+
+### Why Use SegFormer and Efficient Attention?
+
+The main problem that the SegFormer model tries to tackle is the enormous compute footprint of self attention and the poor ability of vision transformers like ViT to adjust to variable pixel size images. Both issues are interrealated, but I'll walk through each one seperatly to begin with:
+
+1. The computational complexity of self attention is quadratic. If we have an image that's 512 x 512, we need 262,144 computations for ONE attention map (usually there are 728 such maps). An image that's 1024 x 1024 requires more than one million coputations! Full on self attention simply does not scale very well for larger image sizes...
+2. A traditional approach to dealing with the large compute footprint of self attention is to group pixels and compute the attention between groups (patches) rather than individual pixels. ViT uses 16 x 16, non-overlapping patches.The problem with the non-overalapping approach is that a model trained on certain pixel size (say, 224 x 224) has a hard time working with larger images during inference and fine tuning. If we think about this intuitively, the amount of "information" in a 16 x 16 patch from a 224 x 224 image is very different from the same sized patch from a 1024 x 1024 image. You would essentially need to train the model from scratch using larger image sizes if you're end goal was to work with such large images.
+
+Ideally, we would use transfer learning and save ourselves time by fine-tuning a model trained on smaller images sizes to work on larger image sizes. Non-overlapping patches, however, prevent effect transfer of knowledge. To get around both this road block, and the problem or large compute requirements of self attention, the authors of the SegFormer propose a simple but effective solution: efficient attention using overlapping patches. The method is straightforawrd:
+
+1. Down sample the image to 1/4 the original size. A 512 x 512 image becomes 128 x 128. The self attention computation requirements are much better than working at the original size.
+2. Use a convolution kernel to create patches that overlap information form neighboring pixels. Each pixel in the 128 x 128 downsampled image contains some information about it's neighbors because of the convolutional kernel's size and stride (more on this later).
+
+The result of these design choices is a vision transformer that has a lower computation foot print (hence, "effeicient" self attention) and an architecture that allows for better adaptation to larger image sizes.
+
 
 ### The Role of Convolutions
 
