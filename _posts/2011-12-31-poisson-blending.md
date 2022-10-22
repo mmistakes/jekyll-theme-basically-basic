@@ -1,5 +1,6 @@
 ---
 layout: post
+alt_title: "Hello"
 title:  "Poisson Blending"
 name:  "Daniel Hoshizaki"
 ---
