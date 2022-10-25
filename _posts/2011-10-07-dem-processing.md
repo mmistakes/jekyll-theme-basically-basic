@@ -10,4 +10,9 @@ The [Geospatial Information Authority of Japan](https://fgd.gsi.go.jp/download/m
 
 ![](/assets/images/dem/dem1.png)
 
+Here's an example of what the tiles look like when visualized on QGIS. 
 ![](/assets/images/dem/dem.gif)
+
+The great thing about tiles is that they can be served over the web and even hosted on an AWS S3 bucket.
+
+The code for converting the [raw XML files](https://fgd.gsi.go.jp/download/mapGis.php?tab=dem) is available from my [GitHub repository](https://github.com/danielhoshizaki/DEM-hillshade). 
