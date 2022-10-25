@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SegFormer: An Efficient Vision Transformer from Scratch"
+title:  "SegFormer: An Efficient Transformer Encoder from Scratch"
 name:  "Daniel Hoshizaki"
 image: /assets/images/segformer/segformer.JPG
 ---
