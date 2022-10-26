@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <p align="center">
-  <img src="/assets/images/self-portrait.jpg" />
+  <img width="300" src="/assets/images/self-portrait.jpg" />
 </p>
 
 ### Hi, I'm Daniel. 
