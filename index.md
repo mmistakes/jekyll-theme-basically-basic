@@ -1,9 +1,9 @@
 ---
 layout: home
-alt_title: "Geospatial Deep Learning Blog"
-sub_title: "Exploring the frontier of geospatial data processing with deep learning"
+paginate: true
+alt_title: "Geospatial Analysis Blog"
+sub_title: "Exploring ways to process geospatial data with spatial statistics and deep learning models"
 image: /assets/images/home.png
 introduction: |
-  An indepth look into the latest deep learning approaches. Read on to find out more about how to process various geospatial datasets and how to apply deep learning methods to solve real-world geospatial problems.
-paginate: true
+  An indepth look at various analytical tools to handle geospatial data. Read on to find out more about how to process various geospatial datasets and how to apply spatial statistics and deep learning methods to solve real-world geospatial problems.
 ---
