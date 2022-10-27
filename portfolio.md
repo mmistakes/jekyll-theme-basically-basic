@@ -1,5 +1,5 @@
 ---
-layout: cv
+layout: collection
 title: Portfolio
 permalink: /portfolio/
 ---
