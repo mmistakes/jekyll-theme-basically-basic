@@ -51,7 +51,7 @@ feed:
   path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 5
+paginate: 20
 paginate_path: /page:num/
 
 # Exclude from processing.
