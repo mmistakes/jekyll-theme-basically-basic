@@ -4,87 +4,82 @@ layout: default
 
 {% include page-intro.html %}
 
-<!DOCTYPE html>
-    <html lang="en">
-        <head>
-        <meta charset="utf-8">
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 
-        <!-- Leaflet -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.5/dist/leaflet.css" />
-        <script src="https://unpkg.com/leaflet@0.7.5/dist/leaflet.js"></script>
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.5/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@0.7.5/dist/leaflet.js"></script>
 
-        <style>
-            body { margin:0; padding:0; }
-            body, table, tr, td, th, div, h1, h2, input { font-family: "Calibri", "Trebuchet MS", "Ubuntu", Serif; font-size: 11pt; }
-            #map { position:absolute; top:0; bottom:0; width:100%; } /* full size */
-            .ctl {
-                padding: 2px 10px 2px 10px;
-                background: white;
-                background: rgba(255,255,255,0.9);
-                box-shadow: 0 0 15px rgba(0,0,0,0.2);
-                border-radius: 5px;
-                text-align: right;
-            }
-            .title {
-                font-size: 18pt;
-                font-weight: bold;
-            }
-            .src {
-                font-size: 10pt;
-            }
+    <style>
+        /* body { margin:0; padding:0; } */
+        table, tr, td, th, div, h1, h2, input { font-family: "Calibri", "Trebuchet MS", "Ubuntu", Serif; font-size: 11pt; }
+        #map { position:absolute; top:0; bottom:0; width:100%; } /* full size */
+        .ctl {
+            padding: 2px 10px 2px 10px;
+            background: white;
+            background: rgba(255,255,255,0.9);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            text-align: right;
+        }
+        .title {
+            font-size: 18pt;
+            font-weight: bold;
+        }
+        .src {
+            font-size: 10pt;
+        }
 
-        </style>
+    </style>
 
-    </head>
-    <body>
+</head>
 
-    <main id="main" class="page-content" aria-label="Content">
-        <div class="inner">
-            <div class="entry-wrap">
-            <div class="entry-content">
-                <div id="map"></div>
-            </div>
-            </div>
+<main id="main" class="page-content" aria-label="Content">
+    <div class="inner">
+        <div class="entry-wrap">
+        <div class="entry-content">
+            <div id="map"></div>
         </div>
-        </main>
+        </div>
+    </div>
+    </main>
 
 
 
-    <script>
-    /* **** Leaflet **** */
+<script>
+/* **** Leaflet **** */
 
-    // Base layers
-    //  .. OpenStreetMap
-    var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors', minZoom: 0, maxZoom: 10});
+// Base layers
+//  .. OpenStreetMap
+var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors', minZoom: 0, maxZoom: 10});
 
-    //  .. CartoDB Positron
-    var cartodb = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>', minZoom: 0, maxZoom: 10});
+//  .. CartoDB Positron
+var cartodb = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>', minZoom: 0, maxZoom: 10});
 
-    //  .. OSM Toner
-    var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.', minZoom: 0, maxZoom: 10});
+//  .. OSM Toner
+var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.', minZoom: 0, maxZoom: 10});
 
-    //  .. White background
-    var white = L.tileLayer("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAAAA1BMVEX///+nxBvIAAAAH0lEQVQYGe3BAQ0AAADCIPunfg43YAAAAAAAAAAA5wIhAAAB9aK9BAAAAABJRU5ErkJggg==", {minZoom: 0, maxZoom: 10});
+//  .. White background
+var white = L.tileLayer("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAAAA1BMVEX///+nxBvIAAAAH0lEQVQYGe3BAQ0AAADCIPunfg43YAAAAAAAAAAA5wIhAAAB9aK9BAAAAABJRU5ErkJggg==", {minZoom: 0, maxZoom: 10});
 
-    // Overlay layers (TMS)
-    var lyr = L.tileLayer('http://d3te075ij4rzq1.cloudfront.net/map/{z}/{x}/{y}.png', {tms: 1, opacity: 0.7, attribution: "", minZoom: 0, maxZoom: 10});
+// Overlay layers (TMS)
+var lyr = L.tileLayer('http://d3te075ij4rzq1.cloudfront.net/map/{z}/{x}/{y}.png', {tms: 1, opacity: 0.7, attribution: "", minZoom: 0, maxZoom: 10});
 
-    // Map
-    var map = L.map('map', {
-        center: [36.516386019792655, 137.85001119220965],
-        zoom: 10,
-        minZoom: 0,
-        maxZoom: 10,
-        layers: [lyr]
-    });
+// Map
+var map = L.map('map', {
+    center: [36.516386019792655, 137.85001119220965],
+    zoom: 10,
+    minZoom: 0,
+    maxZoom: 10,
+    layers: [lyr]
+});
 
-    // Fit to overlay bounds (SW and NE points with (lat, lon))
-    map.fitBounds([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]]);
+// Fit to overlay bounds (SW and NE points with (lat, lon))
+map.fitBounds([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]]);
 
-    </script>
+</script>
 
-    </body>
-    </html>
 
         
