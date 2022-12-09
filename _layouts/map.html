@@ -2,9 +2,7 @@
 layout: default
 ---
 
-{% include page-intro.html %}
-
-    <head>
+<head>
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 
@@ -15,26 +13,13 @@ layout: default
     <style>
         /* body { margin:0; padding:0; } */
         table, tr, td, th, div, h1, h2, input { font-family: "Calibri", "Trebuchet MS", "Ubuntu", Serif; font-size: 11pt; }
-        #map { position:absolute; top:0; bottom:0; width:100%; } /* full size */
-        .ctl {
-            padding: 2px 10px 2px 10px;
-            background: white;
-            background: rgba(255,255,255,0.9);
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            border-radius: 5px;
-            text-align: right;
-        }
-        .title {
-            font-size: 18pt;
-            font-weight: bold;
-        }
-        .src {
-            font-size: 10pt;
-        }
+        #map { top:0; bottom:0; width:100%; } /* full size */
 
     </style>
 
 </head>
+
+{% include page-intro.html %}
 
 <main id="main" class="page-content" aria-label="Content">
     <div class="inner">
