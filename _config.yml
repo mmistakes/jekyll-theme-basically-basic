@@ -17,8 +17,8 @@ lang: zh-CN
 title: Hexiaotong's Personal Website
 email:
 description:"Hexiaotong's Personal Website"
-baseurl: "/qimoxiangmu" # the optional subpath of your site, e.g. "/blog"
-url: "https://gitee.com/qimoxiangmu" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl: "/hexiaotong" # the optional subpath of your site, e.g. "/blog"
+url: "https://gitee.com/hexiaotong" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
   name:Hexiaotong
   twitter:
