@@ -59,11 +59,11 @@ var map = L.map('map', {
     maxZoom: 10,
     layers: [lyr],
     maxBounds: [[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]],
-    maxBoundsViscosity: 0.9
+    maxBoundsViscosity: 0.3
 });
 
 // 	disable bounce after pan to edge
-map.on('drag', function() {     map.panInsideBounds([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]], { animate: false }); });
+// map.on('drag', function() {     map.panInsideBounds([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]], { animate: false }); });
 	
 // Fit to overlay bounds (SW and NE points with (lat, lon))
 map.fitBounds ([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]]);
