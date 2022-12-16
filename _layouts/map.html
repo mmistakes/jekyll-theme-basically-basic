@@ -55,7 +55,7 @@ var lyr = L.tileLayer('http://d3te075ij4rzq1.cloudfront.net/map/{z}/{x}/{y}.png'
 var map = L.map('map', {
     center: [36.516386019792655, 137.85001119220965],
     zoom: 10,
-    minZoom: 5,
+    minZoom: 8,
     maxZoom: 10,
     layers: [lyr],
     maxBounds: [[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]],
@@ -63,7 +63,7 @@ var map = L.map('map', {
 });
 
 // 	disable bounce after pan to edge
-map.on('drag', function() {     map.panInsideBounds(bounds, { animate: false }); });
+map.on('drag', function() {     map.panInsideBounds([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]], { animate: false }); });
 	
 // Fit to overlay bounds (SW and NE points with (lat, lon))
 map.fitBounds ([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]]);
