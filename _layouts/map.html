@@ -68,6 +68,23 @@ map.on('drag', function() {     map.panInsideBounds([[36.007487736980735, 138.48
 // Fit to overlay bounds (SW and NE points with (lat, lon))
 map.fitBounds ([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]]);
 
+// avg element test
+var svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+svgElement.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+svgElement.setAttribute('viewBox', '0 0 200 200');
+svgElement.innerHTML = '<rect width="200" height="200"/><rect x="75" y="23" width="50" height="50" style="fill:red"/><rect x="75" y="123" width="50" height="50" style="fill:#0013ff"/>';
+
+svgElement = document.querySelector('#svg');
+
+
+var latLngBounds = L.latLngBounds([[36.1, 138.1], [36.6, 137.6]]);
+map.fitBounds(latLngBounds);
+
+var svgOverlay = L.svgOverlay(svgElement, latLngBounds, {
+    opacity: 0.7,
+    interactive: true
+}).addTo(map);
+
 </script>
 
 
