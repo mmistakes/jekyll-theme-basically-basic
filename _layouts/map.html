@@ -84,9 +84,8 @@ svgElement = document.querySelector('#svg');
 var latLngBounds = L.latLngBounds([[35.9, 138.1], [36.4, 137.6]]);
 map.fitBounds(latLngBounds);
 
-map.createPane('labels');
-
-map.getPane('labels').style.zIndex = 340;
+// map.createPane('labels');
+// map.getPane('labels').style.zIndex = 340;
 
 var svgOverlay = L.svgOverlay(svgElement, latLngBounds, {
     opacity: 0.7,
