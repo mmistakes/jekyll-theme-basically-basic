@@ -73,18 +73,18 @@ map.on('drag', function() {     map.panInsideBounds([[36.007487736980735, 138.48
 // Fit to overlay bounds (SW and NE points with (lat, lon))
 map.fitBounds ([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]]);
 
-
 // svg element test
 svgElement = document.querySelector('#svg');
 
 var latLngBounds = L.latLngBounds([[35.9, 138.1], [36.4, 137.6]]);
 
-// map.createPane('labels');
-// map.getPane('labels').style.zIndex = 340;
+map.createPane('bottom');
+map.getPane('bottom').style.zIndex = 340;
 
 var svgOverlay = L.svgOverlay(svgElement, latLngBounds, {
     opacity: 0.7,
-    interactive: true
+    interactive: true,
+    pane: "bottom"
 }).addTo(map);
 
 </script>
