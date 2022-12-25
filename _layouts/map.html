@@ -51,16 +51,6 @@ layout: default
 /* **** Leaflet **** */
 
 // Base layers
-//  .. OpenStreetMap
-var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors', minZoom: 0, maxZoom: 10});
-
-//  .. CartoDB Positron
-var cartodb = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>', minZoom: 0, maxZoom: 10});
-
-//  .. OSM Toner
-var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.', minZoom: 0, maxZoom: 10});
-
-// Overlay layers (TMS)
 var lyr = L.tileLayer('http://d3te075ij4rzq1.cloudfront.net/map/{z}/{x}/{y}.png', {tms: 1, opacity: 1, attribution: "", minZoom: 0, maxZoom: 10});
 
 // Map
@@ -71,7 +61,7 @@ var map = L.map('map', {
     maxZoom: 10,
     layers: [lyr],
     maxBounds: [[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]],
-    maxBoundsViscosity: 0.1,
+    maxBoundsViscosity: 0.9,
 
     attributionControl: false
 
