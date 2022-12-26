@@ -37,8 +37,6 @@ layout: default
         <div class="entry-wrap">
         <div class="entry-content">
 
-            <!-- <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200"/><rect x="75" y="23" width="50" height="50" style="fill:red"/><rect x="75" y="123" width="50" height="50" style="fill:#0013ff"/></svg> -->
- 
            <div id="map"></div>
         </div>
         </div>
@@ -52,6 +50,7 @@ layout: default
 
 // Base layers
 var lyr = L.tileLayer('http://d3te075ij4rzq1.cloudfront.net/{z}/{x}/{y}.png', {tms: 1, opacity: 1, attribution: "", minZoom: 0, maxZoom: 10});
+let bounds = [[41.33323675698634, 145.87514101180858], [45.58333333299999, 139.25]]
 
 // Map
 var map = L.map('map', {
@@ -60,7 +59,7 @@ var map = L.map('map', {
     minZoom: 8,
     maxZoom: 10,
     layers: [lyr],
-    maxBounds: [[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]],
+    maxBounds: bounds,
     maxBoundsViscosity: 0.1,
 
     attributionControl: false
@@ -71,21 +70,15 @@ var map = L.map('map', {
 // map.on('drag', function() {     map.panInsideBounds([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]], { animate: false }); });
 	
 // Fit to overlay bounds (SW and NE points with (lat, lon))
-map.fitBounds ([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]]);
+
+map.fitBounds (bounds);
 
 // svg element test
 svgElement = document.querySelector('#svg');
 
-var latLngBounds = L.latLngBounds([[35.9, 138.1], [36.4, 137.6]]);
-var latLngBounds = L.latLngBounds([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]]);
+var latLngBounds = L.latLngBounds(bounds);
 
 map.createPane('bottom');
 map.getPane('bottom').style.zIndex = 340;
-
-// var svgOverlay = L.svgOverlay(svgElement, latLngBounds, {
-//     opacity: 0.7,
-//    interactive: true,
-//    pane: "bottom"
-// }).addTo(map);
 
 </script>
