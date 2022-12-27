@@ -189,6 +189,8 @@ main {
 
 #map {
 
+    height: 512px;
+
     @include breakpoint($small) {
       height: 512px;
     }
