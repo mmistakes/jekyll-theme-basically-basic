@@ -186,3 +186,22 @@ main {
     }
   }
 }
+
+.map {
+
+    @include breakpoint($small) {
+      height: 512px;
+    }
+
+    @include breakpoint($medium) {
+      height: 512px;
+    }
+
+    @include breakpoint($large) {
+      height: 1024px;
+    }
+
+    @include breakpoint($xlarge) {
+      height: 1024px;
+    }
+  }
