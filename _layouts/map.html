@@ -55,11 +55,14 @@ layout: default
 var lyr = L.tileLayer('https://d3te075ij4rzq1.cloudfront.net/{z}/{x}/{y}.png', {tms: 1, opacity: 1, attribution: "", minZoom: 0, maxZoom: 12});
 let bounds = [[41.33323675698634, 145.87514101180858], [45.58333333299999, 139.25]]
 
+// Let the viewport size determine zoom
+let zoom = 5
+
 // Map
 var map = L.map('map', {
     center: [43.45828504499316, 142.5625705059043],
-    zoom: 7,
-    minZoom: 7,
+    zoom: zoom,
+    minZoom: zoom,
     maxZoom: 12,
     layers: [lyr],
     maxBounds: bounds,
