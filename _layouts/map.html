@@ -9,6 +9,7 @@ layout: default
     <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.5/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+
     <script src="https://unpkg.com/sql.js@0.3.2/js/sql.js"></script>
     <script src="https://unpkg.com/leaflet.tilelayer.mbtiles@latest/Leaflet.TileLayer.MBTiles.js"></script>
 
@@ -72,9 +73,24 @@ var map = L.map('map', {
 // map.on('drag', function() {     map.panInsideBounds([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]], { animate: false }); });
 	
 // Fit to overlay bounds (SW and NE points with (lat, lon))
-
 map.fitBounds (bounds);
-	
+
+// Failing to load plugins
 var mb = L.tileLayer.mbTiles('http://d3te075ij4rzq1.cloudfront.net/hokkaido.mbtiles').addTo(map);
-	
+
+
+(function(){
+    var originalInitTile = L.GridLayer.prototype._initTile
+    L.GridLayer.include({
+        _initTile: function (tile) {
+            originalInitTile.call(this, tile);
+
+            var tileSize = this.getTileSize();
+
+            tile.style.width = tileSize.x + 0.5 + 'px';
+            tile.style.height = tileSize.y + 0.5 + 'px';
+        }
+    });
+})()
+
 </script>
