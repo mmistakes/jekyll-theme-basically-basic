@@ -57,8 +57,10 @@ let bounds = [[41.33323675698634, 145.87514101180858], [45.58333333299999, 139.2
 const width = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 console.log(width)
 let zoom = 6
+let minzoom = 6
 if (width >= 720) {
     zoom = 8
+    minzoom = 7
 }
 console.log(zoom)
 
@@ -66,7 +68,7 @@ console.log(zoom)
 var map = L.map('map', {
     center: [43.45828504499316, 142.5625705059043],
     zoom: zoom,
-    minZoom: zoom,
+    minZoom: minzoom,
     maxZoom: 12,
     layers: [lyr],
     maxBounds: bounds,
