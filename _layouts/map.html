@@ -50,17 +50,15 @@ layout: default
 /* **** Leaflet **** */
 
 // Base layers
-var lyr = L.tileLayer('https://d3te075ij4rzq1.cloudfront.net/{z}/{x}/{y}.png', {tms: 1, opacity: 0.8, attribution: "", minZoom: 0, maxZoom: 12});
+var lyr = L.tileLayer('https://d3te075ij4rzq1.cloudfront.net/{z}/{x}/{y}.png', {tms: 1, opacity: 0.85, attribution: "", minZoom: 0, maxZoom: 12});
 let bounds = [[41.33323675698634, 145.87514101180858], [45.58333333299999, 139.25]]
 
 // Let the viewport size determine zoom
 const width = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-console.log(width)
 let zoom = 6
 if (width >= 720) {
     zoom = 8
 }
-console.log(zoom)
 
 // Map
 var map = L.map('map', {
