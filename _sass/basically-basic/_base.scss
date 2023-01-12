@@ -35,7 +35,7 @@ pre {
   font-family: $monospace-font-family;
 }
 
-#custom-attribution {
+.leaflet-control-attribution.leaflet-control{
   font-family: $monospace-font-family !important;
 }
 
