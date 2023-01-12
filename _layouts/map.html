@@ -73,7 +73,7 @@ var map = L.map('map', {
 });
 
 // Add custom attribution
-L.control.attribution({prefix: '© <a href="https://danielhoshizaki.com">Daniel Hoshizaki</a>'}).addTo(map);
+L.control.attribution({prefix: '<a class="custom-attribution" href="https://danielhoshizaki.com">© Daniel Hoshizaki</a>'}).addTo(map);
 
 // disable bounce after pan to edge
 // map.on('drag', function() {     map.panInsideBounds([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]], { animate: false }); });
