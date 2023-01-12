@@ -10,7 +10,6 @@ layout: default
     <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.5/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
 
-    <script src="/js/leaflet-0.7.2/leaflet.ajax.min.js"></script>
     <style>
         /* body { margin:0; padding:0; } */
         table, tr, td, th, div, h1, h2, input { font-family: "Calibri", "Trebuchet MS", "Ubuntu", Serif; font-size: 11pt; }
@@ -84,6 +83,6 @@ map.fitBounds (bounds);
 // Failing to load plugins
 var mb = L.tileLayer.mbTiles('http://d3te075ij4rzq1.cloudfront.net/hokkaido.mbtiles').addTo(map);
 
-document.getElementById('custom-attribution').style.color = "red";
+document.getElementById('custom-attribution').style.fontFamily = "Menlo, Consolas, Monaco, Courier New, Courier";
 
 </script>
