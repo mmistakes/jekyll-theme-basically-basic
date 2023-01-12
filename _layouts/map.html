@@ -79,9 +79,9 @@ map.fitBounds (bounds);
 
 // Add custom attribution
 L.control.attribution({prefix: '<a id="custom-attribution" href="https://danielhoshizaki.com">© Daniel Hoshizaki</a>'}).addTo(map);
-var a = document.getElementById('custom-attribution')
-console.log(a)
-a.style.fontFamily = "Menlo, Consolas, Monaco, Courier New, Courier";
+var att = document.getElementById('custom-attribution');
+att.style.fontFamily = "Menlo, Consolas, Monaco, Courier New, Courier";
+att.style.color = "green";
 
 // Failing to load plugins
 var mb = L.tileLayer.mbTiles('http://d3te075ij4rzq1.cloudfront.net/hokkaido.mbtiles').addTo(map);
