@@ -71,18 +71,20 @@ var map = L.map('map', {
     attributionControl: false
 });
 
-// Add custom attribution
-L.control.attribution({prefix: '<a id="custom-attribution" href="https://danielhoshizaki.com">© Daniel Hoshizaki</a>'}).addTo(map);
-
 // disable bounce after pan to edge
 // map.on('drag', function() {     map.panInsideBounds([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]], { animate: false }); });
-	
+
 // Fit to overlay bounds (SW and NE points with (lat, lon))
 map.fitBounds (bounds);
+
+// Add custom attribution
+L.control.attribution({prefix: '<a id="custom-attribution" href="https://danielhoshizaki.com">© Daniel Hoshizaki</a>'}).addTo(map);
+var a = document.getElementById('custom-attribution')
+console.log(a)
+a.style.fontFamily = "Menlo, Consolas, Monaco, Courier New, Courier";
 
 // Failing to load plugins
 var mb = L.tileLayer.mbTiles('http://d3te075ij4rzq1.cloudfront.net/hokkaido.mbtiles').addTo(map);
 
-document.getElementById('custom-attribution').style.fontFamily = "Menlo, Consolas, Monaco, Courier New, Courier";
 
 </script>
