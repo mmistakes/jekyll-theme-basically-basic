@@ -1,5 +1,6 @@
 ---
-layout: map
 title: Portfolio
+layout: collection
 permalink: /portfolio/
+collection: portfolio
 ---
