@@ -9,6 +9,7 @@ layout: default
     <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.5/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/Leaflet.TileLayer.MBTiles@1.0.0/Leaflet.TileLayer.MBTiles.js"></script>
 
     <style>
         /* body { margin:0; padding:0; } */
@@ -77,7 +78,7 @@ var map = L.map('map', {
 // Fit to overlay bounds (SW and NE points with (lat, lon))
 map.fitBounds (bounds);
 
-// Add custom attribution
+// Add custom attribution style
 L.control.attribution({prefix: '<a id="custom-attribution" href="https://danielhoshizaki.com">© Daniel Hoshizaki</a>'}).addTo(map);
 var att = document.getElementById('custom-attribution');
 att.style.fontFamily = "Menlo, Consolas, Monaco, Courier New, Courier";
@@ -85,6 +86,5 @@ att.style.color = "rgb(72,72,72)";
 
 // Failing to load plugins
 var mb = L.tileLayer.mbTiles('http://d3te075ij4rzq1.cloudfront.net/hokkaido.mbtiles').addTo(map);
-
 
 </script>
