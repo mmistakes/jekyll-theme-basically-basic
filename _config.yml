@@ -78,6 +78,18 @@ exclude:
   - /docs # ignore Basically Basic sample site
   - /example # ignore Basically Basic dev site
 
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+# Collections
+collections:
+  blog:
+    output: true
+    permalink: /:collection/:path/
+
 # Front Matter Defaults
 defaults:
   # _posts
