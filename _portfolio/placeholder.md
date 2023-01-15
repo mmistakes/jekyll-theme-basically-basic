@@ -1,4 +1,5 @@
 ---
+layout: map
 title: "Chocolate Chip Cookies"
 ---
 
