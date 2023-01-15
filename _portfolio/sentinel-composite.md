@@ -2,6 +2,7 @@
 layout: map
 title: "Sentinel-2 Satellite Composite"
 image:
+  path:
   thumbnail: /assets/images/portfolio/hokkaido.png
 ---
 
