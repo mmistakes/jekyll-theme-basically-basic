@@ -80,7 +80,7 @@ exclude:
 
 # Collections
 collections:
-  works:
+  portfolio:
     output: true
     permalink: /:collection/:path/
 
@@ -98,9 +98,9 @@ defaults:
       layout: post
       read_time: true
 
-  # _works
+  # _portfolio
   - scope:
-      path: "_works"
-      type: works
+      path: "_portfolio"
+      type: portfolio
     values:
       layout: post

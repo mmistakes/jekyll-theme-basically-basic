@@ -50,6 +50,5 @@ google_fonts:
 
 navigation_pages:
   - about.md
-  - works.md
   - portfolio.md
   - blog.md
