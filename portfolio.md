@@ -1,6 +1,6 @@
 ---
-title: Recipes
+title: Portfolio
 layout: collection
-permalink: /recipes/
-collection: recipes
+permalink: /portfolio/
+collection: portfolio
 ---

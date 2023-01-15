@@ -80,12 +80,10 @@ exclude:
 
 # Collections
 collections:
-  recipes:
+  portfolio:
     output: true
     permalink: /:collection/:path/
 
-# # Collections
-# collections:
 #   blog:
 #     output: true
 #     permalink: /:collection/:path/
@@ -100,10 +98,10 @@ defaults:
       layout: post
       read_time: true
 
-  # _recipes
+  # _portfolio
   - scope:
-      path: "_recipes"
-      type: recipes
+      path: "_portfolio"
+      type: portfolio
     values:
       layout: post
       read_time: true
