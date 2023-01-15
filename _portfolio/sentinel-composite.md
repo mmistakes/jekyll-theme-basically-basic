@@ -14,6 +14,9 @@ The journey to create an "awesome" looking satellite map took a very long time. 
   <img src="/assets/images/portfolio/hokkaido2.png" width="300"/>
   <img src="/assets/images/portfolio/tokyo.png" width="300"/>
   <img src="/assets/images/portfolio/aichi.png" width="300"/>
+</p>
+
+<p align="center">
   Composite images of Hokkaido, Tokyo, and Aichi Prefecture
 </p>
 
