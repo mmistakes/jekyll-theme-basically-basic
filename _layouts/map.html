@@ -87,9 +87,10 @@ att.style.color = "rgb(72,72,72)";
 let mvt = L.vectorGrid.protobuf("https://d3te075ij4rzq1.cloudfront.net/hokkaido/{z}/{x}/{y}.pbf", {
     vectorTileLayerStyles: {        
         hokkaido: {
-            stroke: 0.3,
+            stroke: true,
             weight: 1,
-            color: "white"
+            color: "white",
+            opacity: 0.8
         }, 
     },
     maxNativeZoom: 12
