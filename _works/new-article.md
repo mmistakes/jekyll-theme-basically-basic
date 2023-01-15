@@ -1,6 +1,10 @@
 ---
 layout: map
-title: "Chocolate Chip Cookies"
+title: "Sentinel-2 Large-scale Composite"
+image:
+  path: /assets/images/portfolio/hokkaido.png
+  thumbnail: /assets/images/portfolio/hokkaido.png
+  caption: "Image from [Daniel Hoshizaki](https://www.danielhoshizaki.com)"
 ---
 
 A chocolate chip cookie is a drop cookie that originated in the United States and features chocolate chips as its distinguishing ingredient.
