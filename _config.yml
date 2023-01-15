@@ -84,11 +84,11 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-# Collections
-collections:
-  blog:
-    output: true
-    permalink: /:collection/:path/
+# # Collections
+# collections:
+#   blog:
+#     output: true
+#     permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
