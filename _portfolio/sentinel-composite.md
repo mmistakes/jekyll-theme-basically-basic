@@ -27,4 +27,10 @@ Next, I needed a stack of Sentinel-2 images. I spent a lot of time experimenting
 
 Once I had my model and stack of images, I would generate a cloud mask for each Sentinel-2 image and select the 25th percentile pixel while excluding any pixel that was classified as a cloud. Excluding values from a percentile calculation turns out to be a very slow process in Numpy. I had to turn to [Kersten Fernerkundung's excellent algorithm](https://krstn.eu/np.nanpercentile()-there-has-to-be-a-faster-way/) that replaced Numpy's quadratic time complexity algorithm with one that has a linear run time. This algorithm was instrumental in allowing me to process the very large stack of Sentinel-2 images.
 
+Taken together, the above steps resulted in a process that guaranteed cloud free images no matter what geographic location was chosen. To be clear, the process works because of the enormous amount of data used. There are usually anywhere from 5~10 cloud free images in the stack of 100 images needed for the above process; however, the result is ALWAYS consistent. Because I've used so much data, the results are a very consistent temporal average. Neighboring tiles look similar and there is no noticeable seam between cells. I totally acknowledge that the process is overkill, but you really cannot argue with the results. 
+
+The images look AWESOME.
+
+Check out an interactive, grayscale version of the map below. 
+
 ## Interactive Map
