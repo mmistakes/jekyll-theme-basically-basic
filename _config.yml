@@ -99,3 +99,11 @@ defaults:
     values:
       layout: post
       read_time: true
+      
+  # _portfolio
+  - scope:
+      path: "_portfolio"
+      type: portfolio
+    values:
+      layout: post
+      read_time: true
