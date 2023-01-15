@@ -104,4 +104,3 @@ defaults:
       type: portfolio
     values:
       layout: post
-      read_time: true
