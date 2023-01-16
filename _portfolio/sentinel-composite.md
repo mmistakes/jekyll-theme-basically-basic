@@ -48,6 +48,6 @@ The final step to creating cloud free images requires combining the cloud mask w
 
 Taken together, the above steps allow me to pick any geographic location and generate a completely cloud free image. The results work great even for areas with persistent cloud cover. I've only processed Sentinel-2 cells over Japan, but it wouldn't be too much extra work to parallelize this process on a bunch of servers on cloud computing platforms like AWS or GCP. If I had a few extra bucks to throw at this project I could have the whole globe processed in a few hours. That's an MLOps project another day.
 
-For now, you can check out a sample of the final output in the map below. I combined the satellite imagery with one of [my favorite datasets for Japan: digital elevation model](https://danielhoshizaki.com/2021/10/07/dem-processing.html). The result is a very cool looking basemap that I'm sure would look great with other GIS data overlayed on top. Another interesting visualization project for another day!
+For now, you can check out a sample of the final output in the map below. I combined the satellite imagery with one of [my favorite datasets for Japan: a 10m digital elevation model](https://danielhoshizaki.com/2021/10/07/dem-processing.html). The result is a very cool looking basemap that I'm sure would look great with other GIS data overlayed on top. Another interesting visualization project for another day!
 
 ## Interactive Map
