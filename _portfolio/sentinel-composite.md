@@ -1,15 +1,17 @@
 ---
 layout: map
-title: "Sentinel-2 Satellite Composite"
+title: "Global Satellite Composite"
 image:
   path: /assets/images/portfolio/kyushu.png
   thumbnail: /assets/images/portfolio/hokkaido.png
 ---
 
-While working for [Axelspace](https://www.axelspace.com/) I contributed to a project that sparked my personal curiosity (and also hit a little bit of my OCD nerve). The company was working on generating a global cloud free dataset that it needed to calibrate one of it's products. After a good deal of research and development the company settle on an approach that allowed it to create a dataset using full precision, multispectral bands, and the most recent data. Although the results were useful for the product the company was developing, I wanted to craved something more visually appealing. I wanted to mix in a little bit of art and make the map "feel" awesome.
+I created a process that outputs clear-sky satellite images of ANY location on the globe. The process is fully automated and can return a clear tile given a Setninel-2 cell. It works for locations that are very hard to process, including areas that have near year-round cloud cover like the tropics. Read on to see examples and find out how I pulled off this feat. 
 
 ## Inspiration
-The journey to create an "awesome" looking satellite map took a very long time. I needed a decent amount of remote sensing processing experience to be able to pull all the required concepts together to achieve the final result I was going for. In the end, I manged to come up with brute force solution to generate cloud free data from a very large stack of Setninel-2 satellite images. Read on to find out how I layered several concepts to achieve awesome looking results.
+I was inspired to create my own process after working on an identical task for [Axelspace](https://www.axelspace.com/). The company ended up using a method that allowed it to retain full precision, multispectral, and the most recent data to create global mosaics. I wanted to branch this off into a personal project after realizing [creating basemaps](https://danielhoshizaki.com/2021/10/07/dem-processing.html) can be really cool and make great looking visuals for GIS projects. That said, I wasn't too concerned about the most recent data or maintaining radiometric accuracy, I just wanted a good looking map that was visually appealing.
+
+My goal was to create an artistic map that "felt" awesome. I surprized even myself when I actually pulled it off!
 
 <p align="center">
   <img src="/assets/images/portfolio/hokkaido2.png" width="300"/>
@@ -18,28 +20,34 @@ The journey to create an "awesome" looking satellite map took a very long time. 
 </p>
 
 <p align="center">
-  Composite images of Hokkaido, Tokyo, and Aichi Prefecture
+  Composite images of Hokkaido, Tokyo, and Aichi Prefecture, Japan.
 </p>
 
 ## Processing Technique
-A common technique used to create cloud free images of satellite data is to use the 25th percentile value from a stack of pixels. This [article on generating a cloud free image of New Zealand](https://medium.com/sentinel-hub/how-to-create-cloudless-mosaics-37910a2b8fa8) describes how the process works in detail. This technique works great for satellites that have very little issue with geoaccuracy. Sentinel-2 satellites only have an error of around a single pixel in a North-South orientation, so the technique works very well. It's possible to generate nearly cloud free imagery using this very, very simple approach.
+The dataset I used for this project was Sentinel-2's level 2 product. This imagery is already calibrated to surface reflectance and is very close to the "true" colors you would see on the surface of the planet without the effects from the atmosphere. A big bonus is that the data is completely free to use and hosted for free on AWS too.
 
-Although selecting the first quartile pixels from a stack Sentinel-2 tile works unreasonable well, I really wanted to push the process further. In areas with heavy cloud cover such as mountainous regions of the tropics, the technique would fail and cloud pixels would always find their way to the final image. This always bothered me enough that I wanted to create a sure-fire way of avoiding ALL cloud pixels in the output. The key to doing so, I found, was to use a very large stack of Sentinel-2 images and an effective cloud mask.
+Creating cloud free images from Sentinel-2 data is actually very easy. A common technique is to take the 25th percentile value from a stack of satellite image pixels. This [article on generating a cloud free image of New Zealand](https://medium.com/sentinel-hub/how-to-create-cloudless-mosaics-37910a2b8fa8) describes how the technique works in detail. It's possible to generate nearly cloud free imagery almost anywhere using this very, very simple approach.
 
-First things first, I needed cloud masks that were relatively accurate. It is possible to use the landcover classification data provided with Sentinel-2 imagery, but I wanted to go with cloud masks that were better than the provided masks. I've talked a bit about transformers in [this blog post](https://danielhoshizaki.com/2022/10/15/vision-transformers.html), but I found this architecture to be unreasonably good at predicting single class outputs like a cloud mask. To train the model, I used a set of Sentinel-2 images I labeled myself and hand selected a group of Sentinel-2 images where the landcover masks accurately predicted the cloud cover. Taking advantage of transfer learning, I was able to train a reasonable cloud detection model with about 100 training images.
+Almost, anywhere.
 
-Next, I needed a stack of Sentinel-2 images. I spent a lot of time experimenting with different sized stacks with different date ranges. I wanted to try to use the most recent data, but found that I could never find the right date range that would work for any location on the planet. What finally worked was simply feeding the process all Sentinel-2 images for selected months from the last 5 years. The stack was generally made up of 100 tiles (give or take a few depending on the Sentinel-2 cell).
+I was always bothered with how this technique would fail for regions that typically have a lot of cloud cover: mountainous terrain or areas around the tropics. For most production cases, it's probably not worth the extra work to deal with cloud cover in this area, but this is a personal project and I wanted to see if I could develop a sure-fire way of removing all cloud cover.
+
+It turns out that a modified version of the 25th percentile technique along with a very heavy handed use of almost all Sentinel-2 data can remove the last vestiges of cloud cover pixels. My process needs on average 100 Sentinel-2 tiles (5 years worth of data during summertime months). The vanilla percentile technique can achieve similar results with around 10 tiles! Needless to say, the process I developed is severe overkill. That said, I can run it in my sleep and it will ALWAYS produce a clear image. The same cannot be said for the vanilla technique
+
+In addition to a large stack of Sentinel-2 images, my process also requires fairly accurate cloud cover masks. At work we used a transformer to detect cloud cover and it worked almost unreasonably well (I've written about the architecture in a [blog post here](https://danielhoshizaki.com/2022/10/15/vision-transformers.html)). I used the same architecture, available on the very awesome [Huggingface](https://huggingface.co/) library, and created my own training dataset using a landcover dataset that comes with the Sentinel-2 data on AWS. After training the model, I ran it against every tile and created a corresponding cloud mask.
 
 <p align="center">
   <img src="/assets/images/portfolio/japan.png" width="500"/>
 </p>
 
-Once I had my model and stack of images, I would generate a cloud mask for each Sentinel-2 image and select the 25th percentile pixel while excluding any pixel that was classified as a cloud. Excluding values from a percentile calculation turns out to be a very slow process in Numpy. I had to turn to [Kersten Fernerkundung's excellent algorithm](https://krstn.eu/np.nanpercentile()-there-has-to-be-a-faster-way/) that replaced Numpy's quadratic time complexity algorithm with one that has a linear run time. This algorithm was instrumental in allowing me to process the very large stack of Sentinel-2 images.
+<p align="center">
+  Composite output over Japan.
+</p>
 
-Taken together, the above steps resulted in a process that guaranteed cloud free images no matter what geographic location was chosen. To be clear, the process works because of the enormous amount of data used (somewhat of an overkill process). Because I've used so much data, the results are a very consistent temporal average. Neighboring tiles look similar and there is no noticeable seam between cells. I totally acknowledge that the process is overkill, but you really cannot argue with the results. 
+The final step to creating cloud free images requires combining the cloud mask with the vanialla 25th percentile technique I mentioned in the beginning. Sounds simple, but this process is insanely slow when using a built in method in Numpy. Thankfully, a talented individual by the name of [Kersten Fernerkundung created an excellent algorithm](https://krstn.eu/np.nanpercentile()-there-has-to-be-a-faster-way/) to do the heavy lifting. His work imprecisely approximates Numpy's nanpercentile function, but brings the run time down from quadratic to linear. This algorithm was critical in allowing me to effectively use the cloud masks to compute the 25th percentile value.
 
-The images look AWESOME.
+Taken together, the above steps allow me to pick any geographic location and generate a completely cloud free image. The results work great even for areas with persistent cloud cover. I've only processed Sentinel-2 cells over Japan, but it wouldn't be too much extra work to upload this process on a bunch of servers on cloud computing platform like AWS or GCP. If I had a few extra bucks to throw at this project I could have the whole globe processed in a few hours. That will be for another day.
 
-Check out a sample, grayscale version of the dataset below. 
+In the meantime, you can check out a sample of the final output in the map below. I combined the satellite imagery with one of [my favorite datasets for Japan: digital elevation model](https://danielhoshizaki.com/2021/10/07/dem-processing.html). The result is a very cool looking basemap that I'm sure would look great with other GIS data overlayed on top. Another interesting visualization project for another day!
 
 ## Interactive Map
