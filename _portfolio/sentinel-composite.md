@@ -6,12 +6,12 @@ image:
   thumbnail: /assets/images/portfolio/hokkaido.png
 ---
 
-I created a process that outputs clear-sky satellite images of ANY location on the globe. The process is fully automated and can return a clear tile given a Setninel-2 cell. It works for locations that are very hard to process, including areas that have near year-round cloud cover like the tropics. Read on to see examples and find out how I pulled off this feat. 
+I created a process that outputs clear-sky satellite images of ANY location on the globe. The process is fully automated and can return a clear tile given a Setninel-2 cell. It even works for locations that are typically hard to process, like the tropics where there is almost year-round cloud cover. Read on to see examples and find out how I pulled off this feat.
 
 ## Inspiration
-I was inspired to create my own process after working on an identical task for [Axelspace](https://www.axelspace.com/). The company ended up using a method that allowed it to retain full precision, multispectral, and the most recent data to create global mosaics. I wanted to branch this off into a personal project after realizing [creating basemaps](https://danielhoshizaki.com/2021/10/07/dem-processing.html) can be really cool and make great looking visuals for GIS projects. That said, I wasn't too concerned about the most recent data or maintaining radiometric accuracy, I just wanted a good looking map that was visually appealing.
+I was inspired to create my own process after working on an identical task for [Axelspace](https://www.axelspace.com/). The company ended up developing a method that allowed it to retain full precision, multispectral, and the most recent data to create global mosaics. I wanted to take a different approach and be able to use the data for future personal GIS visualization projects. To that end, I wasn't too concerned about the most recent data or maintaining radiometric accuracy, I just wanted a good looking map that was visually appealing.
 
-My goal was to create an artistic map that "felt" awesome. I surprized even myself when I actually pulled it off!
+I wasn't sure that I could pull it off, but I ended up surprizing myself when I saw the results!
 
 <p align="center">
   <img src="/assets/images/portfolio/hokkaido2.png" width="300"/>
