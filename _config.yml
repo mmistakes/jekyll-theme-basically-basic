@@ -16,7 +16,7 @@
 lang: en-US
 title: Daniel Hoshizaki
 email: dth.hoshizaki@gmail.com
-description: Geospatial Deep Learning Blog
+# description: Geospatial Deep Learning Blog
 baseurl: /
 url: https://danielhoshizaki.com/
 root: /
