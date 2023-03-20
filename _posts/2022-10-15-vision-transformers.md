@@ -3,8 +3,8 @@ layout: post
 title:  "An Efficient Transformer Encoder from Scratch"
 name:  "Daniel Hoshizaki"
 image:
- thumbnail: /assets/images/segformer/segformer.JPG
- path: /assets/images/segformer/segformer.JPG
+ thumbnail: /assets/images/segformer/particles.jpg
+ path: /assets/images/segformer/particles.jpg
 ---
  
 The SegFormer transformer model is a very stable and powerful computer vision model. In this article I take a deep dive into the inner workings of the model's encoder in an attempt to understand why it performs so well. Read on to find out what makes this vision model so awesome.
