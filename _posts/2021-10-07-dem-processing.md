@@ -2,7 +2,9 @@
 layout: post
 title:  "Processing DEM Data for Japan"
 name:  "Daniel Hoshizaki"
-image: /assets/images/dem/dem2.png
+image:
+  path: /assets/images/dem/header.png
+  thumbnail: /assets/images/dem/header.png
 ---
 
 # Japan's Digital Elevation Model
