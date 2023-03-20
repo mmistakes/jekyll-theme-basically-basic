@@ -10,6 +10,17 @@ layout: default
     
     {% if site.posts.size > 0 %}
       <div>
+        {% if paginator.page > 1 %}
+          <header class="section-title">
+            <h2>Pinned Post</h2>
+            {% for post in site.posts %}
+              {% if post.pin == true %}
+                {% include entry.html %}
+              {% endif %}
+            {% endfor %}
+          </header>
+        {% endif %}
+
         <header class="section-title">
           <h2>{{ site.data.theme.t.posts | default: 'Posts' }}{% if paginator.page > 1 %}{{ site.data.theme.t.page | default: 'Page' | prepend: ' - ' | append: ' ' }}{{ paginator.page }} {{ site.data.theme.t.of | default: 'of' }} {{ paginator.total_pages }}{% endif %}</h2>
         </header>
