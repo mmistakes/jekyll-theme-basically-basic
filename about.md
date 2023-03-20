@@ -9,7 +9,7 @@ permalink: /about/
 </p>
 
 ### Hi, I'm Daniel.
-#### I'm passionate about applied deep learning and all things geospatial.
+#### I'm passionate about applied deep learning and geospatial data.
  
 I currently work as the lead data scientist for a satellite manufacturer startup, [Axelspace](https://www.axelspace.com/).
 Prior to that, I worked as a GIS application programmer for a renewable energy startup, [GPSS](https://gpssgroup.jp/). You can check out my portfolio here and my resume on [LinkedIn](https://www.linkedin.com/in/daniel-hoshizaki-25b3a659/).
