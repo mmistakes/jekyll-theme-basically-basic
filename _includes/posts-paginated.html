@@ -1,11 +1,7 @@
-{% for post in site.posts %}
-  {% if post.pin == true %}
-  {% include entry.html %}
-  {% endif %}
-{% endfor %}
-
 {% for post in paginator.posts %}
-  {% include entry.html %}
+  {% if post.pin != true %}
+    {% include entry.html %}
+  {% endif %}
 {% endfor %}
 
 <!-- Pagination links -->
