@@ -3,7 +3,8 @@ layout: map
 title: "Global Satellite Composite"
 image:
   path: /assets/images/portfolio/kyushu.png
-  thumbnail: /assets/images/portfolio/hokkaido.png
+  # thumbnail: /assets/images/portfolio/hokkaido.png
+  thumbnail: /assets/images/portfolio/kyushu.png
 categories: [Remote Sensing, Deep Learning]
 pin: true
 ---
