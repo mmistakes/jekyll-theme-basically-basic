@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An Efficient Transformer Encoder from Scratch"
+title:  "A Vision Transformer Encoder from Scratch"
 name:  "Daniel Hoshizaki"
 image:
  thumbnail: /assets/images/segformer/particles.jpg
