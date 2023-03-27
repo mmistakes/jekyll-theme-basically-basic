@@ -2,6 +2,9 @@
 layout: post
 title:  "Attention Mechanisms for Vision Transformers"
 name:  "Daniel Hoshizaki"
+image:
+  path: /assets/images/attention_comparison/attention.jpg
+  thumbnail: /assets/images/attention_comparison/attention.jpg
 ---
 
 This notebook will explore the components of a [SegFormer model](https://arxiv.org/pdf/2105.15203.pdf) as defined by [Hugging Face (HF)](https://huggingface.co/docs/transformers/model_doc/segformer).
