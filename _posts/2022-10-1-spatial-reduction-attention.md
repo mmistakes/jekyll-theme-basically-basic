@@ -12,9 +12,9 @@ This notebook will explore the components of a [SegFormer model](https://arxiv.o
 
 <p align="center">
   <img src="/assets/images/attention_comparison/cat/cat.jpg" width="256" height="256" />
-  <img src="/assets/images/attention_comparison/cat/seg.png" width="256" height="256" />
-  <img src="/assets/images/attention_comparison/cat/swin.png" width="256" height="256" />
-  <img src="/assets/images/attention_comparison/cat/deform.png" width="256" height="256" />
+  <img src="/assets/images/attention_comparison/cat/seg.jpg" width="256" height="256" />
+  <img src="/assets/images/attention_comparison/cat/swin.jpg" width="256" height="256" />
+  <img src="/assets/images/attention_comparison/cat/deform.jpg" width="256" height="256" />
 </p>
 
 <p align="center">
