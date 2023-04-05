@@ -13,3 +13,5 @@ gem "jekyll-remote-theme"
 #   gem "jekyll-feed"
 #   gem "jemoji"
 # end
+
+gem "webrick", "~> 1.8"
