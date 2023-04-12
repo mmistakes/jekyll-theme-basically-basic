@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: Erick's Web Site
+title: An Intersection of Engineering, Agriculture, Data Science and Innovation
 email: erick@erickcantu.com
-description:
+description: Explore the fusion of engineering, agriculture, and innovation with Erick, a Data Scientist navigating the crossroads of expertise to create sustainable, efficient solutions..
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: https://www.erickcantu.com
 author:
@@ -25,7 +25,7 @@ author:
   picture:
 twitter_username:
 github_username: erickCantu
-logo: # path of site logo, e.g. "/assets/images/logo.png"
+logo: "/assets/images/avatar.jpg" # path of site logo, e.g. "/assets/images/logo.png"
 search: # true, false (default)
 search_full_content: false # true, false (default)
 search_provider: # lunr (default), algolia
