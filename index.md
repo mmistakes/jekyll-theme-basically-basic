@@ -1,5 +1,6 @@
 ---
 layout: home
+image: /assets/images/ecantu_Craft_a_captivating_artwork_that_illustrates_the_fusion__c8e70261-dc44-4cdb-accb-00d61ea5b16f.png
 ---
 
 Welcome to the Intersection of Engineering, Agriculture, Data Science and Innovation
