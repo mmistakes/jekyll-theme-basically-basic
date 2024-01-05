@@ -9,14 +9,8 @@ permalink: /about/
 </p>
 
 ### Hi, I'm Daniel.
-#### I'm passionate about applied deep learning and geospatial data.
+#### In my past life I was an artist: now I'm in the `shell` of a programmer. <br>I'm interested in art, geospatial data, and deep-learning.
  
-I currently work as the lead data scientist for a satellite manufacturer startup, [Axelspace](https://www.axelspace.com/).
-Prior to that, I worked as a GIS application programmer for a renewable energy startup, [GPSS](https://gpssgroup.jp/). You can check out my portfolio here and my resume on [LinkedIn](https://www.linkedin.com/in/daniel-hoshizaki-25b3a659/).
+I write about geospatial deep learning and data science in my [blog](https://danielhoshizaki.com/blog/). All my other spare time goes to making interesting visualizations and art. You can see examples of my projects in my [portfolio](https://danielhoshizaki.com/).
  
-In my spare time I enjoy finding and tinkering with new spatial datasets for Japan. I blog about how I process these datasets as well as how to use deep learning to extract insights from the data.
- 
-I also enjoy skiing, mountain biking, and photography.
- 
-#### Let's connect
-Interested in any of the above topics? Let's chat! You can reach me at dth.hoshizaki at gmail.com.
+If I don't have to stare at a computer, I prefer to be outside spending time with my daughter, skiing, mountain biking, or surfing.

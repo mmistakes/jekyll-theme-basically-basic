@@ -8,7 +8,9 @@ image:
 
 ---
 
-This notebook will explore the components of a [SegFormer model](https://arxiv.org/pdf/2105.15203.pdf) as defined by [Hugging Face (HF)](https://huggingface.co/docs/transformers/model_doc/segformer).
+Having worked with a few vision transformer models recently, I became curious about the different types of self attention used inside of these models. In particular, I chose to focus on howSelf attention layers can be very memory and compute intensive for large images
+
+Self attention has been on my mind recently. This notebook will explore the components of a [SegFormer model](https://arxiv.org/pdf/2105.15203.pdf) as defined by [Hugging Face (HF)](https://huggingface.co/docs/transformers/model_doc/segformer).
 
 <p align="center">
   <img src="/assets/images/attention_comparison/cat/cat.jpg" width="256" height="256" />
