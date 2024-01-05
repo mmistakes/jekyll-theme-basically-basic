@@ -1,6 +1,6 @@
 ---
 title: Blog
-layout: collection
+layout: home
 permalink: /blog/
 collection: blog
 ---
