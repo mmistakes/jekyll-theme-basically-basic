@@ -80,13 +80,13 @@ exclude:
 
 # Collections
 collections:
-  # portfolio:
-  #   output: true
-  #   permalink: /:collection/:path/
-
-  blog:
+  portfolio:
     output: true
     permalink: /:collection/:path/
+
+#   blog:
+#     output: true
+#     permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
