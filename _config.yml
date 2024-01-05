@@ -84,9 +84,9 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-#   blog:
-#     output: true
-#     permalink: /:collection/:path/
+  blog:
+    output: true
+    permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
@@ -102,5 +102,12 @@ defaults:
   - scope:
       path: "_portfolio"
       type: portfolio
+    values:
+      layout: post
+
+  # _blog
+  - scope:
+      path: "_blog"
+      type: blog
     values:
       layout: post
