@@ -1,5 +1,6 @@
 ---
-layout: home
-paginate: true
-image: /assets/images/home.png
+title: Blog
+layout: collection
+permalink: /blog/
+collection: blog
 ---
