@@ -7,8 +7,7 @@
   {% endif %}
 
   <div class="inner">
-    <div class="intro-text">
-      <p class="intro-subtitle">{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</p>
-    </div>
+    <h2 id="page-title" class="intro-title">{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</h2>
+    
   </div>
 </header>
