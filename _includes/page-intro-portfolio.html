@@ -5,7 +5,7 @@
       <img src="{{ intro_image }}" alt="{{ page.title }}">
     </div>
   {% endif %}
-  <div class="inner">
+  <div class="custom">
   <div>
     <h2 class="entry-content">{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</h2>
   </div>
