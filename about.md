@@ -10,4 +10,4 @@ permalink: /about/
 
 I've worked with several mediums in the past, but I find programming to be the most practical. It offers a good balance between  intersting problems worth solving, creative expression, and a decent work-life balance.
  
-Topics I enjoy exploring include are art, geospatial data, and deep learning. That said, if I don't have to stare at a computer, I prefer to be outside spending time with my daughter, skiing, mountain biking, or surfing.
+Topics I enjoy exploring include art, geospatial data, and deep learning. That said, if I don't have to stare at a computer, I prefer to be outside spending time with my daughter, skiing, mountain biking, or surfing.
