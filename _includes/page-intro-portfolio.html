@@ -1,13 +1,13 @@
-<header class="intro">
+<!-- <header class="intro">
   {% if page.image.path %}
     {% assign intro_image = page.image.path | default: page.image | relative_url | escape %}
     <div class="intro-image">
       <img src="{{ intro_image }}" alt="{{ page.title }}">
     </div>
-  {% endif %}
+  {% endif %} -->
   <div class="inner">
   <div>
     <h2 class="custom">{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</h2>
   </div>
   </div>
-</header>
+<!-- </header> -->
