@@ -1,1 +1,102 @@
+---
+layout: default
+---
 
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.5/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.vectorgrid@latest/dist/Leaflet.VectorGrid.js"></script>
+
+    <style>
+        /* body { margin:0; padding:0; } */
+        table, tr, td, th, div, h1, h2, input { font-family: "Calibri", "Trebuchet MS", "Ubuntu", Serif; font-size: 11pt; }
+        #map { top:0; bottom:0; width:100%; } /* height needs to be dynamic */
+        .leaflet-container {
+
+        background: rgb(125,191,194);
+        background: linear-gradient(180deg,
+          rgba(125,191,194,0.75) 0%, 
+          rgba(254,149,149,0.75) 68%,
+          rgba(254,188,93,0.75) 100%); 
+        
+        border-radius: 10px;
+        outline: 0;
+       
+	}
+    </style>
+
+</head>
+
+<main id="main" class="page-content" aria-label="Content">
+    <div class="inner">
+        <div class="entry-wrap">
+        <div class="entry-content"
+            
+            <div id="map"></div>
+            {{ content }}
+          
+        </div>
+        </div>
+    </div>
+    </main>
+
+
+
+<script>
+/* **** Leaflet **** */
+
+// Base layers
+var lyr = L.tileLayer('https://d3te075ij4rzq1.cloudfront.net/{z}/{x}/{y}.png', {tms: 1, opacity: 0.85, attribution: "", minZoom: 0, maxZoom: 12});
+let bounds = [[41.33323675698634, 145.87514101180858], [45.58333333299999, 139.25]]
+
+// Let the viewport size determine zoom
+const width = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+let zoom = 6
+if (width >= 720) {
+    zoom = 8
+}
+
+// Map
+var map = L.map('map', {
+    center: [43.45828504499316, 142.5625705059043],
+    zoom: zoom,
+    minZoom: zoom,
+    maxZoom: 12,
+    layers: [lyr],
+    maxBounds: bounds,
+    maxBoundsViscosity: 0.1,
+    attributionControl: false
+});
+
+// disable bounce after pan to edge
+// map.on('drag', function() {     map.panInsideBounds([[36.007487736980735, 138.480548876562], [37.025284302604575, 137.21947350785726]], { animate: false }); });
+
+// Fit to overlay bounds (SW and NE points with (lat, lon))
+map.fitBounds (bounds);
+
+// Add custom attribution style
+L.control.attribution({prefix: '<a id="custom-attribution" href="https://danielhoshizaki.com">© Daniel Hoshizaki</a>'}).addTo(map);
+var att = document.getElementById('custom-attribution');
+att.style.fontFamily = "Menlo, Consolas, Monaco, Courier New, Courier";
+att.style.color = "rgb(72,72,72)";
+
+// If there are no headers to uncompress the response, then the original data MUST not be compressed by GDAL
+// Sample command:
+// ogr2ogr -f MVT -dsco MAXZOOM=12 -dsco COMPRESS=NO ./hokkaido ./hokkaido.geojson
+let mvt = L.vectorGrid.protobuf("https://d3te075ij4rzq1.cloudfront.net/hokkaido/{z}/{x}/{y}.pbf", {
+    vectorTileLayerStyles: {        
+        hokkaido: {
+            stroke: true,
+            weight: 1,
+            color: "white",
+            opacity: 0.9
+        }, 
+    },
+    maxNativeZoom: 12
+}).addTo(map);
+
+</script>
