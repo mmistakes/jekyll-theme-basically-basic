@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: collection-portfolio
 title: Portfolio
 collection: portfolio
 paginate: true
