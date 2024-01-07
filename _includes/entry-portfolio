@@ -1,0 +1,17 @@
+{% if post.id %}
+  {% assign title = post.title | markdownify | strip_html %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<article class="entry">
+  <header class="entry-header">
+    <h3 class="entry-title">
+      <a href="{{ post.url | relative_url }}" rel="bookmark">{{ title }}</a>
+    </h3>
+    {% if post.image.thumbnail %}
+      {% assign entry_image = post.image.thumbnail | relative_url | escape %}
+      <img class="entry-image u-photo" src="{{ entry_image }}" alt="">
+    {% endif %}
+  </header>
+</article>
