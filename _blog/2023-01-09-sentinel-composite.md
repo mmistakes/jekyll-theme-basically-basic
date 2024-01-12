@@ -11,11 +11,6 @@ pin: true
 
 I created a process that outputs clear-sky satellite images of ANY location on the globe. The process is fully automated and can return a clear tile given a Setninel-2 cell. It even works for locations that are typically hard to process, like the tropics where there is almost year-round cloud cover. Read on to see examples and find out how I put this project together.
 
-## Inspiration
-I was inspired to create my own process after working on an identical task for [Axelspace](https://www.axelspace.com/). The company ended up developing a method that allowed it to retain full precision, multispectral, and the most recent data to create global mosaics. I wanted to take a different approach and be able to use the data for future personal GIS visualization projects. To that end, I wasn't too concerned about the most recent data or maintaining radiometric accuracy, I just wanted a good looking map that was visually appealing.
-
-I wasn't sure that I could pull it off, but I ended up surprizing myself when I saw the results!
-
 <p align="center">
   <img src="/assets/images/portfolio/hokkaido2.png" width="300"/>
   <img src="/assets/images/portfolio/tokyo.png" width="300"/>
