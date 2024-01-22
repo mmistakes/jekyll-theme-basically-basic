@@ -17,7 +17,7 @@ lang: en-US
 title: Daniel Hoshizaki
 email: dth.hoshizaki@gmail.com
 description: Creator in a programmer's shell
-baseurl: /
+baseurl: /blog
 url: https://danielhoshizaki.com/
 root: /
 author:
