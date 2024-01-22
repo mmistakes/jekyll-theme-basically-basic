@@ -14,35 +14,35 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: Basically Basic
-email: dugan.nash@mailinator.com
-description: "Your new default Jekyll theme"
-baseurl: "/example"  # the subpath of your site, e.g. /blog
-url: ""  # the base hostname & protocol for your site, e.g. http://example.com
+title: Daniel Hoshizaki
+email: dth.hoshizaki@gmail.com
+description: Creator in a programmer's shell
+baseurl: /
+url: https://danielhoshizaki.com/
+root: /
 author:
-  name: Dugan Nash
-  twitter: Towlette_Pettetucci
-  picture: /assets/images/johndoe.png
-twitter_username: Towlette_Pettetucci
-github_username: Towlette_Pettetucci
-logo: /assets/icons/basically-basic-logo-light.svg
-search: true
-search_full_content: true
-search_provider: algolia
+  name: Daniel Hoshizaki
+  twitter:
+  picture: /assets/images/self-portrait.jpg
+twitter_username:
+github_username: danielhoshizaki
+logo: # path of site logo, e.g. "/assets/images/logo.png"
+search: true # true, false (default)
+search_full_content: true # true, false (default)
+search_provider: # lunr (default), algolia
 algolia:
-  application_id: QB6HVGBSBA
-  index_name: basically-basic
-  search_only_api_key: 9d5014e5bbc77372547bce778dfa5663
+  application_id: # YOUR_APPLICATION_ID
+  index_name: # YOUR_INDEX_NAME
+  search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
-
-# Liquid
-liquid:
-  error_mode: strict
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-basically-basic
-plugins: # previously gems
+
+# theme: jekyll-theme-basically-basic
+remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
+
+plugins: # previsously gems
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -51,26 +51,46 @@ feed:
   path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 10
+paginate: 20
 paginate_path: /page:num/
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .asset-cache
+  - .bundle
+  - .codeclimate.yml
+  - .editorconfig
+  - .gitattributes
+  - .jekyll-assets-cache
+  - .sass-cache
+  - .scss-lint.yml
+  - CHANGELOG
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - Rakefile
+  - README
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - /docs # ignore Basically Basic sample site
+  - /example # ignore Basically Basic dev site
 
 # Collections
 collections:
-  recipes:
+  portfolio:
     output: true
     permalink: /:collection/:path/
+
+  # blog:
+  #   output: true
+  #   permalink: /:collection/:path/
+
+  # home:
+  #   output: true
+  #   permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
@@ -81,10 +101,10 @@ defaults:
     values:
       layout: post
       read_time: true
-  # _recipes
-  - scope:
-      path: "_recipes"
-      type: recipes
-    values:
-      layout: post
-      read_time: true
+
+  # # _portfolio
+  # - scope:
+  #     path: "_portfolio"
+  #     type: portfolio
+  #   values:
+  #     layout: post
