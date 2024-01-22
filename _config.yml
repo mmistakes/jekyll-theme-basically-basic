@@ -80,11 +80,15 @@ exclude:
 
 # Collections
 collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
+  # portfolio:
+  #   output: true
+  #   permalink: /:collection/:path/
 
-  blog:
+  # blog:
+  #   output: true
+  #   permalink: /:collection/:path/
+
+  home:
     output: true
     permalink: /:collection/:path/
 
