@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: collection-portfolio
 title: Portfolio
 collection: portfolio
@@ -7,4 +7,4 @@ image: /assets/images/home.png
 entries_layout: grid
 ---
 
-## Portfolio
+## Portfolio -->
