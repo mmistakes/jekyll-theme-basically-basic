@@ -98,16 +98,18 @@ defaults:
       layout: post
       read_time: true
 
-  # _portfolio
-  - scope:
-      path: "_portfolio"
-      type: portfolio
-    values:
-      layout: post
+  # # If portfolio version is desired, uncomment these and set
+  # # archive_portfolio_index.md -> index.md
+  # # _portfolio
+  # - scope:
+  #     path: "_portfolio"
+  #     type: portfolio
+  #   values:
+  #     layout: post
 
-  # _blog
-  - scope:
-      path: "_blog"
-      type: blog
-    values:
-      layout: post
+  # # _blog
+  # - scope:
+  #     path: "_blog"
+  #     type: blog
+  #   values:
+  #     layout: post

@@ -1,10 +1,7 @@
 ---
-layout: collection-portfolio
-title: Portfolio
-collection: portfolio
+title: Blog
+layout: home
+permalink: /blog/
+collection: blog
 paginate: true
-image: /assets/images/home.png
-entries_layout: grid
 ---
-
-## Portfolio
