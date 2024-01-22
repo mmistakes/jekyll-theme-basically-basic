@@ -1,1 +1,1 @@
-danielhoshizaki.github.io
+My personal blog. See the website [here](danielhoshizaki.com)
