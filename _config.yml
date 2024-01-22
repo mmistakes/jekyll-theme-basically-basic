@@ -84,9 +84,9 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-  blog:
-    output: true
-    permalink: /:collection/:path/
+#   blog:
+#     output: true
+#     permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
@@ -98,18 +98,9 @@ defaults:
       layout: post
       read_time: true
 
-  # # If portfolio version is desired, uncomment these and set
-  # # archive_portfolio_index.md -> index.md
-  # # _portfolio
-  # - scope:
-  #     path: "_portfolio"
-  #     type: portfolio
-  #   values:
-  #     layout: post
-
-  # # _blog
-  # - scope:
-  #     path: "_blog"
-  #     type: blog
-  #   values:
-  #     layout: post
+  # _portfolio
+  - scope:
+      path: "_portfolio"
+      type: portfolio
+    values:
+      layout: post
