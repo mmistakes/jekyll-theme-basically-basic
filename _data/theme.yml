@@ -49,6 +49,7 @@ google_fonts:
 # pages that have a `title`. Add raw page paths in the order you'd like.
 
 navigation_pages:
-  - portfolio.md
-  - blog.md
+  # - portfolio.md
+  # - blog.md
+  - home.md
   - about.md
