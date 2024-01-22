@@ -1,7 +1,6 @@
 ---
-title: Blog
 layout: home
-permalink: /blog/
-collection: blog
+title: Blog
+collection: posts
 paginate: true
 ---
