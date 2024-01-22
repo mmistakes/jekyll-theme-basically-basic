@@ -1,9 +1,9 @@
 ---
 layout: map
 title: "Global Satellite Composite"
+name:  "Daniel Hoshizaki"
 image:
   path: /assets/images/portfolio/kyushu.png
-  # thumbnail: /assets/images/portfolio/hokkaido.png
   thumbnail: /assets/images/portfolio/kyushu.png
 categories: [Remote Sensing, Deep Learning]
 pin: true
