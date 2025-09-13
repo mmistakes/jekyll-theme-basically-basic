@@ -2,8 +2,6 @@
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/)
-[![Ruby gem](https://img.shields.io/gem/v/jekyll-theme-basically-basic.svg)](https://rubygems.org/gems/jekyll-theme-basically-basic)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
 
 Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as 
 a substitute for the default [Minima](https://github.com/jekyll/minima), with a 
@@ -16,68 +14,10 @@ few enhancements thrown in for good measure:
 - Disqus Comments and Google Analytics support
 - SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
 
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) for developing and maintaining it.**
-
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
-
 [![Basically Basic live preview][2]][1]
 
 [1]: https://mmistakes.github.io/jekyll-theme-basically-basic/
 [2]: https://cloud.githubusercontent.com/assets/1376749/24117647/6dede894-0d81-11e7-9c2c-f19bea45e219.jpg (live preview)
-
-## Table of Contents
-
-1. [Installation](#installation)
-   1. [Ruby Gem Method](#ruby-gem-method)
-   2. [GitHub Pages Method](#github-pages-method)
-      1. [Remove the Unnecessary](#remove-the-unnecessary)
-2. [Upgrading](#upgrading)
-   1. [Ruby Gem](#ruby-gem)
-   2. [Remote Theme](#remote-theme)
-   3. [Use Git](#use-git)
-      1. [Pull Down Updates](#pull-down-updates)
-   4. [Update Files Manually](#update-files-manually)
-3. [Structure](#structure)
-   1. [Starting Fresh](#starting-fresh)
-   2. [Starting from `jekyll new`](#starting-from-jekyll-new)
-4. [Configuration](#configuration)
-   1. [Skin](#skin)
-   2. [Google Fonts](#google-fonts)
-   3. [Text](#text)
-   4. [Navigation](#navigation)
-   5. [Pagination](#pagination)
-   6. [Search](#search)
-      1. [Lunr (default)](#lunr-default)
-      2. [Algolia](#algolia)
-   7. [Author](#author)
-   8. [Reading Time](#reading-time)
-   9. [Comments (via Disqus)](#comments-via-disqus)
-   10. [Google Analytics](#google-analytics)
-   11. [Copyright](#copyright)
-5. [Layouts](#layouts)
-   1. [`layout: default`](#layout-default)
-   2. [`layout: post`](#layout-post)
-   3. [`layout: page`](#layout-page)
-   4. [`layout: home`](#layout-home)
-   5. [`layout: posts`](#layout-posts)
-   6. [`layout: categories`](#layout-categories)
-   7. [`layout: tags`](#layout-tags)
-   8. [`layout: collection`](#layout-collection)
-   9. [`layout: category`](#layout-category)
-   10. [`layout: tag`](#layout-tag)
-   11. [`layout: about`](#layout-about)
-   12. [`layout: cv`](#layout-cv)
-6. [Images](#images)
-7. [Customization](#customization)
-   1. [Overriding Includes and Layouts](#overriding-includes-and-layouts)
-   2. [Customizing Sass (SCSS)](#customizing-sass-scss)
-   3. [Customizing JavaScript](#customizing-javascript)
-   4. [SVG Icons](#svg-icons)
-   5. [Customizing Sidebar Content](#customizing-sidebar-content)
-8. [Development](#development)
-9. [Contributing](#contributing)
-10. [Credits](#credits)
-11. [License](#license)
 
 ## Installation
 
@@ -118,7 +58,7 @@ for any GitHub-hosted theme.
 
 2. Run `bundle update` and verify that all gems install properly.
 
-3. Add `remote_theme: "mmistakes/jekyll-theme-basically-basic"` to your 
+3. Add `remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"` to your 
    `_config.yml` file. Remove any other `theme:` or `remote_theme:` entries.
 
 ---
@@ -161,7 +101,7 @@ site and you should something similar to:
 
 ```
 <!--
-    Basically Basic Jekyll Theme 1.2.0
+    Basically Basic Jekyll Theme 1.4.5
     Copyright 2017-2018 Michael Rose - mademistakes.com | @mmistakes
     Free for personal and commercial use under the MIT license
     https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE
@@ -177,11 +117,17 @@ update jekyll-theme-basically-basic` if you're not.
 
 ### Remote Theme
 
-When hosting with GitHub Pages you'll need to push up a commit to force a 
-rebuild with the latest [theme release](https://github.com/mmistakes/jekyll-theme-basically-basic/releases).
+Verify you have the [latest version](https://github.com/mmistakes/jekyll-theme-basically-basic/releases) assigned in `_config.yml`
 
-An empty commit will get the job done too if you don't have anything to push at 
-the moment:
+```
+remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
+```
+
+Note: If `@x.x.x` is omitted the theme's current `master` branch will be used. It is advised to ["lock" `remote_theme`](https://github.com/benbalter/jekyll-remote-theme#declaring-your-theme) at a specific version to avoid introducing breaking changes to your site.
+
+The next step requires rebuilding your [GitHub Pages](https://pages.github.com/) site so it can pull down the latest theme updates. This can be achieved by pushing up a commit to your GitHub repo.
+
+An empty commit will get the job done too if you don't have anything to push at the moment:
 
 ```terminal
 git commit --allow-empty -m "Force rebuild of site"
@@ -351,6 +297,10 @@ t:
   skip_content: "Skip to content"
   skip_footer: "Skip to footer"
   menu: "Menu"
+  search: "Search"
+  site_search: "Site Search"
+  results_found: "Result(s) found"
+  search_placeholder_text: "Enter your search term..."
   home: "Home"
   newer: "Newer"
   older: "Older"
@@ -362,6 +312,21 @@ t:
   of: "of"
   min_read: "min read"
   present: "Present"
+  cv_awards: "Awards"
+  cv_summary_contact: "Contact"
+  cv_summary_contact_email: "Email"
+  cv_summary_contact_phone: "Phone"
+  cv_summary_contact_website: "Website"
+  cv_location: "Location"
+  cv_education: "Education"
+  cv_education_courses: "Courses"
+  cv_interests: "Interests"
+  cv_languages: "Languages"
+  cv_publications: "Publications"
+  cv_references: "References"
+  cv_skills: "Skills"
+  cv_volunteer: "Volunteer"
+  cv_work: "Work"
 ```
 
 ### Navigation
@@ -785,7 +750,7 @@ file, create an `_includes` directory in your project, copy
 `<your_project>/_includes` and start editing that file.
 
 **ProTip:** to locate the theme's files on your computer run 
-`bundle show jekyll-theme-basically-basic`. This returns the location of the 
+`bundle info jekyll-theme-basically-basic`. This returns the location of the 
 gem-based theme files.
 
 ### Customizing Sass (SCSS)
@@ -796,7 +761,7 @@ To override the default [Sass](http://sass-lang.com/guide) (located in theme's
 1. Copy directly from the Basically Basic gem
 
    - Go to your local Basically Basic gem installation directory (run 
-     `bundle show jekyll-theme-basically-basic` to get the path to it).
+     `bundle info jekyll-theme-basically-basic` to get the path to it).
    - Copy the contents of `/assets/stylesheets/main.scss` from there to 
      `<your_project>`.
    - Customize what you want inside `<your_project>/assets/stylesheets/main.scss`.
@@ -826,7 +791,7 @@ To override the default JavaScript bundled in the theme, do one of the following
 1. Copy directly from the Basically Basic gem
 
    - Go to your local Basically Basic gem installation directory (run 
-     `bundle show jekyll-theme-basically-basic` to get the path to it).
+     `bundle info jekyll-theme-basically-basic` to get the path to it).
    - Copy the contents of `/assets/javascripts/main.js` from there to 
      `<your_project>`.
    - Customize what you want inside `<your_project>/assets/javascripts/main.js`.
@@ -981,7 +946,7 @@ grammar, etc.
 
 The MIT License (MIT)
 
-Copyright (c) 2017-2018 Michael Rose and contributors
+Copyright (c) 2017-2021 Michael Rose and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

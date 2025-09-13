@@ -6,18 +6,18 @@
 
 <div id="contact" class="entry">
   <header class="entry-header">
-    <h3 class="entry-title">Contact</h3>
+    <h3 class="entry-title">{{ site.data.theme.t.cv_summary_contact | default: 'Contact' }}</h3>
   </header>
 
   <div class="entry-content">
     {% if cv.basics.email %}
-      <div class="email"><strong>Email</strong> <a href="mailto:{{ cv.basics.email }}">{{ cv.basics.email }}</a></div>
+      <div class="email"><strong>{{ site.data.theme.t.cv_summary_contact_email | default: 'Email' }}</strong> <a href="mailto:{{ cv.basics.email }}">{{ cv.basics.email }}</a></div>
     {% endif %}
     {% if cv.basics.phone %}
-      <div class="phone"><strong>Phone</strong> {{ cv.basics.phone }}</div>
+      <div class="phone"><strong>{{ site.data.theme.t.cv_summary_contact_phone | default: 'Phone' }}</strong> {{ cv.basics.phone }}</div>
     {% endif %}
     {% if cv.basics.website %}
-      <div class="website"><strong>Website</strong> <a href="{{ cv.basics.website }}">{{ cv.basics.website }}</a></div>
+      <div class="website"><strong>{{ site.data.theme.t.cv_summary_contact_website | default: 'Website' }}</strong> <a href="{{ cv.basics.website }}">{{ cv.basics.website }}</a></div>
     {% endif %}
     {% if cv.basics.profiles %}
       {% for p in cv.basics.profiles %}
@@ -43,7 +43,7 @@
 {% if cv.basics.location %}
   <div id="location" class="entry">
     <header class="entry-header">
-      <h3 class="entry-title">Location</h3>
+      <h3 class="entry-title">{{ site.data.theme.t.cv_location | default: 'Location' }}</h3>
     </header>
 
     <div class="entry-content">

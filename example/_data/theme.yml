@@ -19,6 +19,21 @@ t:
   of: "of"
   min_read: "min read"
   present: "Present"
+  cv_awards: "Awards"
+  cv_summary_contact: "Contact"
+  cv_summary_contact_email: "Email"
+  cv_summary_contact_phone: "Phone"
+  cv_summary_contact_website: "Website"
+  cv_location: "Location"
+  cv_education: "Education"
+  cv_education_courses: "Courses"
+  cv_interests: "Interests"
+  cv_languages: "Languages"
+  cv_publications: "Publications"
+  cv_references: "References"
+  cv_skills: "Skills"
+  cv_volunteer: "Volunteer"
+  cv_work: "Work"
 
 # Google Fonts
 google_fonts:

@@ -22,7 +22,7 @@ url: ""  # the base hostname & protocol for your site, e.g. http://example.com
 author:
   name: Dugan Nash
   twitter: Towlette_Pettetucci
-  picture: https://api.adorable.io/avatars/285/johndoe.png
+  picture: /assets/images/johndoe.png
 twitter_username: Towlette_Pettetucci
 github_username: Towlette_Pettetucci
 logo: /assets/icons/basically-basic-logo-light.svg

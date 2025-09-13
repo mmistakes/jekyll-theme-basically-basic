@@ -1,7 +1,7 @@
 {% if cv.education %}
   <div id="education" class="entry">
     <header class="entry-header">
-      <h3 class="entry-title">Education</h3>
+      <h3 class="entry-title">{{ site.data.theme.t.cv_education | default: 'Education' }}</h3>
     </header>
 
     <div class="entry-content">
@@ -23,7 +23,7 @@
           <div class="area"><strong>{{ e.area }}{% if e.studyType %}<span class="studyType">{{ e.studyType | prepend: ', ' }}</span>{% endif %}</strong>{% if e.gpa %}<span class="gpa">{{ e.gpa | prepend: ' (' | append: ' GPA)' }}</span>{% endif %}</div>
         {% endif %}
         {% if e.courses %}
-          <h5 class="courses-title">Courses</h5>
+          <h5 class="courses-title">{{ site.data.theme.t.cv_education_courses | default: 'Courses' }}</h5>
           <ul class="courses">
             {% for course in e.courses %}
               <li>{{ course }}</li>

@@ -1,8 +1,4 @@
-{% if site.logo contains '://' %}
-  {% assign site_logo = site.logo %}
-{% else %}
-  {% assign site_logo = site.logo | relative_url %}
-{% endif %}
+{% assign site_logo = site.logo | relative_url %}
 
 <header id="masthead">
   <div class="inner">

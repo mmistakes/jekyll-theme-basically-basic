@@ -5,15 +5,42 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [1.4.5] - 2021-07-05
+
+## Added
+- Add translation keys for CV layout. [#145](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/145)
+- Display 'Posts' header only if the site has posts. [#144](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/144)
+
+## Changed
+- Improve remote theme upgrading documentation.
+- Simplify image assigns.
+### Fixed
+- Fix to use current `bundle info` syntax. [#127](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/127)
+- Add `relative_url` filter to author profile image. [#125](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/125)
+- Fix rake vulnerability in `.gemspec` file.
+
+## [1.4.4] - 2019-08-20
+
+### Fixed
+- Fix MIME-type issues with Lunr search by renaming `search-data.json` to `lunr/lunr.store.js`. [#82](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/82)
+
+## [1.4.3] - 2019-08-20
+
+### Changed
+- Relax Jekyll dependency to allow for version 4.0.
+
+## [1.4.2] - 2019-07-18
 
 ### Added
 - Document `site.copyright` override for customizing footer copyright text.
 
 ### Changed
+- Update links to LICENSE. [#102](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/102)
 - Update GitHub issue templates.
 
 ### Fixed
+- Fix theme text strings for `search_placeholder_text` and `results_found`. [#104](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/104)
+- Remove stray `console.log` from lunr-search-scripts [#105](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/105)
 - Add missing `/` in icon-gitlab.html. [#80](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/80)
 
 ## [1.4.1] - 2018-08-07
